@@ -1,0 +1,1272 @@
+{
+  "version": 1,
+  "engineVersion": "expanded-v6",
+  "rulesVersion": "1.1",
+  "provenance": {
+    "method": "hosted-general-tactics",
+    "sourceCommit": "032a0ec6d4d644f0d37b3b586b8d33b5089e2f9d",
+    "files": [
+      {
+        "path": "data/starter-decks.json",
+        "sha256": "6acafcff2e152807e944ee3ebf32d2300e4300927c34730c01b504d8c49a8c36"
+      },
+      {
+        "path": "data/simulator/catalog-baseline.json",
+        "sha256": "08fae904dbb7d94f08e7f2b5e8cdb307c7f7f5b14e5dbd5c208363a4aed081d8"
+      },
+      {
+        "path": "lib/simulator/bot-playbook.ts",
+        "sha256": "19b30602d729804753c53d4026b65ad7e37514bf386a4fb7c4afa201f22274a4"
+      }
+    ]
+  },
+  "opponents": [
+    {
+      "key": "genesis-starter-corpo",
+      "name": "Corpo Starter",
+      "entries": [
+        {
+          "card_id": "1c2af8d0-6085-4319-9411-b509601cab75",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "2d1190d3-7dec-4e42-9905-428896d968ac",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "3408c423-f8e6-432e-8fff-7e87fcd403bf",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "63df8026-7eed-4a33-99a9-de4779b0ff77",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "733c4d90-6934-4dfe-8401-c42b9da7d291",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "75fb06fc-dcec-40f5-a501-ddc3e65c8242",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "7629d9ab-061c-4c8f-abdd-05e8a8457412",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "7c4f7168-d89b-422a-bb23-9f672d393aba",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "88add5df-ae68-42e6-916a-6f62f1e03863",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35",
+          "section": "cyberdeck",
+          "quantity": 4
+        },
+        {
+          "card_id": "922a3d65-a5f5-42ff-a3db-a32166f27f3f",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "9b3b9b91-4e46-4e71-a354-4de90fa98674",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "a699f13f-3461-4226-bef3-64a024c9c9d2",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "b8cc9e18-f767-4c36-be11-70c41700605f",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "bfd8e1d4-493d-4ced-a02e-72c6082061c8",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "cf331915-54d5-4018-96ac-22635b683994",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "d06a1bb5-a102-4338-9220-da7839542007",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "e1ec1411-c056-4cf8-9553-ed6e8208dadd",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "e3f8d3f3-634f-4b81-b4c2-1776920cee78",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "e5a07806-0e36-429e-aae2-ca74bc4afd8a",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "ecc9914d-7879-46ff-9015-0c58a75cb31b",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "b5d8de27-032f-4098-aebf-f1f9f132a504",
+          "section": "mainframe",
+          "quantity": 1
+        },
+        {
+          "card_id": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "section": "ram",
+          "quantity": 25
+        }
+      ],
+      "description": "Genesis two-player starter kits: Corpo Starter. 1 A-Z LUXUREON, 50 cyberdeck cards, and 25 Basic RAM.",
+      "playbook": {
+        "version": 1,
+        "deck": "genesis-starter-corpo",
+        "provenance": {
+          "method": "ai-analysis",
+          "source": "General fallback; deck analysis unavailable"
+        },
+        "reserveRam": 0,
+        "aggression": 0.6,
+        "priorities": []
+      },
+      "playbookSha256": "a837c6a64440429268acffceec91618e5550e594296790210d6c64f0674fe775",
+      "definitionVersions": [
+        "103b12477443bb4f762c1a0d3e132a8f14792f3339d170ac754c4d8c73516119",
+        "187539e75be4680308f4a8263ddedc4a7db178f6dab4d0feecdc1215541936f0",
+        "1b66c2e617e886ec24d37e48e64ca05b42dfb544998b02bfcfc96663b550bfa0",
+        "31e5562c27c6d90862ed9c5d2c82135b519120778bb112fa79d688dd08eff025",
+        "4549b1175c4c59a84cccaad9e593c231f49fa129c439cfb8716361eca981505a",
+        "4905be4472435ae570f898abc15392efa86f3df1db8a504ae89505c7bac995fe",
+        "52042ae32661d667221653fffdda63ad971edb7b2d59ac0d67c29f0a3c47d098",
+        "5fc582b3d434f3cc6f75859668b474d26d97b8ea7796f272ba27412ba8f4e108",
+        "611978cd4cb6deff1d7012796ed53bc7834d4215ad332800b1efa9c24e5d6738",
+        "7b25b7aedce893bceb0a5b2658619716748bfe3e3a79570dc74b469ee31371c8",
+        "7b58ea2fb98ddc083c0591bed8e7f983915f239c9910aa8654cc2407ec4977a2",
+        "7e65cb14ee7eecd2d4258f730138f44917946d2689ced4661b7e39e4c006a771",
+        "894e44c459c3f5fd35796c1a038a72c8e08fb6d802ab689883d8d2be6dff486c",
+        "8d2d2bfef338f30535e89a0e07b5a1bc18a61fe57e87efea3f4640d83680f036",
+        "9a5006a90d578947e8ee1ec96e89bb10aacb56a8a584a47c45f194bff060eea0",
+        "9bb7b6bbded753d683bb064bf90189835316b545f92b154de7a1067f1436edff",
+        "b38593814545552621dc5f36b8137f55fd36323ec73f0a6a91ae3851431aedf8",
+        "b55eb3fd0cf797cd1c4bf790d4c4fc943b86403eb59026eee6c5c8cebe3c0c87",
+        "b7977362c81839a2b205f378dd61ee7b1ba4c647d100dad23368df8935abdae8",
+        "bb7574aba7475a2011ee01c809ffa2648666ff61263c272865533b4e847423c9",
+        "bbdb3b05bfbd2219c82951608920705e2bc86e02158928b6eab9244880d16819",
+        "bee84647a9875a369c17f2a4c23aaaec55e7d73865008364d8f2e1c71a13c2f6",
+        "c8c8602112cf282a5cb1a412cf73a225c818bbdc6d17dd6a2de22d33d4efe452",
+        "d900d42abe9b0fa7fbdab25ebd9c406504f29b0873499e4c2639a00dabb5d229",
+        "dc7494c1a54d59df70c931e42b9bb3edd0d73dda1cb9d5a21d3be58216ecad97",
+        "ede2eb9edfed0b20ab7f6f3fb07d49a996c83fa8c4c0b5c928b32fc0ed20b8d0",
+        "fafc92fdcb20a7f7a611b2257a7f6ef6c11c8fd6c2f0567db2dabd27fc2caa06"
+      ],
+      "artwork": [
+        {
+          "cardId": "1c2af8d0-6085-4319-9411-b509601cab75",
+          "path": "1c2af8d0-6085-4319-9411-b509601cab75/beca7233d4e90d6e0591a86b81f1fea7734e570075009cfbaca967879fcc9a22.webp",
+          "sha256": "beca7233d4e90d6e0591a86b81f1fea7734e570075009cfbaca967879fcc9a22"
+        },
+        {
+          "cardId": "2d1190d3-7dec-4e42-9905-428896d968ac",
+          "path": "2d1190d3-7dec-4e42-9905-428896d968ac/236c56eaa7e10e98b55309a175b7fb3e8e60d05fa278d8e8ad940c638fcd57d3.webp",
+          "sha256": "236c56eaa7e10e98b55309a175b7fb3e8e60d05fa278d8e8ad940c638fcd57d3"
+        },
+        {
+          "cardId": "3408c423-f8e6-432e-8fff-7e87fcd403bf",
+          "path": "3408c423-f8e6-432e-8fff-7e87fcd403bf/3ab87a50e9176156c0f3fdbd2579377af62f8f8f4c780cceb9e8109ded6955b0.webp",
+          "sha256": "3ab87a50e9176156c0f3fdbd2579377af62f8f8f4c780cceb9e8109ded6955b0"
+        },
+        {
+          "cardId": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8",
+          "path": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8/080ed41e47bcc141738836bbe3510dc9d1a238b6fb1a35e10260a042a7411b54.webp",
+          "sha256": "080ed41e47bcc141738836bbe3510dc9d1a238b6fb1a35e10260a042a7411b54"
+        },
+        {
+          "cardId": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "path": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4/e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943.webp",
+          "sha256": "e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943"
+        },
+        {
+          "cardId": "63df8026-7eed-4a33-99a9-de4779b0ff77",
+          "path": "63df8026-7eed-4a33-99a9-de4779b0ff77/39cc11cce46bc23331ef380d65e0f40f8a658ffa2907f95569b5808385552a4d.webp",
+          "sha256": "39cc11cce46bc23331ef380d65e0f40f8a658ffa2907f95569b5808385552a4d"
+        },
+        {
+          "cardId": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa",
+          "path": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa/0a2d1b3c00ace6afa176b560bdc551e44747ef2a01167b05beb629a2ecfb214a.webp",
+          "sha256": "0a2d1b3c00ace6afa176b560bdc551e44747ef2a01167b05beb629a2ecfb214a"
+        },
+        {
+          "cardId": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "path": "72967874-2318-4e18-9fc2-a8b5e364787f/5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f.webp",
+          "sha256": "5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f"
+        },
+        {
+          "cardId": "733c4d90-6934-4dfe-8401-c42b9da7d291",
+          "path": "733c4d90-6934-4dfe-8401-c42b9da7d291/ce6147bad0b9ab2a0780c65c5e8dfb764b0ecfc3ffcd6bf530bddffacbc1ae5a.webp",
+          "sha256": "ce6147bad0b9ab2a0780c65c5e8dfb764b0ecfc3ffcd6bf530bddffacbc1ae5a"
+        },
+        {
+          "cardId": "75fb06fc-dcec-40f5-a501-ddc3e65c8242",
+          "path": "75fb06fc-dcec-40f5-a501-ddc3e65c8242/be779f9ec550c80d17702d4969c669a8919c96de0d6ccb8a3d617643ed1dca6c.webp",
+          "sha256": "be779f9ec550c80d17702d4969c669a8919c96de0d6ccb8a3d617643ed1dca6c"
+        },
+        {
+          "cardId": "7629d9ab-061c-4c8f-abdd-05e8a8457412",
+          "path": "7629d9ab-061c-4c8f-abdd-05e8a8457412/81dbe367199c68c1a2e51d02be3e33898de8bd399af32e12e649b9c5f023a14d.webp",
+          "sha256": "81dbe367199c68c1a2e51d02be3e33898de8bd399af32e12e649b9c5f023a14d"
+        },
+        {
+          "cardId": "7c4f7168-d89b-422a-bb23-9f672d393aba",
+          "path": "7c4f7168-d89b-422a-bb23-9f672d393aba/f060e0858cac9e182a64f5576bf1019b41fac08807bc16f82f30542e80da6eb4.webp",
+          "sha256": "f060e0858cac9e182a64f5576bf1019b41fac08807bc16f82f30542e80da6eb4"
+        },
+        {
+          "cardId": "88add5df-ae68-42e6-916a-6f62f1e03863",
+          "path": "88add5df-ae68-42e6-916a-6f62f1e03863/17ace1b04db8084b425344b86e7c9d44650e3ca63540f47ca6e3e3378b663ae6.webp",
+          "sha256": "17ace1b04db8084b425344b86e7c9d44650e3ca63540f47ca6e3e3378b663ae6"
+        },
+        {
+          "cardId": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35",
+          "path": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35/ecb370f40ca10156fce4d1926189e6cd215ccd20f40ef654e54db074db2b2ad9.webp",
+          "sha256": "ecb370f40ca10156fce4d1926189e6cd215ccd20f40ef654e54db074db2b2ad9"
+        },
+        {
+          "cardId": "922a3d65-a5f5-42ff-a3db-a32166f27f3f",
+          "path": "922a3d65-a5f5-42ff-a3db-a32166f27f3f/5c274e24c4e08647b34d06fa54c868c081fc1c7e2c9358cd25c6aaf774146828.webp",
+          "sha256": "5c274e24c4e08647b34d06fa54c868c081fc1c7e2c9358cd25c6aaf774146828"
+        },
+        {
+          "cardId": "9b3b9b91-4e46-4e71-a354-4de90fa98674",
+          "path": "9b3b9b91-4e46-4e71-a354-4de90fa98674/4bf1dd613f39fa2c4ea29f8010bf8e55b5d18f01434613f5b5572a6e39496e9d.webp",
+          "sha256": "4bf1dd613f39fa2c4ea29f8010bf8e55b5d18f01434613f5b5572a6e39496e9d"
+        },
+        {
+          "cardId": "a699f13f-3461-4226-bef3-64a024c9c9d2",
+          "path": "a699f13f-3461-4226-bef3-64a024c9c9d2/fd7dee82f5d67040c9fce659df32750ea80a84e0088eed0900be164bc4013a30.webp",
+          "sha256": "fd7dee82f5d67040c9fce659df32750ea80a84e0088eed0900be164bc4013a30"
+        },
+        {
+          "cardId": "b5d8de27-032f-4098-aebf-f1f9f132a504",
+          "path": "b5d8de27-032f-4098-aebf-f1f9f132a504/77cebebe4c4c611e5e00fa9979447f1839b9653e32f6ed3d5bbeabbe4cf47bea.webp",
+          "sha256": "77cebebe4c4c611e5e00fa9979447f1839b9653e32f6ed3d5bbeabbe4cf47bea"
+        },
+        {
+          "cardId": "b8cc9e18-f767-4c36-be11-70c41700605f",
+          "path": "b8cc9e18-f767-4c36-be11-70c41700605f/1686bfdfe75116c7477633a595e9c14f4b42ee8b997fc7764e1d8de68196e62b.webp",
+          "sha256": "1686bfdfe75116c7477633a595e9c14f4b42ee8b997fc7764e1d8de68196e62b"
+        },
+        {
+          "cardId": "bfd8e1d4-493d-4ced-a02e-72c6082061c8",
+          "path": "bfd8e1d4-493d-4ced-a02e-72c6082061c8/319c6dafa7d9f0624fd40e322593e190c7ba0b95622fe2a894c24aed670b6587.webp",
+          "sha256": "319c6dafa7d9f0624fd40e322593e190c7ba0b95622fe2a894c24aed670b6587"
+        },
+        {
+          "cardId": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7",
+          "path": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7/2ec21134eaa0dbf1be2d1d3df892eeac972d7d37a0481c9f507436986eab9410.webp",
+          "sha256": "2ec21134eaa0dbf1be2d1d3df892eeac972d7d37a0481c9f507436986eab9410"
+        },
+        {
+          "cardId": "cf331915-54d5-4018-96ac-22635b683994",
+          "path": "cf331915-54d5-4018-96ac-22635b683994/cef697af11a120669ee060abe909dd6ed5e90f8c9bdf81ced5c1fd89fb660f1d.webp",
+          "sha256": "cef697af11a120669ee060abe909dd6ed5e90f8c9bdf81ced5c1fd89fb660f1d"
+        },
+        {
+          "cardId": "d06a1bb5-a102-4338-9220-da7839542007",
+          "path": "d06a1bb5-a102-4338-9220-da7839542007/a9cae67f74421977f4281b7ccc66384116d3c5e30ba88937c3ab7b876b06aac3.webp",
+          "sha256": "a9cae67f74421977f4281b7ccc66384116d3c5e30ba88937c3ab7b876b06aac3"
+        },
+        {
+          "cardId": "e1ec1411-c056-4cf8-9553-ed6e8208dadd",
+          "path": "e1ec1411-c056-4cf8-9553-ed6e8208dadd/6b665477bc02ccc700557b6ae2899f6f2ffcd5d949c32bfeb9f2a78f80d1e84a.webp",
+          "sha256": "6b665477bc02ccc700557b6ae2899f6f2ffcd5d949c32bfeb9f2a78f80d1e84a"
+        },
+        {
+          "cardId": "e3f8d3f3-634f-4b81-b4c2-1776920cee78",
+          "path": "e3f8d3f3-634f-4b81-b4c2-1776920cee78/27d11559dbf26607c2cb10e58136e59450b0cdd9350d1383dcb7d9053527cacc.webp",
+          "sha256": "27d11559dbf26607c2cb10e58136e59450b0cdd9350d1383dcb7d9053527cacc"
+        },
+        {
+          "cardId": "e5a07806-0e36-429e-aae2-ca74bc4afd8a",
+          "path": "e5a07806-0e36-429e-aae2-ca74bc4afd8a/f64e7f552393660c1c617610b7937584b0a7c9e8faf752b3acb0df05c7deeea3.webp",
+          "sha256": "f64e7f552393660c1c617610b7937584b0a7c9e8faf752b3acb0df05c7deeea3"
+        },
+        {
+          "cardId": "ecc9914d-7879-46ff-9015-0c58a75cb31b",
+          "path": "ecc9914d-7879-46ff-9015-0c58a75cb31b/c6b34eae776c5b571a99dd01893ea7ddc9fdf7f2c5a5397c68c80e09287357d0.webp",
+          "sha256": "c6b34eae776c5b571a99dd01893ea7ddc9fdf7f2c5a5397c68c80e09287357d0"
+        }
+      ]
+    },
+    {
+      "key": "genesis-starter-dustrunner",
+      "name": "Dustrunner Starter",
+      "entries": [
+        {
+          "card_id": "10526e1b-0820-4a60-922c-fefc1e63ccae",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "22dcc5d2-76a3-4d50-8472-afb300855593",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "27220600-7672-4783-a05a-9204aa503a89",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "280fd50c-4edb-4ebb-832c-a9852b63d62a",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "290acf42-33bf-44e8-ab3d-3465cf196acc",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "34810daa-5fbe-4492-8a14-2626a6e3eca0",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "370d9703-52f8-43da-9043-40e1b8b75c3a",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "3ec2c11b-5714-4956-957b-d508d408fd53",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "48020ef5-d5a5-49e5-aca5-dbf2c922476c",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "63308855-5322-4802-96d5-d9b5644bde57",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "67832741-300f-4036-947c-68e94315ed2b",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "7afff4f5-540c-4653-b638-59b349b587cc",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "85d94625-a106-419d-82ad-774bffc1442b",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "88c0acda-d695-43b1-aff3-3f90616b5f2a",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "8b795fb7-e7d0-4d4b-9548-986550995814",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "a47412db-9db3-4040-89bb-19d52bfacf3c",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "adf74d0d-3afa-448b-8568-de48bb7c40db",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "b004fdc9-8d52-4f27-87d0-92ed6255b37a",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "bdaff2a5-7fb9-4338-8a79-2785f176f641",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "c8f91456-44ed-4d96-9a15-e9f2dd2f6a36",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "cce48eab-aadc-44cf-bfbf-91e2aefe1195",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "d7301ed8-ca68-47ff-9508-7ef1199700dc",
+          "section": "cyberdeck",
+          "quantity": 4
+        },
+        {
+          "card_id": "e0f980f5-2933-482a-9933-6025f14233ce",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "fac479cf-cd61-4517-9d05-da6719ecd6f1",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "6fb303c7-228b-4ab5-8d46-7c0a54383249",
+          "section": "mainframe",
+          "quantity": 1
+        },
+        {
+          "card_id": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "section": "ram",
+          "quantity": 25
+        }
+      ],
+      "description": "Genesis two-player starter kits: Dustrunner Starter. 1 COYOTE, 50 cyberdeck cards, and 25 Basic RAM.",
+      "playbook": {
+        "version": 1,
+        "deck": "genesis-starter-dustrunner",
+        "provenance": {
+          "method": "ai-analysis",
+          "source": "General fallback; deck analysis unavailable"
+        },
+        "reserveRam": 0,
+        "aggression": 0.6,
+        "priorities": []
+      },
+      "playbookSha256": "96de237f5ab7d1f9a1805a582450c405d9f6fa7583ccc4bcc40932422fede187",
+      "definitionVersions": [
+        "04e2b322fe9d2b9ad400bf8b3467f3221834237bf2f3cd04a9000b282a00be83",
+        "1351ba9bb5dfe43116c5ad68b9deab260c60764c4215f09efdcb5b99e585cc05",
+        "19b89d100c3d1f4eb239d217b1b6d51396a584da62d804b6ee4187811900e18e",
+        "1a0634bebfc2b8706156323b9a455f0cb1aadc3552af38db306ecd2e09028b9c",
+        "20bd1f310a4f5ceb085242910d6b9eed38bf80a23387cb14e6b7dfbd0953fbc5",
+        "310b907145a0fa7a079bbb623ab9099dc16059e9bd4b2eded856c94a7d8443da",
+        "3d7fc130e248ea0aa3e06bc6c275e75a80d27ae69933470f7091fe7deae25d20",
+        "43c38d716dc032027c9e6ea9633c70fb8d1dd135ef841dbc8cd28febe611e06e",
+        "5635e12039b3465848c4f73b8140cdff2766d21ad3aa9e997e89a468a311333b",
+        "61610b19aa15ffef5bfb8f5019b01b415e9828d27364dd2e9f76dd9f3f592ac7",
+        "68f0ecd8aa70313ec7e0fdacdcdc654957cf2301186eab94aa1f0e2b1d13985a",
+        "7b6abcc6499586a3f3a850f2332a5586151ecf90ea0b010007bbf04004df2e6c",
+        "8de4cc9bffb4a5e41af3ca5fbc56728f672fe0b4755e1138b84d0fe76cde11fa",
+        "96b20036caeb711376b0b79cf2418b7dedea8902aded7e909e1fa0fb8b5841bf",
+        "a11a6aee1d9c1553377e2b5690511d0df70e28c0e0c43a76bf9bda2a38b8187d",
+        "aaacf3a6d5cfa7f264698d053d075873bd023e768e9d05f42caab6ff71dfc998",
+        "abfcf4b5329fe0ff8c32e7c8d61f27287afacc543b7f8490ceb10bf691e02860",
+        "b393c524532a9905b7049df86b8a3944965e12c04845e71116853cb4c9d1321d",
+        "b55eb3fd0cf797cd1c4bf790d4c4fc943b86403eb59026eee6c5c8cebe3c0c87",
+        "bfbac23e4da5a8ed905be7c1e087354a1313b6b55be13c42577442454c8e7159",
+        "c62a11004a4d9ecc85a8be170a97e44b4088a45771eec2af858eaf271278684c",
+        "db2df2f2e4dab5d1782317499631cbd2b36b5d6a2fd9cb098f574e46d7cafa37",
+        "db8555bd8bda8d7b97c430190fb2e344c6858f598a40588abe58ea9bf7e43993",
+        "dff2824d1643685be6c39f619b792324b0bd5209ed45bed19d9dad8bb60998dc",
+        "e0fb9a5874e626496bed70d236453d1b8e037d158755796ba83ae1efd91b4a10",
+        "fc159613e6af5d36b4c4a9db207a640e2f8750b8ace58ddf929a410c9c5bb5ec"
+      ],
+      "artwork": [
+        {
+          "cardId": "10526e1b-0820-4a60-922c-fefc1e63ccae",
+          "path": "10526e1b-0820-4a60-922c-fefc1e63ccae/68160922ff14ae31253cbecc726f8d609fa8ed06e0659a9d4d6bd62d8526d732.webp",
+          "sha256": "68160922ff14ae31253cbecc726f8d609fa8ed06e0659a9d4d6bd62d8526d732"
+        },
+        {
+          "cardId": "22dcc5d2-76a3-4d50-8472-afb300855593",
+          "path": "22dcc5d2-76a3-4d50-8472-afb300855593/debda49778eb15182fd2fc3c3a2cdce4d65e9cee5150469947c5f31e23a8096f.webp",
+          "sha256": "debda49778eb15182fd2fc3c3a2cdce4d65e9cee5150469947c5f31e23a8096f"
+        },
+        {
+          "cardId": "27220600-7672-4783-a05a-9204aa503a89",
+          "path": "27220600-7672-4783-a05a-9204aa503a89/e3fbcc694cfaa840ed9644baa8cabec1e3a4304a5965f8b4fc26abada196fb6f.webp",
+          "sha256": "e3fbcc694cfaa840ed9644baa8cabec1e3a4304a5965f8b4fc26abada196fb6f"
+        },
+        {
+          "cardId": "280fd50c-4edb-4ebb-832c-a9852b63d62a",
+          "path": "280fd50c-4edb-4ebb-832c-a9852b63d62a/add4c587c38ca686897e8681171da3211eb8cbf0de4ee68d403ccd9d4726947e.webp",
+          "sha256": "add4c587c38ca686897e8681171da3211eb8cbf0de4ee68d403ccd9d4726947e"
+        },
+        {
+          "cardId": "290acf42-33bf-44e8-ab3d-3465cf196acc",
+          "path": "290acf42-33bf-44e8-ab3d-3465cf196acc/cf960db80d1ba036aa39f52555b5933583cfab6ccc64e537529547b99f872d8f.webp",
+          "sha256": "cf960db80d1ba036aa39f52555b5933583cfab6ccc64e537529547b99f872d8f"
+        },
+        {
+          "cardId": "34810daa-5fbe-4492-8a14-2626a6e3eca0",
+          "path": "34810daa-5fbe-4492-8a14-2626a6e3eca0/c8a425e8a647432f6d2a7da88559d53bda5d00b870b2406b6c48c499590cf144.webp",
+          "sha256": "c8a425e8a647432f6d2a7da88559d53bda5d00b870b2406b6c48c499590cf144"
+        },
+        {
+          "cardId": "370d9703-52f8-43da-9043-40e1b8b75c3a",
+          "path": "370d9703-52f8-43da-9043-40e1b8b75c3a/04c4903e05c4b67d521ff79e31a2e3fbec7c8a51f0b97d8d4e806e1263ebe931.webp",
+          "sha256": "04c4903e05c4b67d521ff79e31a2e3fbec7c8a51f0b97d8d4e806e1263ebe931"
+        },
+        {
+          "cardId": "3ec2c11b-5714-4956-957b-d508d408fd53",
+          "path": "3ec2c11b-5714-4956-957b-d508d408fd53/3e7f88d6d8811955a13f5dbe564c3e9a05cb9c2ca3f5c98db6c1f74d05e49221.webp",
+          "sha256": "3e7f88d6d8811955a13f5dbe564c3e9a05cb9c2ca3f5c98db6c1f74d05e49221"
+        },
+        {
+          "cardId": "48020ef5-d5a5-49e5-aca5-dbf2c922476c",
+          "path": "48020ef5-d5a5-49e5-aca5-dbf2c922476c/ccaee60e667166907b4754118ce16965aa50e819eb27323f34393e307310eda7.webp",
+          "sha256": "ccaee60e667166907b4754118ce16965aa50e819eb27323f34393e307310eda7"
+        },
+        {
+          "cardId": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "path": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4/e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943.webp",
+          "sha256": "e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943"
+        },
+        {
+          "cardId": "63308855-5322-4802-96d5-d9b5644bde57",
+          "path": "63308855-5322-4802-96d5-d9b5644bde57/a0a2814802602162499ed30b6e8869656a9e78fee298a2710ddb45f9bf88b275.webp",
+          "sha256": "a0a2814802602162499ed30b6e8869656a9e78fee298a2710ddb45f9bf88b275"
+        },
+        {
+          "cardId": "67832741-300f-4036-947c-68e94315ed2b",
+          "path": "67832741-300f-4036-947c-68e94315ed2b/4bb127a2072569f800729d6e70daa501043abea999017ab6bf9a09d706e893b3.webp",
+          "sha256": "4bb127a2072569f800729d6e70daa501043abea999017ab6bf9a09d706e893b3"
+        },
+        {
+          "cardId": "6fb303c7-228b-4ab5-8d46-7c0a54383249",
+          "path": "6fb303c7-228b-4ab5-8d46-7c0a54383249/e2126775dcef8e26d5673df0dc8c3fc2a47af4e349c15ae6b38607577efecc69.webp",
+          "sha256": "e2126775dcef8e26d5673df0dc8c3fc2a47af4e349c15ae6b38607577efecc69"
+        },
+        {
+          "cardId": "7afff4f5-540c-4653-b638-59b349b587cc",
+          "path": "7afff4f5-540c-4653-b638-59b349b587cc/625b03473e99b89c26d7d3de44d9009f033f9e40e4d4893954c271fca1511c18.webp",
+          "sha256": "625b03473e99b89c26d7d3de44d9009f033f9e40e4d4893954c271fca1511c18"
+        },
+        {
+          "cardId": "85d94625-a106-419d-82ad-774bffc1442b",
+          "path": "85d94625-a106-419d-82ad-774bffc1442b/5940ea5860a57694f65ea80328b9e3a675816f6776a547d5afcc5cf5b2e33fc0.webp",
+          "sha256": "5940ea5860a57694f65ea80328b9e3a675816f6776a547d5afcc5cf5b2e33fc0"
+        },
+        {
+          "cardId": "88c0acda-d695-43b1-aff3-3f90616b5f2a",
+          "path": "88c0acda-d695-43b1-aff3-3f90616b5f2a/19c0698f0468bdc20a6c150ea9ebda4decb5d3d0e59f6e8d596a47f02fd20862.webp",
+          "sha256": "19c0698f0468bdc20a6c150ea9ebda4decb5d3d0e59f6e8d596a47f02fd20862"
+        },
+        {
+          "cardId": "8b795fb7-e7d0-4d4b-9548-986550995814",
+          "path": "8b795fb7-e7d0-4d4b-9548-986550995814/38d64b6101ce06ec286b5180e106cb073db230e52f115886276b2d1d1eb2a2ab.webp",
+          "sha256": "38d64b6101ce06ec286b5180e106cb073db230e52f115886276b2d1d1eb2a2ab"
+        },
+        {
+          "cardId": "a47412db-9db3-4040-89bb-19d52bfacf3c",
+          "path": "a47412db-9db3-4040-89bb-19d52bfacf3c/ba72f0eb517f3e606eebd23474228e4cdbfeb3cf011b1f568184b740ae9b85ce.webp",
+          "sha256": "ba72f0eb517f3e606eebd23474228e4cdbfeb3cf011b1f568184b740ae9b85ce"
+        },
+        {
+          "cardId": "adf74d0d-3afa-448b-8568-de48bb7c40db",
+          "path": "adf74d0d-3afa-448b-8568-de48bb7c40db/0d1931b60ead3cd07ba4ca196411f9e3ec1a46dff554c7a89c4ca209e98060c1.webp",
+          "sha256": "0d1931b60ead3cd07ba4ca196411f9e3ec1a46dff554c7a89c4ca209e98060c1"
+        },
+        {
+          "cardId": "b004fdc9-8d52-4f27-87d0-92ed6255b37a",
+          "path": "b004fdc9-8d52-4f27-87d0-92ed6255b37a/ff61b4bc054eb050a260118b696c8908452479dbebe7299662a502199dfa59bc.webp",
+          "sha256": "ff61b4bc054eb050a260118b696c8908452479dbebe7299662a502199dfa59bc"
+        },
+        {
+          "cardId": "bdaff2a5-7fb9-4338-8a79-2785f176f641",
+          "path": "bdaff2a5-7fb9-4338-8a79-2785f176f641/a858f4963a4b44232b6b386d9c81cca5635ae42eae2e1de82963999eb771841f.webp",
+          "sha256": "a858f4963a4b44232b6b386d9c81cca5635ae42eae2e1de82963999eb771841f"
+        },
+        {
+          "cardId": "c8f91456-44ed-4d96-9a15-e9f2dd2f6a36",
+          "path": "c8f91456-44ed-4d96-9a15-e9f2dd2f6a36/0ff2ded47e68c94ea25b583fdd8a14e3acede39e2db3cf4fe353482a87a6ecb1.webp",
+          "sha256": "0ff2ded47e68c94ea25b583fdd8a14e3acede39e2db3cf4fe353482a87a6ecb1"
+        },
+        {
+          "cardId": "cce48eab-aadc-44cf-bfbf-91e2aefe1195",
+          "path": "cce48eab-aadc-44cf-bfbf-91e2aefe1195/ba0a0b9b01fe14eb680d173a3a4999be254a76c9919492aa5e3db88047d5d40c.webp",
+          "sha256": "ba0a0b9b01fe14eb680d173a3a4999be254a76c9919492aa5e3db88047d5d40c"
+        },
+        {
+          "cardId": "d7301ed8-ca68-47ff-9508-7ef1199700dc",
+          "path": "d7301ed8-ca68-47ff-9508-7ef1199700dc/8fce65566673150f2811078ae02afc02b0ddf27852809b8153b19baee3994861.webp",
+          "sha256": "8fce65566673150f2811078ae02afc02b0ddf27852809b8153b19baee3994861"
+        },
+        {
+          "cardId": "e0f980f5-2933-482a-9933-6025f14233ce",
+          "path": "e0f980f5-2933-482a-9933-6025f14233ce/118f6faaa0af03e50dacdf9b07cd9ef1bfbb663967c51efc7d9dc21264e9762b.webp",
+          "sha256": "118f6faaa0af03e50dacdf9b07cd9ef1bfbb663967c51efc7d9dc21264e9762b"
+        },
+        {
+          "cardId": "fac479cf-cd61-4517-9d05-da6719ecd6f1",
+          "path": "fac479cf-cd61-4517-9d05-da6719ecd6f1/baf3dba96c6fa7a42820ee52ef55989f5e182cb71960c75010a61627ef8ad802.webp",
+          "sha256": "baf3dba96c6fa7a42820ee52ef55989f5e182cb71960c75010a61627ef8ad802"
+        }
+      ]
+    },
+    {
+      "key": "genesis-starter-cybernetic",
+      "name": "Cybernetic Starter",
+      "entries": [
+        {
+          "card_id": "011d3fc1-6fab-4791-bf59-fc6a80a465b4",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "11fc2d4c-e24a-4556-baef-42ecf2b27838",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "138219c0-06f3-44de-b02b-1cb418c690c9",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "192ff5bc-3da1-4ea6-ba4d-f6ec9fce73c7",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "202d92fe-e5df-4b04-9a6e-7e499a8385bf",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "240abe8f-929a-4bb6-b6b8-872033a7cc56",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "4a830aa1-c719-4a3f-9800-d404d4de5f55",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "5806a128-2e44-4fe4-a275-2a3e7c2666b3",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "6bc3ceab-04fe-455b-9c9c-b0470f122286",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "8683c419-1c9f-4d37-8a22-0f88c7dca0ac",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "89279587-794a-4602-8d08-785b75aa9f47",
+          "section": "cyberdeck",
+          "quantity": 4
+        },
+        {
+          "card_id": "8ac649de-1476-4db0-adec-9d8d09ad53e2",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "8f020b4c-1b7b-41e8-a0ab-e4a7ed93a1ea",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "9771c36f-c100-4ac3-af9d-f54c32bbde1f",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "a4fc6736-0561-4d7a-a824-788c44595f9d",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "b7f56830-c78c-48a8-b013-53bbb4c9d123",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "bc1b6a83-9114-428a-a804-b1accd8affb2",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "c3d25941-ff69-4cfb-9aaa-20b97c44c819",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "d3ed772b-f0ac-4e77-a9ab-833544869315",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "ec207828-a706-474a-9d96-f6cc98e15973",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "13bedd76-c98b-4508-a6d0-15eb4afe3f86",
+          "section": "mainframe",
+          "quantity": 1
+        },
+        {
+          "card_id": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "section": "ram",
+          "quantity": 25
+        }
+      ],
+      "description": "Genesis two-player starter kits: Cybernetic Starter. 1 SYNTHETIX, 50 cyberdeck cards, and 25 Basic RAM.",
+      "playbook": {
+        "version": 1,
+        "deck": "genesis-starter-cybernetic",
+        "provenance": {
+          "method": "ai-analysis",
+          "source": "General fallback; deck analysis unavailable"
+        },
+        "reserveRam": 0,
+        "aggression": 0.6,
+        "priorities": []
+      },
+      "playbookSha256": "51e653788bc39070f203d014e1c36930d82fb80d3e66de73fdf5509b82d4a7ed",
+      "definitionVersions": [
+        "1be982ab24b669de16c4fc9a859259366fe975394e7bdaea61e6ab0e6933c1c7",
+        "25d6648602a6a96acbcba51d21dbd77f471166b67795cb2f0704c930718c7344",
+        "2a302365bab0d4a1ef2bd982c8653f18aa927cef34abb4dd3040b23bc9944185",
+        "2cb544812b4ee4130eb8d505853c3798faf5e8557047fd62e7c4c87d2399ad58",
+        "2e7e51957f1cb6137b176a211758e1e0b6d8be05a5d66de80500a1aa8f254a2e",
+        "2ef140f9eb1796e9e7e53fbca55e53060ad53776c11d7b12c401d8595f0704e1",
+        "33ff4e47fb607440c10e074ba6a862a87e59191bf71b050422d4ece310143994",
+        "35c72b886f0b27c5d9f5800a32ef911243e7d5a4607a1fc73fe9676efb447427",
+        "50077e5275b0196b17556a5f1ab74854c7b6ff1fc3cc0abd66ec0e9e20964a67",
+        "7879a2135687a44cd52fc98f3ca97943dd0a9782d8793f5343c39692c0862617",
+        "7b58ea2fb98ddc083c0591bed8e7f983915f239c9910aa8654cc2407ec4977a2",
+        "7bc2639fb4a3f805d2cfc13e039c485dc63533e5cd9db3aa0b8224d88d234b92",
+        "7e2016d4d7a08383619ac448f359367d19556cfd0211828089c8bd213a875846",
+        "8008a382ee5adf065394f299261be1cbc839e0d311f15236499d0a24fec872b9",
+        "81f6aee94a46b32ddbf09f4c3e7ac4bdd4f9a0c011b297b9f5bca977f54ebdf7",
+        "81fbf45a98e9a84a0f84ab24c5ab81dceff508fd3a4be5759b88069753fcd60e",
+        "97bdd182f53afda62e6c3ab1db29d50cf8539c225841e9834cad81dc30e4a84c",
+        "b1f27e0334d1cb99481299a78bfb9810eb61a978325a44fbfb4b956d1cd6509e",
+        "b30e1af361eb32d388312366d8851bd454672fdd85d12369508ded65acb4910c",
+        "b55eb3fd0cf797cd1c4bf790d4c4fc943b86403eb59026eee6c5c8cebe3c0c87",
+        "b63b6212f34eb1a82e9b2ceb57c36290507d9a7e74bb884d34418f95f63ba8dd",
+        "c810fdfd1c2cd9d103182bbf69c1c35e596a856f06d89f07560ee165f926f48b",
+        "e213b6da7bca0a4e5ff8b2a4c77115ddbdff9b43aee5a5d001da3903e407e530",
+        "e5aeb124e8e623fc5e1fb5a42815acc09cfb437d7bddbe4b04367a6e39c81038",
+        "ef9cc89218e7ea2818eba19edaec669aa1cb5b8703952c20f01e0efa89c74e24",
+        "f29a2bb710e1462d3565f0e9c8075afab49cc7671cf8c638534bde31e2caf24d",
+        "ff396c737ef8275f9b6c98d6799273bb9e53e641cc15c3e1b09543a7efbd7517"
+      ],
+      "artwork": [
+        {
+          "cardId": "011d3fc1-6fab-4791-bf59-fc6a80a465b4",
+          "path": "011d3fc1-6fab-4791-bf59-fc6a80a465b4/608c0abd301c91c0ac0e95b642879274e68ded33fe2204dab124bacc4be70a98.webp",
+          "sha256": "608c0abd301c91c0ac0e95b642879274e68ded33fe2204dab124bacc4be70a98"
+        },
+        {
+          "cardId": "11fc2d4c-e24a-4556-baef-42ecf2b27838",
+          "path": "11fc2d4c-e24a-4556-baef-42ecf2b27838/4c1583613ea1fe587e14d15133758ef6ae0523f996a4824eb2c986aba33670c6.webp",
+          "sha256": "4c1583613ea1fe587e14d15133758ef6ae0523f996a4824eb2c986aba33670c6"
+        },
+        {
+          "cardId": "138219c0-06f3-44de-b02b-1cb418c690c9",
+          "path": "138219c0-06f3-44de-b02b-1cb418c690c9/cfe3c87b51a3210592de58f6182fb165ab45600929720c9353948fd8b8a8f02e.webp",
+          "sha256": "cfe3c87b51a3210592de58f6182fb165ab45600929720c9353948fd8b8a8f02e"
+        },
+        {
+          "cardId": "13bedd76-c98b-4508-a6d0-15eb4afe3f86",
+          "path": "13bedd76-c98b-4508-a6d0-15eb4afe3f86/89d1c8c795c6fd27f495ce6d2749e9d820d60692fa2560e4b6c6b75b2ecec7c8.webp",
+          "sha256": "89d1c8c795c6fd27f495ce6d2749e9d820d60692fa2560e4b6c6b75b2ecec7c8"
+        },
+        {
+          "cardId": "192ff5bc-3da1-4ea6-ba4d-f6ec9fce73c7",
+          "path": "192ff5bc-3da1-4ea6-ba4d-f6ec9fce73c7/ca022a957ce67652e571af69035d3a3630359eb4725f4c998c5726b7f438b069.webp",
+          "sha256": "ca022a957ce67652e571af69035d3a3630359eb4725f4c998c5726b7f438b069"
+        },
+        {
+          "cardId": "202d92fe-e5df-4b04-9a6e-7e499a8385bf",
+          "path": "202d92fe-e5df-4b04-9a6e-7e499a8385bf/290c09cd87331147306cf0853aad5d0eabc409dcd2733484a35db0a725b921c0.webp",
+          "sha256": "290c09cd87331147306cf0853aad5d0eabc409dcd2733484a35db0a725b921c0"
+        },
+        {
+          "cardId": "240abe8f-929a-4bb6-b6b8-872033a7cc56",
+          "path": "240abe8f-929a-4bb6-b6b8-872033a7cc56/5a97db12de641ebeb5999818c04effd777f9338bb34f0f0267762812effff4d2.webp",
+          "sha256": "5a97db12de641ebeb5999818c04effd777f9338bb34f0f0267762812effff4d2"
+        },
+        {
+          "cardId": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5",
+          "path": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5/d19f904cc6ed65720809b1852711ab358e8809480ca7a072f918ef0362a1d849.webp",
+          "sha256": "d19f904cc6ed65720809b1852711ab358e8809480ca7a072f918ef0362a1d849"
+        },
+        {
+          "cardId": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04",
+          "path": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04/13e933471c7057827874c4c8d6df2fc021ed11796d7676ee5bc24976c6e7f3dd.webp",
+          "sha256": "13e933471c7057827874c4c8d6df2fc021ed11796d7676ee5bc24976c6e7f3dd"
+        },
+        {
+          "cardId": "4a830aa1-c719-4a3f-9800-d404d4de5f55",
+          "path": "4a830aa1-c719-4a3f-9800-d404d4de5f55/6318dc4afcc74ab5d057fcc8c1b945e9676e241e196ce7164f71d2f11102f413.webp",
+          "sha256": "6318dc4afcc74ab5d057fcc8c1b945e9676e241e196ce7164f71d2f11102f413"
+        },
+        {
+          "cardId": "5806a128-2e44-4fe4-a275-2a3e7c2666b3",
+          "path": "5806a128-2e44-4fe4-a275-2a3e7c2666b3/7701de9f693c3d287c76b67080b40be05fcb01a33a0cd842b9641ee753e8293f.webp",
+          "sha256": "7701de9f693c3d287c76b67080b40be05fcb01a33a0cd842b9641ee753e8293f"
+        },
+        {
+          "cardId": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "path": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4/e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943.webp",
+          "sha256": "e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943"
+        },
+        {
+          "cardId": "6bc3ceab-04fe-455b-9c9c-b0470f122286",
+          "path": "6bc3ceab-04fe-455b-9c9c-b0470f122286/5932db75689db3b99b5e073bcf6c5184712a7565685c1d8ec9b3d30143e1d0c0.webp",
+          "sha256": "5932db75689db3b99b5e073bcf6c5184712a7565685c1d8ec9b3d30143e1d0c0"
+        },
+        {
+          "cardId": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "path": "72967874-2318-4e18-9fc2-a8b5e364787f/5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f.webp",
+          "sha256": "5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f"
+        },
+        {
+          "cardId": "8683c419-1c9f-4d37-8a22-0f88c7dca0ac",
+          "path": "8683c419-1c9f-4d37-8a22-0f88c7dca0ac/568f02d0c59a5d2b56fafdd59a8be284c8418b548ea941c1b945f0460016e206.webp",
+          "sha256": "568f02d0c59a5d2b56fafdd59a8be284c8418b548ea941c1b945f0460016e206"
+        },
+        {
+          "cardId": "89279587-794a-4602-8d08-785b75aa9f47",
+          "path": "89279587-794a-4602-8d08-785b75aa9f47/0bc159516ffca0ad6f2c6ff7fdc160486a2126e40fb8ee15ff9164481c71ba2c.webp",
+          "sha256": "0bc159516ffca0ad6f2c6ff7fdc160486a2126e40fb8ee15ff9164481c71ba2c"
+        },
+        {
+          "cardId": "8ac649de-1476-4db0-adec-9d8d09ad53e2",
+          "path": "8ac649de-1476-4db0-adec-9d8d09ad53e2/7c7259be7eacd52e3f0158d8ba3e61c809a895c0d87ef578e57a88a37c898a49.webp",
+          "sha256": "7c7259be7eacd52e3f0158d8ba3e61c809a895c0d87ef578e57a88a37c898a49"
+        },
+        {
+          "cardId": "8f020b4c-1b7b-41e8-a0ab-e4a7ed93a1ea",
+          "path": "8f020b4c-1b7b-41e8-a0ab-e4a7ed93a1ea/0273da932aa19aaea82589db5016575019b57b6fe1c36a60a500e98c8a427d98.webp",
+          "sha256": "0273da932aa19aaea82589db5016575019b57b6fe1c36a60a500e98c8a427d98"
+        },
+        {
+          "cardId": "9771c36f-c100-4ac3-af9d-f54c32bbde1f",
+          "path": "9771c36f-c100-4ac3-af9d-f54c32bbde1f/06c78f48dc93efcd9b6789756c0c3241dc37210f4bcbaa8685f46c0cdbdcb93d.webp",
+          "sha256": "06c78f48dc93efcd9b6789756c0c3241dc37210f4bcbaa8685f46c0cdbdcb93d"
+        },
+        {
+          "cardId": "a4fc6736-0561-4d7a-a824-788c44595f9d",
+          "path": "a4fc6736-0561-4d7a-a824-788c44595f9d/4c84e586ef08878c29926e21f0c295a000ec47e856c4003236a0d7ab281effe4.webp",
+          "sha256": "4c84e586ef08878c29926e21f0c295a000ec47e856c4003236a0d7ab281effe4"
+        },
+        {
+          "cardId": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335",
+          "path": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335/30999fd6b479e9744c16cbd602ab69f6c14c09cb363d50d165ed63a0806b2602.webp",
+          "sha256": "30999fd6b479e9744c16cbd602ab69f6c14c09cb363d50d165ed63a0806b2602"
+        },
+        {
+          "cardId": "b7f56830-c78c-48a8-b013-53bbb4c9d123",
+          "path": "b7f56830-c78c-48a8-b013-53bbb4c9d123/0a6263bc2e5d030c5ba8751cfea9f3503ac81799f85c702763a3eb1172aa6eb6.webp",
+          "sha256": "0a6263bc2e5d030c5ba8751cfea9f3503ac81799f85c702763a3eb1172aa6eb6"
+        },
+        {
+          "cardId": "bc1b6a83-9114-428a-a804-b1accd8affb2",
+          "path": "bc1b6a83-9114-428a-a804-b1accd8affb2/b7ee454ee6bc57585003d6c13759ea5a1f121b5dcf0bb14e01eaed1030048a79.webp",
+          "sha256": "b7ee454ee6bc57585003d6c13759ea5a1f121b5dcf0bb14e01eaed1030048a79"
+        },
+        {
+          "cardId": "c3d25941-ff69-4cfb-9aaa-20b97c44c819",
+          "path": "c3d25941-ff69-4cfb-9aaa-20b97c44c819/2abd22e9eab20a9ad7eaeba5e96617319a7ee06bdafc3d37c3c2654d2502ce36.webp",
+          "sha256": "2abd22e9eab20a9ad7eaeba5e96617319a7ee06bdafc3d37c3c2654d2502ce36"
+        },
+        {
+          "cardId": "d3ed772b-f0ac-4e77-a9ab-833544869315",
+          "path": "d3ed772b-f0ac-4e77-a9ab-833544869315/a324259d855418cbdf044fe0d9ce82ae2ee0ba4468e7abc0cf2dde3078c08102.webp",
+          "sha256": "a324259d855418cbdf044fe0d9ce82ae2ee0ba4468e7abc0cf2dde3078c08102"
+        },
+        {
+          "cardId": "ec207828-a706-474a-9d96-f6cc98e15973",
+          "path": "ec207828-a706-474a-9d96-f6cc98e15973/663df716b3845eb0db98d556c160960aa9bad5fa095c85df36dbb3b7ab5dee23.webp",
+          "sha256": "663df716b3845eb0db98d556c160960aa9bad5fa095c85df36dbb3b7ab5dee23"
+        },
+        {
+          "cardId": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442",
+          "path": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442/f7663551ed405b893ead027666fcb77ac9e7932973b0b5ee0a3e2a1b02faee46.webp",
+          "sha256": "f7663551ed405b893ead027666fcb77ac9e7932973b0b5ee0a3e2a1b02faee46"
+        }
+      ]
+    },
+    {
+      "key": "genesis-starter-hacker",
+      "name": "Hacker Starter",
+      "entries": [
+        {
+          "card_id": "02ce98ff-74b8-410a-8671-95e16d3d5f02",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "11bd1619-6eb4-462e-953a-482258f87a99",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "29ee1174-f6e0-43f1-91ff-d44688bf7e11",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "38e95da0-8b22-4672-97f0-459b5ec48d26",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "391a83d4-5ca3-4d4f-9c90-06ba6ee7f108",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "3a0b4588-3b7d-4795-8d59-d5752eab616e",
+          "section": "cyberdeck",
+          "quantity": 4
+        },
+        {
+          "card_id": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "462c87e3-1c4d-4583-a689-af1b16acdd51",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "538f04c0-6e64-4bdd-b767-b2dbc68052d4",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "58fa2817-dce4-4b38-9ec0-db4aff2ee275",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "9109471f-7635-4fa6-b777-5f8ee66732a0",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "9904cdfa-fb57-4115-81b6-f4c6802c3623",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "a998fc2a-dfed-42f7-b733-dab3fa36c641",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "ae9d640e-b2c0-4eec-84b5-da1768cbeb20",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "beca8aeb-a1fe-4d0c-8890-4e14521879db",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "cf077870-faa4-4d49-bac3-6080d316c424",
+          "section": "cyberdeck",
+          "quantity": 2
+        },
+        {
+          "card_id": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb",
+          "section": "cyberdeck",
+          "quantity": 1
+        },
+        {
+          "card_id": "fd9f3afc-e12c-4219-93e8-95b450f0f57d",
+          "section": "cyberdeck",
+          "quantity": 3
+        },
+        {
+          "card_id": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3",
+          "section": "mainframe",
+          "quantity": 1
+        },
+        {
+          "card_id": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "section": "ram",
+          "quantity": 25
+        }
+      ],
+      "description": "Genesis two-player starter kits: Hacker Starter. 1 FIRESTARTER, 50 cyberdeck cards, and 25 Basic RAM.",
+      "playbook": {
+        "version": 1,
+        "deck": "genesis-starter-hacker",
+        "provenance": {
+          "method": "ai-analysis",
+          "source": "General fallback; deck analysis unavailable"
+        },
+        "reserveRam": 0,
+        "aggression": 0.6,
+        "priorities": []
+      },
+      "playbookSha256": "080b776b87de0d8c0989a1f1f608eaf4416cfd17d827eafa18cc24dc128867a7",
+      "definitionVersions": [
+        "101be13580ad063b74989f802367fa35d5840368f1b30355c16d93000246d469",
+        "12ca70ac27fac19e0fdadb61a18e546017680a18e938790ffd5750f384f0a4c8",
+        "173adfe3c475e1248d60b15ffa0edf67bad27cf96609b662dae7962b88dbd6e9",
+        "1cf76c263356af9b532b7233adde1a288c5535af2acd88947afa1c5b8578d4d4",
+        "220b55bd1d8ff33b3751beadf33b6d6b759be334fa4d423551f665b4056bf222",
+        "28591a937765fc35a9941a1327e946d0fe4b4dd40e78faa825e50df88d0a0ffb",
+        "3a1246244c7cbb6e6bfd867ef3a268b051fa69732c54c4ab2bc0a732f948304b",
+        "49dfca31d85c303a2dfcbaad4a67e11d63879a1e1672ee4fcb7fed34427e3b6c",
+        "4a6eaae4b4d226f534067070d4e6748ed69d947a0993749bcd49ce7101e5501a",
+        "4c5ca0e4befe1bffe0c7ad2ca2fcc02fe73a38b69f271d71aaedf4f2209fed28",
+        "4fe32e717fc9e58b8c5b6baeabf61a859a26761989f2b9f9ff248b9bcec8577c",
+        "59db87feb93cef46a35b7e210c460d90c9db65697d38e619f173d2a912836a0b",
+        "59dea2b86158b7a9f742523d1402fbd66c24e2325ceee76d1ca22d625c7611e3",
+        "7b58ea2fb98ddc083c0591bed8e7f983915f239c9910aa8654cc2407ec4977a2",
+        "8eb34253dfea9a3490ac472ce4229610ada71edcef9dbc1189e34f855e581b60",
+        "92b5541b34e58074a5c9bec0f692a09d379db884f38ff3390712a5d48ef4c9bc",
+        "b55eb3fd0cf797cd1c4bf790d4c4fc943b86403eb59026eee6c5c8cebe3c0c87",
+        "bc099df3978c19f94ba32230745944258b7d0a5d5e6e2debc7aedbe888a1eb81",
+        "c0e7435970af10f8926321212c414824fe2c7d287d297a6dcca8a60a038ffb84",
+        "c8f0199db28af2f995f60e7cbb99c292331d5fb3c043694dbfece7e7db2ac902",
+        "cc83668e6663a528c27ca7810ed614da9d8f832c3c9474893dc47804a17bb1e5",
+        "d2c7539c1b69dcd43c39d61adb9cefd7dee6281794146a9a45e1a31a914c75da",
+        "f30abe09454c052ffa25ac0ca5b7a437a28947d393c39e3edc5c17db05ed41a3",
+        "f5006330e6f50cdb6a4a3387cada18538e8f546c9f79da5f0d89d797530791e4",
+        "fbf45a7ad7709e358a4bb4951576ea07e056614d52ae731e78f6525149eecdb5"
+      ],
+      "artwork": [
+        {
+          "cardId": "02ce98ff-74b8-410a-8671-95e16d3d5f02",
+          "path": "02ce98ff-74b8-410a-8671-95e16d3d5f02/44ba9da998e4f25875a1bfa475585c53c64402f0800a51b7f2bd2814dcccb2fd.webp",
+          "sha256": "44ba9da998e4f25875a1bfa475585c53c64402f0800a51b7f2bd2814dcccb2fd"
+        },
+        {
+          "cardId": "11bd1619-6eb4-462e-953a-482258f87a99",
+          "path": "11bd1619-6eb4-462e-953a-482258f87a99/010272d84525ca0c0576718e3a8a9d80206bd2670fefc88668afb7acdab6cc26.webp",
+          "sha256": "010272d84525ca0c0576718e3a8a9d80206bd2670fefc88668afb7acdab6cc26"
+        },
+        {
+          "cardId": "29ee1174-f6e0-43f1-91ff-d44688bf7e11",
+          "path": "29ee1174-f6e0-43f1-91ff-d44688bf7e11/883d4ec3e204c911bbfa2420ba926aa06aa7593568348bd859b75342e326fcdc.webp",
+          "sha256": "883d4ec3e204c911bbfa2420ba926aa06aa7593568348bd859b75342e326fcdc"
+        },
+        {
+          "cardId": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3",
+          "path": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3/8144d9d16e2b122334e7fed75bc8508d0598131936b5ac1fd6daed36f90bb657.webp",
+          "sha256": "8144d9d16e2b122334e7fed75bc8508d0598131936b5ac1fd6daed36f90bb657"
+        },
+        {
+          "cardId": "38e95da0-8b22-4672-97f0-459b5ec48d26",
+          "path": "38e95da0-8b22-4672-97f0-459b5ec48d26/a188d3a9ec4d239141ff923a3e7f7d4188aa051c111d01104e954eaa5ee6478b.webp",
+          "sha256": "a188d3a9ec4d239141ff923a3e7f7d4188aa051c111d01104e954eaa5ee6478b"
+        },
+        {
+          "cardId": "391a83d4-5ca3-4d4f-9c90-06ba6ee7f108",
+          "path": "391a83d4-5ca3-4d4f-9c90-06ba6ee7f108/00ce906bcd5e741494088f35bb31d7f28ae8ba969a070d30e99a4d41b7a49b53.webp",
+          "sha256": "00ce906bcd5e741494088f35bb31d7f28ae8ba969a070d30e99a4d41b7a49b53"
+        },
+        {
+          "cardId": "3a0b4588-3b7d-4795-8d59-d5752eab616e",
+          "path": "3a0b4588-3b7d-4795-8d59-d5752eab616e/846465c54a7be4baf6e364e2f7dbf4f9069bf5e9f939580463df98412c33a38d.webp",
+          "sha256": "846465c54a7be4baf6e364e2f7dbf4f9069bf5e9f939580463df98412c33a38d"
+        },
+        {
+          "cardId": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3",
+          "path": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3/39afadad00cdeab12e9d74c8eb08912146fe48996669221207d0df683a43f350.webp",
+          "sha256": "39afadad00cdeab12e9d74c8eb08912146fe48996669221207d0df683a43f350"
+        },
+        {
+          "cardId": "462c87e3-1c4d-4583-a689-af1b16acdd51",
+          "path": "462c87e3-1c4d-4583-a689-af1b16acdd51/7d9460afaf7d41d98f6e24f8a9e0a46d8d0eb4d5fabef73856e57734dace8ba6.webp",
+          "sha256": "7d9460afaf7d41d98f6e24f8a9e0a46d8d0eb4d5fabef73856e57734dace8ba6"
+        },
+        {
+          "cardId": "538f04c0-6e64-4bdd-b767-b2dbc68052d4",
+          "path": "538f04c0-6e64-4bdd-b767-b2dbc68052d4/63d3f9507740c2cd452faa7c29c0c38ccb64a0bc5979c3768e9a3db5c32be34c.webp",
+          "sha256": "63d3f9507740c2cd452faa7c29c0c38ccb64a0bc5979c3768e9a3db5c32be34c"
+        },
+        {
+          "cardId": "58fa2817-dce4-4b38-9ec0-db4aff2ee275",
+          "path": "58fa2817-dce4-4b38-9ec0-db4aff2ee275/53044664827253afb7b011c9a412a2a13ca73afd60c4af27ae3d6f1767381cbd.webp",
+          "sha256": "53044664827253afb7b011c9a412a2a13ca73afd60c4af27ae3d6f1767381cbd"
+        },
+        {
+          "cardId": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+          "path": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4/e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943.webp",
+          "sha256": "e6c973368f32787253e71cbbbcc1ba457e16fc1b6f411a67875c64e3818ff943"
+        },
+        {
+          "cardId": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308",
+          "path": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308/40061e0cb6c9d797bb364eb014e8d0c9e8219bfd8d2e46ab108f376f7397a087.webp",
+          "sha256": "40061e0cb6c9d797bb364eb014e8d0c9e8219bfd8d2e46ab108f376f7397a087"
+        },
+        {
+          "cardId": "72967874-2318-4e18-9fc2-a8b5e364787f",
+          "path": "72967874-2318-4e18-9fc2-a8b5e364787f/5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f.webp",
+          "sha256": "5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f"
+        },
+        {
+          "cardId": "9109471f-7635-4fa6-b777-5f8ee66732a0",
+          "path": "9109471f-7635-4fa6-b777-5f8ee66732a0/29639c1c65ea7c3a176d4a20d686db807a1e31d39f566a23717816568d8d76eb.webp",
+          "sha256": "29639c1c65ea7c3a176d4a20d686db807a1e31d39f566a23717816568d8d76eb"
+        },
+        {
+          "cardId": "9904cdfa-fb57-4115-81b6-f4c6802c3623",
+          "path": "9904cdfa-fb57-4115-81b6-f4c6802c3623/15be9614cbc956f6901921297561d338f8314bdeaee1a4c1776752bb9948a93c.webp",
+          "sha256": "15be9614cbc956f6901921297561d338f8314bdeaee1a4c1776752bb9948a93c"
+        },
+        {
+          "cardId": "a998fc2a-dfed-42f7-b733-dab3fa36c641",
+          "path": "a998fc2a-dfed-42f7-b733-dab3fa36c641/d0825e43f9dd535a1290944e6e42d4624047a642204773a031022604fdaa807a.webp",
+          "sha256": "d0825e43f9dd535a1290944e6e42d4624047a642204773a031022604fdaa807a"
+        },
+        {
+          "cardId": "ae9d640e-b2c0-4eec-84b5-da1768cbeb20",
+          "path": "ae9d640e-b2c0-4eec-84b5-da1768cbeb20/3badf014f7c0b5ebf98241725c961fbc3ef69cd08be1fd1f68b5ad631c838c45.webp",
+          "sha256": "3badf014f7c0b5ebf98241725c961fbc3ef69cd08be1fd1f68b5ad631c838c45"
+        },
+        {
+          "cardId": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b",
+          "path": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b/06ed0907a0abdf6830975cd5c04bf9f52c23ce24842397f336dc095ca5105137.webp",
+          "sha256": "06ed0907a0abdf6830975cd5c04bf9f52c23ce24842397f336dc095ca5105137"
+        },
+        {
+          "cardId": "beca8aeb-a1fe-4d0c-8890-4e14521879db",
+          "path": "beca8aeb-a1fe-4d0c-8890-4e14521879db/9fa1d4dd75792f335730982961e36ca0218f0f48b85b34f2c70711663adc5b6e.webp",
+          "sha256": "9fa1d4dd75792f335730982961e36ca0218f0f48b85b34f2c70711663adc5b6e"
+        },
+        {
+          "cardId": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b",
+          "path": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b/f6116e0518f86cd2101a749aeafbc6f044815123a850be1fe15b93e4306ce787.webp",
+          "sha256": "f6116e0518f86cd2101a749aeafbc6f044815123a850be1fe15b93e4306ce787"
+        },
+        {
+          "cardId": "cf077870-faa4-4d49-bac3-6080d316c424",
+          "path": "cf077870-faa4-4d49-bac3-6080d316c424/9c702788a194e5a7cf303ad270fe9f05aa9596863553d334d3e42decd1ab692c.webp",
+          "sha256": "9c702788a194e5a7cf303ad270fe9f05aa9596863553d334d3e42decd1ab692c"
+        },
+        {
+          "cardId": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc",
+          "path": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc/65751aba54da4880cb38ca5a82a5bcf27890984228c92feb84faded6cea436cc.webp",
+          "sha256": "65751aba54da4880cb38ca5a82a5bcf27890984228c92feb84faded6cea436cc"
+        },
+        {
+          "cardId": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb",
+          "path": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb/66821514d3c3a8524247c88151ad13adc6a4ecc461e0731e371bcdfc2b8a63cb.webp",
+          "sha256": "66821514d3c3a8524247c88151ad13adc6a4ecc461e0731e371bcdfc2b8a63cb"
+        },
+        {
+          "cardId": "fd9f3afc-e12c-4219-93e8-95b450f0f57d",
+          "path": "fd9f3afc-e12c-4219-93e8-95b450f0f57d/87abe3be766208da35c6469ffadf2ea96233e94ad4654f9269153fe393544e12.webp",
+          "sha256": "87abe3be766208da35c6469ffadf2ea96233e94ad4654f9269153fe393544e12"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "cardId": "d9fd6f03-dbf7-499d-a7e6-a86bbd21fa77",
+  "handlerId": "edward/drink-v1",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "EDWARD 40 HANDS",
+    "cardType": "character",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "On your NETCHECK, put 1 drink counter to Edward 40 Hands.\n\nEdward 40 Hands gets +4/+0 for every 2 drink counters on him.",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": [],
+    "attack": 0,
+    "defence": 2,
+    "attackType": "BF"
+  }
+}

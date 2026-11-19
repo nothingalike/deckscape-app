@@ -1,0 +1,45 @@
+{
+  "cardId": "651fa0f7-a433-46c5-9f66-136068839053",
+  "reviewMechanicsSha256": "c92ce8a05dea0732964f3fa6918b2c24dcd33b60dfd4378159f9b0ea36eb6033",
+  "characteristics": {
+    "name": "PROJECT ARCHANGEL",
+    "cardType": "character",
+    "factions": ["MECH"],
+    "tags": [],
+    "iconic": true,
+    "copiesLimit": 4,
+    "rulesText": "Project Archangel can’t attack or block unless it has 1 or more ARMOR counters. On your SYSTEM CHECK, if it has no ARMOR counters, put 1 on it. (If character would be destroyed, instead remove an ARMOR counter from it.)\nDestroy all other characters and programs. On turn end, purge Project Archangel.",
+    "ramCost": 7,
+    "requirements": {},
+    "attack": 10,
+    "defence": 10,
+    "attackType": "BF",
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": [
+      {
+        "name": "JUDGMENT DAY",
+        "ramCost": 5,
+        "run": false
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "abilityId": "judgment-day",
+      "index": 0,
+      "handlerId": "project-archangel/judgment-day-v1",
+      "handlerVersion": 1
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "project-archangel/armor-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

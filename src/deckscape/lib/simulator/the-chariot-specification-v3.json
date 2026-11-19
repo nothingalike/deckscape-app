@@ -1,0 +1,33 @@
+{
+  "cardId": "24347497-a1dc-46be-8b9d-cd08375ec65d",
+  "kind": "the-chariot",
+  "handlerId": "script/the-chariot",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "6aa0621a3548c722894707dbdb417973f5b8110ffdf2e9d91322c585ef1e5415",
+  "characteristics": {
+    "name": "THE CHARIOT",
+    "cardType": "program",
+    "factions": [
+      "MYSTIC"
+    ],
+    "tags": [
+      "TAROT"
+    ],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Change the target(s) of target program.\nREVERSED ability",
+    "ramCost": 2,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Change the target(s) of target program.",
+      "pinkText": "program",
+      "replacementText": "ability",
+      "reversedText": "Change the target(s) of target ability."
+    }
+  }
+}

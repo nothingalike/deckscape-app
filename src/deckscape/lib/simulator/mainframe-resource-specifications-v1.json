@@ -1,0 +1,72 @@
+[
+  {
+    "cardId": "6fb303c7-228b-4ab5-8d46-7c0a54383249",
+    "reviewMechanicsSha256": "999a9fec1f2240edb0af28e2cd4fd7fa4588a8e57dae18a65ac655eced99681b",
+    "kind": "coyote",
+    "handlers": [
+      { "id": "coyote/tether-draw-v1", "version": 1, "parameters": {} },
+      { "id": "coyote/character-draw-v1", "version": 1, "parameters": {} }
+    ],
+    "characteristics": {
+      "name": "COYOTE",
+      "cardType": "mainframe",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "When you a play a tether, draw 1.\n+ / When you play a *DUSTRUNNER character, draw 1.",
+      "prefix": "",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": { "DUSTRUNNER": 2 },
+          "operator": "base",
+          "text": "When you play a tether, draw 1."
+        },
+        {
+          "persistents": 4,
+          "factions": { "DUSTRUNNER": 4 },
+          "operator": "independent",
+          "text": "When you play a DUSTRUNNER character, draw 1."
+        }
+      ]
+    }
+  },
+  {
+    "cardId": "b5d8de27-032f-4098-aebf-f1f9f132a504",
+    "reviewMechanicsSha256": "51b22706916cbb9c1fa465182a6c90310134ceedab0af82c34a8160e621ab553",
+    "kind": "az-luxureon",
+    "handlers": [
+      { "id": "az-luxureon/ram-entry-v1", "version": 1, "parameters": {} },
+      {
+        "id": "az-luxureon/system-check-install-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "characteristics": {
+      "name": "A-Z LUXUREON",
+      "cardType": "mainframe",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Your *RAM comes into play refreshed.\n+ / On your SYSTEM CHECK, install 1 *RAM refreshed.",
+      "prefix": "",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": { "CORPO": 2 },
+          "operator": "base",
+          "text": "Your RAM comes into play refreshed."
+        },
+        {
+          "persistents": 4,
+          "factions": { "CORPO": 4 },
+          "operator": "independent",
+          "text": "On your SYSTEM CHECK, install 1 RAM refreshed."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "cardId": "78ddb85e-53b6-46c0-822b-eed353b8798e",
+  "reviewMechanicsSha256": "eee68e458f272475d1633e0918bfbdf1562db9d95af053050c491b2d3382ed3a",
+  "characteristics": {
+    "name": "REANIMATOR",
+    "cardType": "character",
+    "factions": ["MYSTIC"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Put target *MYSTIC character from your recycle bin into play with a SPIRIT counter. On turn end, purge it. (Character’s *RAM cost is set to 0. If they would leave play, purge them instead.)",
+    "ramCost": 3,
+    "requirements": {},
+    "attack": 1,
+    "defence": 2,
+    "attackType": "MF",
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 2,
+      "rightArm": 2
+    },
+    "activatedAbilities": [
+      {
+        "name": "RECOMPILE",
+        "ramCost": 2,
+        "run": false
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "abilityId": "recompile",
+      "index": 0,
+      "handlerId": "reanimator/recompile-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

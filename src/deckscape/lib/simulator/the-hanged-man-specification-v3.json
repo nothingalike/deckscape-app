@@ -1,0 +1,24 @@
+{
+  "cardId": "4d2d6bc7-ebac-4e59-a35d-ba78379f1182",
+  "kind": "the-hanged-man",
+  "handlerId": "script/the-hanged-man",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "3975909c2de61f723103fd5502c4a39d17573d8c1239165b6c05762d0b675091",
+  "characteristics": {
+    "name": "THE HANGED MAN",
+    "cardType": "program",
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT ADDITIONAL COST [Destroy a *MYSTIC character you control.]\n\nCounter target card.",
+    "ramCost": 3,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "swift": true,
+    "iconic": false,
+    "activatedAbilities": [],
+    "additionalPlayCostText": "Destroy a *MYSTIC character you control."
+  }
+}

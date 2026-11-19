@@ -1,0 +1,29 @@
+{
+  "cardId": "af6cb9a8-723b-46d9-b179-d03a572b9641",
+  "reviewMechanicsSha256": "30a3f608c82e4ceb4062ceaf4470eec76d8d2b4bcc8cca0f54cabdbf842d9c0d",
+  "kind": "the-devil",
+  "handlerId": "script/the-devil",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "THE DEVIL",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Target character gets +10 PSYCHOSIS until turn end. It must attack this turn if able.\nREVERSED +15",
+    "ramCost": 3,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Target character gets +10 PSYCHOSIS until turn end. It must attack this turn if able.",
+      "pinkText": "+10",
+      "replacementText": "+15",
+      "reversedText": "Target character gets +15 PSYCHOSIS until turn end. It must attack this turn if able."
+    }
+  }
+}

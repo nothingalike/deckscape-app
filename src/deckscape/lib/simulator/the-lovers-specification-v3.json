@@ -1,0 +1,23 @@
+{
+  "cardId": "089777cb-5342-4845-ad46-05ad0c60c01d",
+  "kind": "the-lovers",
+  "handlerId": "script/the-lovers",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "fa263591bddbfea9a4c7a2be2d9147d062bd2d1a241b31430bb23392c68f876e",
+  "characteristics": {
+    "name": "THE LOVERS",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Put two +1/+1 counters on 2 target characters. When one of these characters is destroyed, destroy the other.",
+    "ramCost": 3,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

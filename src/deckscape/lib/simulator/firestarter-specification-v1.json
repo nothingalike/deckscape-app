@@ -1,0 +1,32 @@
+{
+  "cardId": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3",
+  "reviewMechanicsSha256": "86abc3bb1d40cbb5681fc32565dcc7c55298054fb70b11b01fe51ae507b30a55",
+  "handlers": [
+    { "id": "firestarter/script-damage-1-v1", "version": 1, "parameters": {} },
+    { "id": "firestarter/script-damage-2-v1", "version": 1, "parameters": {} }
+  ],
+  "characteristics": {
+    "name": "FIRESTARTER",
+    "cardType": "mainframe",
+    "factions": ["HACKER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Deal 1 *MF damage to any target.\nInstead, deal 2 *MF damage to any target.",
+    "prefix": "When you play a HACKER script —",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": { "HACKER": 2 },
+        "operator": "base",
+        "text": "Deal 1 MF damage to any target."
+      },
+      {
+        "persistents": 4,
+        "factions": { "HACKER": 4 },
+        "operator": "instead",
+        "text": "Deal 2 MF damage to any target."
+      }
+    ]
+  }
+}

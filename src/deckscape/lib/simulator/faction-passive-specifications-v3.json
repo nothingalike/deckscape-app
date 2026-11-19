@@ -1,0 +1,58 @@
+[
+  {
+    "cardId": "02406d16-c888-40af-9b45-e4df06ee4aef",
+    "kind": "other-mystic-persistents",
+    "handlerId": "seance-sisters/passive-stats-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "83cce6290b0f268defc874b17c33b19412627646be1d8c3cd3210e306a1d2d9c",
+    "characteristics": {
+      "name": "SEANCE SISTERS",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Seance Sisters get +1/+1 for each other *MYSTIC you control.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF"
+    }
+  },
+  {
+    "cardId": "e45525aa-735a-4c2d-a442-4b64786c3809",
+    "kind": "other-nanobot-characters",
+    "handlerId": "nanobot-swarm/passive-stats-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "f779a0837f2db959cf2c5228778ee537db5eb290d9e78231aba9e46aade9bf87",
+    "characteristics": {
+      "name": "NANOBOT SWARM",
+      "cardType": "character",
+      "factions": ["NANOBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "A cyberdeck can have any number of cards named [Nanobot Swarm].\nNanobot Swarm gets +1/+0 for each other *NANOBOT character you control.",
+      "copiesLimit": null,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": [],
+      "attack": 0,
+      "defence": 1,
+      "attackType": "BF"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "cardId": "793b3c76-1dee-461f-b37e-f0e8271adc36",
+  "kind": "the-moon",
+  "handlerId": "script/the-moon",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "252201a1b7767eb3e1d0525181cf9f958ef92581f4253b1c24097206645c9d33",
+  "characteristics": {
+    "name": "THE MOON",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "rulesText": "*SWIFT Run X target characters, where X is the number of tarots played this turn.\nREVERSED cards",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Run X target characters, where X is the number of tarots played this turn.",
+      "pinkText": "tarots",
+      "replacementText": "cards",
+      "reversedText": "Run X target characters, where X is the number of cards played this turn."
+    }
+  }
+}

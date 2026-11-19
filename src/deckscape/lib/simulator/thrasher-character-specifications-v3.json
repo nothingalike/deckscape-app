@@ -1,0 +1,208 @@
+[
+  {
+    "cardId": "6051e4bb-d4da-4560-a062-87c691812bea",
+    "reviewMechanicsSha256": "b945eb11053f2e2e3edc747c2b5fd6af6cf5912849fe1bbc48b5d40810a20a80",
+    "characteristics": {
+      "name": "NAMELESS",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target program.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "BASS FACE",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "bass-face",
+        "index": 0,
+        "handlerId": "nameless/bass-face-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "84a2133a-6625-4ad3-b987-9fee95540f5c",
+    "reviewMechanicsSha256": "4a8ea47de2be4dfd2af305b439b24ed79673aa4a84b59ea106a2a228b6743461",
+    "characteristics": {
+      "name": "SKIN SMASHER",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Other *THRASHER characters you control get +1/+1 until turn end.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "COUNT IN",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "count-in",
+        "index": 0,
+        "handlerId": "skin-smasher/count-in-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "ef8825fe-fa2e-45c3-8e07-dc1b34d4a0c3",
+    "reviewMechanicsSha256": "1bcf4bb583e2e8fac1006ae78618aef636ee98728ea368f511f49ccaa2756e08",
+    "characteristics": {
+      "name": "VIC VIPER, AXE GOD",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Until turn end, all *THRASHER characters get +2/+0 and all other characters get -1/-1.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 2,
+        "leftArm": 3,
+        "rightArm": 3
+      },
+      "activatedAbilities": [
+        {
+          "name": "FACEMELTING SOLO",
+          "ramCost": 3,
+          "run": true
+        }
+      ],
+      "attack": 5,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "facemelting-solo",
+        "index": 0,
+        "handlerId": "vic-viper-axe-god/facemelting-solo-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "99370879-cb49-4470-bb3d-8c81a86e4fbf",
+    "reviewMechanicsSha256": "bc6fa509a4747344a3c78cf9ba625277f83f44b7865d42a9e60d17c59c26498e",
+    "characteristics": {
+      "name": "JETT THORN",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Destroy target running character.\nUntil turn end, *THRASHER characters you control get +2/+0 and OVERRUN.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "ports": {
+        "head": 3,
+        "body": 2,
+        "leftArm": 3,
+        "rightArm": 3
+      },
+      "activatedAbilities": [
+        {
+          "name": "BLOOD THIRST",
+          "ramCost": 1,
+          "run": true
+        },
+        {
+          "name": "GUTTURAL ROAR",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "attack": 7,
+      "defence": 3,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "blood-thirst",
+        "index": 0,
+        "handlerId": "jett-thorn/blood-thirst-v1",
+        "handlerVersion": 1
+      },
+      {
+        "abilityId": "guttural-roar",
+        "index": 1,
+        "handlerId": "jett-thorn/guttural-roar-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "8b8a3f58-c620-47c7-a0cf-09fb7cc143ef",
+    "reviewMechanicsSha256": "c6b4b115e2166d44ee8c71d2004d5e052a163a8dc8463f207ed1b50bc8a3dc56",
+    "characteristics": {
+      "name": "XAX XANTHOS",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Until turn end, all non-*THRASHER characters get +10 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "ports": {
+        "head": 3,
+        "body": 2,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "SAVAGE MINDSCAPE",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 0,
+      "defence": 5,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "savage-mindscape",
+        "index": 0,
+        "handlerId": "xax-xanthos/savage-mindscape-v1",
+        "handlerVersion": 1
+      }
+    ]
+  }
+]

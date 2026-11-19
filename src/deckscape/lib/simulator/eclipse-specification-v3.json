@@ -1,0 +1,33 @@
+{
+  "cardId": "3cf9d4b3-af11-486c-bf84-bbaf44e0da5c",
+  "reviewMechanicsSha256": "ff1c84ddb34e5853d50f3fd40585750801bf5292db836a4ae6bf997b7c65108b",
+  "characteristics": {
+    "cardType": "mainframe",
+    "prefix": "",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "MYSTIC": 2
+        },
+        "operator": "base",
+        "text": "When you play a tarot, create a MF 0/1 Dreamwalker token character."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "MYSTIC": 4
+        },
+        "operator": "independent",
+        "text": "All Dreamwalker tokens get +1/+1."
+      }
+    ],
+    "iconic": false,
+    "name": "ECLIPSE",
+    "rulesText": "\nWhen you play a tarot, create a MF 0/1 Dreamwalker token character.\nAll Dreamwalker tokens get +1/+1.",
+    "factions": ["MYSTIC"],
+    "copiesLimit": 4,
+    "tags": []
+  },
+  "handlerId": "eclipse/dreamwalkers-v1"
+}

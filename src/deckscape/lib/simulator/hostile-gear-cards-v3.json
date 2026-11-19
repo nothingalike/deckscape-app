@@ -1,0 +1,72 @@
+[
+  {
+    "cardId": "7b135025-a446-4acf-96ca-c3536671ae39",
+    "characteristics": {
+      "name": "BRAINSHREDDER",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "MALICIOUS (Attach to any target character.)\nAttached character can't be force quit and gets +15 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\nIf attached to [Xax Xanthos], he gets +6/+0 and is immune to PSYCHOSIS.",
+      "ramCost": 3,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "subtype": "cyberware",
+      "ports": {
+        "head": 1,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": []
+    },
+    "handlers": [
+      {
+        "id": "brainshredder/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "7b135025-a446-4acf-96ca-c3536671ae39/6f0ba9838a310e19615ae689a73d5d583b98a6b86effd53071558714213bea88.webp",
+      "sha256": "6f0ba9838a310e19615ae689a73d5d583b98a6b86effd53071558714213bea88"
+    }
+  },
+  {
+    "cardId": "f42371de-1f64-47a4-8d25-3f191848200b",
+    "characteristics": {
+      "name": "OVERDRIVER",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "MALICIOUS (Attach to any target character.)\n\nAttached character can't be force quit. Double its PSYCHOSIS.",
+      "ramCost": 2,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": []
+    },
+    "handlers": [
+      {
+        "id": "overdriver/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "f42371de-1f64-47a4-8d25-3f191848200b/5604f718c884196f9fb77c45b209b470c3585804aa5b432f2f4bc6c979a936f4.webp",
+      "sha256": "5604f718c884196f9fb77c45b209b470c3585804aa5b432f2f4bc6c979a936f4"
+    }
+  }
+]

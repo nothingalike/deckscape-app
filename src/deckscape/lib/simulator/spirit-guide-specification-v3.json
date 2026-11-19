@@ -1,0 +1,26 @@
+{
+  "cardId": "0afee01e-86bb-4ef0-bc88-27ec385451d8",
+  "handlerId": "spirit-guide/tarot-token-v1",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "SPIRIT GUIDE",
+    "cardType": "character",
+    "factions": ["MYSTIC"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "When you play a tarot, create a *MF 0/1 Dreamwalker token character.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 2,
+      "rightArm": 2
+    },
+    "activatedAbilities": [],
+    "attack": 1,
+    "defence": 2,
+    "attackType": "MF"
+  }
+}

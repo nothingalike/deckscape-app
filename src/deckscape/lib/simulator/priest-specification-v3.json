@@ -1,0 +1,40 @@
+{
+  "cardId": "71bd25da-b2cc-4ae8-844d-f0df89196759",
+  "reviewMechanicsSha256": "c19d417e213e985694abf34e0165a2316c6c79c3cf18abba09aabfccfbb15cea",
+  "characteristics": {
+    "name": "PRIEST OF MAHKAV",
+    "cardType": "character",
+    "factions": ["DUSTRUNNER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "ADDITIONAL COST [Destroy another character you control.] All *DUSTRUNNER characters you control get +3/+3 until turn end.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 0,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [
+      {
+        "name": "SACRIFICIAL OFFERING",
+        "ramCost": 1,
+        "run": true,
+        "additionalCostText": "Destroy another character you control."
+      }
+    ],
+    "attack": 1,
+    "defence": 1,
+    "attackType": "MF"
+  },
+  "abilities": [
+    {
+      "abilityId": "sacrificial-offering",
+      "index": 0,
+      "handlerId": "priest-of-mahkav/sacrificial-offering-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

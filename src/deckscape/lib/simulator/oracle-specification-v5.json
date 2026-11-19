@@ -1,0 +1,49 @@
+{
+  "cardId": "c58e6288-5528-458d-9e96-0ad1b14daac9",
+  "reviewMechanicsSha256": "dbbe8f42905656c4ea147d194cbf2d63268c04d29e2265ff24e5ef346b4344ea",
+  "characteristics": {
+    "name": "THE ORACLE",
+    "cardType": "character",
+    "factions": ["MYSTIC"],
+    "tags": [],
+    "iconic": true,
+    "copiesLimit": 4,
+    "rulesText": "You may look at the top card of your cyberdeck at any time. You may play that card.\nDIVINE 3 (Look at the top 3 cards of your cyberdeck. Put 1 into your hand, then bin the rest.)",
+    "ramCost": 4,
+    "requirements": {},
+    "activatedAbilities": [
+      {
+        "name": "PROPHECY",
+        "ramCost": 2,
+        "run": false
+      }
+    ],
+    "attack": 2,
+    "defence": 3,
+    "attackType": "MF",
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    }
+  },
+  "abilities": [
+    {
+      "abilityId": "prophecy",
+      "index": 0,
+      "handlerId": "oracle/prophecy-v1",
+      "handlerVersion": 1,
+      "topCards": {
+        "kind": "divine",
+        "count": 3
+      }
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "oracle/top-card-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

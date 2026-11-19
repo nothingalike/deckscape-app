@@ -1,0 +1,100 @@
+{
+  "name": "neuroscape-app",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Local Neuroscape deckbuilding and solo play",
+  "main": "dist/main.cjs",
+  "scripts": {
+    "postinstall": "install-electron",
+    "notices": "node tools/dependency-notices.mjs",
+    "roster:assemble": "tsx tools/assemble-bot-roster.ts",
+    "build": "node tools/build.mjs",
+    "start": "npm run build && electron .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify": "npm run typecheck && npm test",
+    "package:dir": "npm run build && electron-builder --dir",
+    "package:win": "npm run build && electron-builder --win nsis --x64",
+    "package:mac": "node tools/package-macos.mjs",
+    "package:linux": "node tools/package-linux.mjs",
+    "test:desktop": "node tools/desktop-smoke.mjs",
+    "test:platform-render": "tsx tools/platform-render-smoke.ts",
+    "test:theme-ui": "tsx tools/theme-smoke.ts",
+    "qualification:bundle": "node tools/prepare-platform-bundle.mjs",
+    "test:catalog-ui": "node tools/catalog-smoke.mjs",
+    "test:decks-ui": "node tools/decks-smoke.mjs",
+    "test:interchange-ui": "node tools/interchange-smoke.mjs && node tools/starter-interchange-smoke.mjs",
+    "test:solo-ui": "tsx tools/prepare-solo-ui.ts && node tools/solo-smoke.mjs",
+    "test:game-ui": "tsx tools/prepare-solo-ui.ts && tsx tools/game-smoke.ts",
+    "test:resume-ui": "tsx tools/prepare-solo-ui.ts && tsx tools/prepare-resume-ui.ts && node tools/resume-smoke.mjs",
+    "test:retention-ui": "tsx tools/prepare-solo-ui.ts && tsx tools/prepare-resume-ui.ts && tsx tools/content-retention-smoke.ts",
+    "test:recovery-ui": "tsx tools/prepare-solo-ui.ts && tsx tools/prepare-resume-ui.ts && node tools/match-recovery-smoke.mjs",
+    "test:roster-ui": "tsx tools/prepare-solo-ui.ts && node tools/roster-smoke.mjs",
+    "test:backup-ui": "tsx tools/prepare-solo-ui.ts && tsx tools/prepare-backup-ui.ts && node tools/backup-smoke.mjs",
+    "test:restore-ui": "tsx tools/prepare-restore-ui.ts && tsx tools/restore-smoke.ts",
+    "test:restore-native-relaunch": "tsx tools/prepare-restore-ui.ts && node tools/restore-native-relaunch.mjs",
+    "test:release-ui": "tsx tools/prepare-restore-ui.ts && node tools/app-release-smoke.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "1.5.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "1.43.0",
+    "pixi.js": "8.23.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwind-merge": "3.7.0",
+    "yauzl": "3.4.0",
+    "yazl": "3.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/yauzl": "3.4.0",
+    "@types/yazl": "3.3.1",
+    "electron": "45.3.2",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.28.2",
+    "postcss": "8.5.33",
+    "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=24.5.0"
+  },
+  "build": {
+    "appId": "org.neuroscape.localapp",
+    "productName": "Neuroscape Local",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "signExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Game"
+    }
+  }
+}

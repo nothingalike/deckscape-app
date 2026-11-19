@@ -1,0 +1,29 @@
+{
+  "cardId": "c38dc35b-06e8-4348-969a-b0efbb51367d",
+  "kind": "wheel-of-fortune",
+  "handlerId": "script/wheel-of-fortune",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "5b44fa2e67bf78b98f2ec83112d332f5312ae250fdc3dadee3945f10d6ebbda7",
+  "characteristics": {
+    "name": "WHEEL OF FORTUNE",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Name a *RAM cost, then reveal the top card of your cyberdeck. If its *RAM cost is the named cost, install 1 *RAM running.\nREVERSED draw 2.",
+    "ramCost": 2,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Name a *RAM cost, then reveal the top card of your cyberdeck. If its *RAM cost is the named cost, install 1 *RAM running.",
+      "pinkText": "install 1 *RAM running",
+      "replacementText": "draw 2",
+      "reversedText": "Name a *RAM cost, then reveal the top card of your cyberdeck. If its *RAM cost is the named cost, draw 2."
+    }
+  }
+}

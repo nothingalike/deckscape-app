@@ -1,0 +1,58 @@
+[
+  {
+    "cardId": "011d3fc1-6fab-4791-bf59-fc6a80a465b4",
+    "handlerId": "blackout-boys/passive-stats-v1",
+    "handlerVersion": 1,
+    "kind": "other-named-cards",
+    "reviewMechanicsSha256": "34b1cdeb17ff5465391b343e0bdf7747725e315104a5d5dbfd0672e6e2622253",
+    "characteristics": {
+      "name": "BLACKOUT BOYS",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Blackout Boys gets +1/+0 for each other [Blackout Boys] you control.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    }
+  },
+  {
+    "cardId": "370d9703-52f8-43da-9043-40e1b8b75c3a",
+    "handlerId": "badlands-infantry/passive-stats-v1",
+    "handlerVersion": 1,
+    "kind": "other-tether-characters",
+    "reviewMechanicsSha256": "af63e0746c0f7f92a500d99e808095a15e54a17c4139d92f51cd4a096d906b12",
+    "characteristics": {
+      "name": "BADLANDS INFANTRY",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Badlands Infantry gets +1/+1 for each other character in their tether chain.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  }
+]

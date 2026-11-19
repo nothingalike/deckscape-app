@@ -1,0 +1,21 @@
+{
+  "cardId": "f8c690c3-1898-4d79-ae79-dd0473707988",
+  "kind": "wonderland",
+  "handlerId": "wonderland/netcheck-v1",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "48bf24457d2297f7f68793e866984a289828059e5964c88b8562732dfedc8aa0",
+  "characteristics": {
+    "name": "WONDERLAND",
+    "cardType": "program",
+    "factions": ["WONDERLAND"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "On NETCHECK, the active player may roll a d20. If they control (Alice, Dreamwalker), they roll twice instead.\n\n1–3 | They destroy a character they control, unless they control (Alice, Dreamwalker).\n\n4–17 | They may choose target character and put an INVERT counter on it. If it already has one, remove 1 instead. (Character swaps its attack type.)\n\n18+ | They reveal the top card of their cyberdeck. If it can be played, they set its *RAM cost to 0 and play it; if not, bin it.",
+    "ramCost": 3,
+    "requirements": {},
+    "subtype": "environment",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

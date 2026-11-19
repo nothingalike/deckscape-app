@@ -1,0 +1,29 @@
+{
+  "cardId": "2439b986-bb1c-4428-80c9-eb64bd732bbb",
+  "kind": "temperance",
+  "handlerId": "script/temperance",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "ac8731f302fc15e20d9b9e8696bd5f5878ec10553f61dec5498a66f1369e17b9",
+  "characteristics": {
+    "name": "TEMPERANCE",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Target character can't be destroyed this turn.\nREVERSED program",
+    "ramCost": 1,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Target character can't be destroyed this turn.",
+      "pinkText": "character",
+      "replacementText": "program",
+      "reversedText": "Target program can't be destroyed this turn."
+    }
+  }
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "cardId": "ff5db5c4-c8c6-4f7b-bb95-5e701c093546",
+    "kind": "railgun",
+    "handlerId": "railgun/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "50defd876aa088fce691d271b4f445b874e514d143333b9e0de200ac72724828",
+    "reviewArtworkSha256": "e5e4e7fb6296985d8e28ac6b8eb9d1120ce51320ed936bfbd4cab9af484d0b79",
+    "characteristics": {
+      "name": "RAILGUN",
+      "cardType": "gear",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +5/+0.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 3,
+        "rightArm": 3
+      },
+      "activatedAbilities": [],
+      "subtype": "weapon"
+    }
+  },
+  {
+    "cardId": "1f0f45d6-f46f-4310-a6b8-30b9a845e066",
+    "kind": "chronos-maestro",
+    "handlerId": "chronos-maestro/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c983115044408a087703ba97ff49516d751c5ec7c2a3436a4f38512f4837de64",
+    "reviewArtworkSha256": "82a541db5e57008fd7a75a6ca664d7c8c1b3eb5b8a6bf5597c9065fa81a5d706",
+    "characteristics": {
+      "name": "CHRONOS MAESTRO",
+      "cardType": "gear",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 2 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "CORPO": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "MANIFEST",
+          "ramCost": 0,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ],
+      "subtype": "cyberware"
+    }
+  },
+  {
+    "cardId": "9e646d0f-89eb-4f2c-b898-750dcada0dd3",
+    "kind": "whammy-bar",
+    "handlerId": "whammy-bar/dive-bomb-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "393fb08478db14ececcc5e92e0b1f30cf9a0fa8aa775c2bb86da3f94d6ae80c3",
+    "reviewArtworkSha256": "61c503dd03abf7ec24c73eaf7b623fe3cf36d9c12d6e77f1407003d754141a2c",
+    "characteristics": {
+      "name": "WHAMMY BAR",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target running character.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "subtype": "weapon",
+      "activatedAbilities": [
+        {
+          "name": "DIVE BOMB",
+          "ramCost": 2,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ]
+    }
+  },
+  {
+    "cardId": "ff14c775-0269-46a0-91dc-eb1edf690ba6",
+    "kind": "demon-shard",
+    "handlerId": "demon-shard/mark-of-the-beast-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "6864c5abb5cff3e06245037987b0fe6f88f34f072404e3c9f9c705bd0949e406",
+    "reviewArtworkSha256": "5bc2aeefafce7dbdcd700b79d59ac1be8643a116330ebef99f7b5e5cc98b4cf6",
+    "characteristics": {
+      "name": "DEMON SHARD",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put two -1/-1 counters on attached character, then deal 6 *BF damage to up to 3 target characters.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "subtype": "weapon",
+      "activatedAbilities": [
+        {
+          "name": "MARK OF THE BEAST",
+          "ramCost": 3,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ]
+    }
+  }
+]

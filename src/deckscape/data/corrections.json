@@ -1,0 +1,8 @@
+{
+  "basic_ram": {
+    "id": "61045c1b-73b0-46f2-8cc0-4c379c5d31e4",
+    "source": "https://www.neuroscapetcg.com/s/Neuroscape-Comprehensive-Rules-v100.pdf",
+    "rules": ["100.2a.2", "100.4"],
+    "reason": "The feed leaves Basic Ram's type empty and specifies four copies. Classify it as RAM and exempt it from the copy limit."
+  }
+}

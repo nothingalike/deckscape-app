@@ -1,0 +1,21 @@
+{
+  "cardId": "d6e44437-ff47-4b5a-b07c-14be1951bc5f",
+  "kind": "download-more-ram",
+  "handlerId": "script/download-more-ram",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "81fb16e414540d6113f5d6f1b8992a4b929741908f13ee5081896152ec5d72d8",
+  "characteristics": {
+    "name": "DOWNLOAD MORE RAM",
+    "cardType": "program",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Put up to 4 target *RAM from your recycle bin into your RAM bank running.",
+    "ramCost": 3,
+    "requirements": {},
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "cardId": "aa05da05-1035-49b2-9e61-e6cdb11aa30a",
+    "kind": "darkstone-datashard",
+    "handlerId": "protocol/darkstone-datashard",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c3d16057f138a106307d6c47dd6299ff67c5c9241a0c8464b3788b8192b20e0d",
+    "characteristics": {
+      "name": "DARKSTONE DATASHARD",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["DATASHARD"],
+      "iconic": false,
+      "rulesText": "When you play a tarot, deal 1 *MF damage to each opponent.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "subtype": "protocol",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "2218e95c-76dd-4397-ad24-4229651a74ae",
+    "kind": "moonstone-datashard",
+    "handlerId": "protocol/moonstone-datashard",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "b212d3c32cc5c012802169e32443c4ad1df97676acbb71619775c0c802f5f159",
+    "characteristics": {
+      "name": "MOONSTONE DATASHARD",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["DATASHARD"],
+      "iconic": false,
+      "rulesText": "When you play a tarot, gain 1 *MF and 1 *BF health.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "subtype": "protocol",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  }
+]

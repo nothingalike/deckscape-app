@@ -1,0 +1,26 @@
+{
+  "cardId": "30070bc2-a893-43b5-8900-1cfca36afd7e",
+  "handlerId": "ed-card-counter/d20-v1",
+  "reviewMechanicsSha256": "96a3ff75e72307008c66623c8a69999227c654cb83ead59b1f07f425722afd12",
+  "characteristics": {
+    "name": "ED, CARD COUNTER",
+    "cardType": "character",
+    "factions": ["CORPO", "GAMBLER"],
+    "tags": [],
+    "iconic": true,
+    "rulesText": "Whenever you roll a d20, put a +1/+1 counter on Ed, Card Counter.",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [],
+    "attack": 2,
+    "defence": 2,
+    "attackType": "BF"
+  }
+}

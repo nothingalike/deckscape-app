@@ -1,0 +1,21 @@
+{
+  "cardId": "462fca1e-56a6-4d66-9370-83c13a6e90e6",
+  "kind": "cheshire-rar",
+  "handlerId": "protocol/cheshire-rar",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "98f77931d6badf3e8c3b5c226c274932d4d8486d66b5f2a6d37d9189b0880d2d",
+  "characteristics": {
+    "name": "CHESHIRE.RAR",
+    "cardType": "program",
+    "factions": ["WONDERLAND"],
+    "tags": ["VIRUS"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Attach to target player's mainframe. The following abilities only trigger if your *WONDERLAND synergy is 2 or more:\n\nWhen this becomes attached to a mainframe, if it's an opponent's, deal 1 *MF or 1 *BF damage to them; if it's yours or a teammate's, you gain 1 *MF or 1 *BF health.\n\nOn your SYSTEM CHECK, attach this to a different mainframe if possible.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

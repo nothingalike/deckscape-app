@@ -1,0 +1,70 @@
+[
+  {
+    "cardId": "183608ce-70a5-4442-846c-aed572e5a606",
+    "characteristics": {
+      "name": "CELESTIAL CHANNELER",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DATAVAMP (When character’s attack hits a player for *MF damage, you gain that much *MF health.)\n\nWhen you play a tarot, Celestial Channeler gets +1/+1 until turn end.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF"
+    },
+    "handlers": [
+      {
+        "id": "celestial-channeler/abilities-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "183608ce-70a5-4442-846c-aed572e5a606/0c16a5c44c3adad6cdc46f03af5e842de87f90727b1d5a8ddace51db2d4bbf27.webp",
+      "sha256": "0c16a5c44c3adad6cdc46f03af5e842de87f90727b1d5a8ddace51db2d4bbf27"
+    }
+  },
+  {
+    "cardId": "030eeffc-7051-4d97-8684-8c903e660b7a",
+    "characteristics": {
+      "name": "SIPHON GAUNTLET",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets BIOVAMP (When character’s attack hits a player for *BF damage, you gain that much *BF health.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [],
+      "subtype": "cyberware"
+    },
+    "handlers": [
+      {
+        "id": "siphon-gauntlet/biovamp-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "030eeffc-7051-4d97-8684-8c903e660b7a/26331fc0a2fe66abee5df19d7413f9a3eebb72eef1b7d8cabc9fc182980356dc.webp",
+      "sha256": "26331fc0a2fe66abee5df19d7413f9a3eebb72eef1b7d8cabc9fc182980356dc"
+    }
+  }
+]

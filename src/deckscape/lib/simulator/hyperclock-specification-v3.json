@@ -1,0 +1,23 @@
+{
+  "cardId": "fb055aad-5691-4199-bd2e-0062e8817d10",
+  "kind": "hyperclock",
+  "handlerId": "script/hyperclock",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "10cfd12124ce9a5d3f10cc0d366c3bdb61ba1fb0ce79da18353a729b44872e70",
+  "characteristics": {
+    "name": "HYPERCLOCK",
+    "cardType": "program",
+    "factions": ["HACKER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "ADDITIONAL COST [Pay 3 *MF and 3 *BF health.]\n\nInstall 3 *RAM refreshed. On turn end, destroy 3 *RAM you control.",
+    "ramCost": 1,
+    "requirements": {
+      "HACKER": 1
+    },
+    "subtype": "script",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

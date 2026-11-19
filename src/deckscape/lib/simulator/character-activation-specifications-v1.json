@@ -1,0 +1,1840 @@
+[
+  {
+    "cardId": "ecc9914d-7879-46ff-9015-0c58a75cb31b",
+    "reviewMechanicsSha256": "d7945ac0d380fabe51ee34bc43156aad675eee3c8e3c7e54cadaa66d213c7199",
+    "abilities": [
+      {
+        "abilityId": "detain",
+        "index": 0,
+        "handlerId": "acpd/detain-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "characteristics": {
+      "name": "ACPD DRONES",
+      "cardType": "character",
+      "factions": ["CORPO", "ROBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Run target character.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DETAIN",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    }
+  },
+  {
+    "cardId": "02ce98ff-74b8-410a-8671-95e16d3d5f02",
+    "reviewMechanicsSha256": "bd45a9be96bedda001edf2a54fa6da752643beff918db61866f714241eb22afd",
+    "abilities": [
+      {
+        "abilityId": "lucidity",
+        "index": 0,
+        "handlerId": "nova/lucidity-v1",
+        "handlerVersion": 1
+      },
+      {
+        "abilityId": "past-life",
+        "index": 1,
+        "handlerId": "nova/past-life-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "characteristics": {
+      "name": "NOVA, THE WHITE RABBIT",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Draw 1.\nSearch your cyberdeck for a *HACKER or *WONDERLAND card and reveal it. Put it into your hand, then shuffle. Purge Nova, the White Rabbit.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "LUCIDITY",
+          "ramCost": 1,
+          "run": true
+        },
+        {
+          "name": "PAST LIFE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 3,
+        "rightArm": 2
+      }
+    }
+  },
+  {
+    "cardId": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308",
+    "reviewMechanicsSha256": "f01e60952267e73b30342178299719e1cd06bc0a5709d9619be56556c8f8f61d",
+    "abilities": [
+      {
+        "abilityId": "recovery",
+        "index": 0,
+        "handlerId": "deep-diver/recovery-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "characteristics": {
+      "name": "DEEP DIVER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, you may play target *HACKER script in your recycle bin. As it resolves, purge it.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RECOVERY",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "3a0b4588-3b7d-4795-8d59-d5752eab616e",
+    "reviewMechanicsSha256": "b696dde8721084db5789b9c2cbe4bff5947c0450c470eb3ac6720dc6233b1f11",
+    "abilities": [
+      {
+        "abilityId": "upgrade",
+        "index": 0,
+        "handlerId": "admin/upgrade-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ],
+    "characteristics": {
+      "name": "ADMIN",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "UPGRADE",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35",
+    "reviewMechanicsSha256": "3cabe25d82e28d956768dc20a5d1f08dcf0d2eb4abb83a507147ec79aeca73b2",
+    "abilities": [
+      {
+        "abilityId": "acquisition",
+        "index": 0,
+        "handlerId": "executive/acquisition-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ],
+    "characteristics": {
+      "name": "EXECUTIVE",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACQUISITION",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "89279587-794a-4602-8d08-785b75aa9f47",
+    "reviewMechanicsSha256": "7e769279f9e704832e4b9ca7eec1fe5c9be9466b4b64dd5f53cc36ce284d4933",
+    "abilities": [
+      {
+        "abilityId": "scrap-heap",
+        "index": 0,
+        "handlerId": "scrapper/scrap-heap-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ],
+    "characteristics": {
+      "name": "SCRAPPER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SCRAP HEAP",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "d7301ed8-ca68-47ff-9508-7ef1199700dc",
+    "reviewMechanicsSha256": "ab49d6a3680e1e8f28c956c2a75f8d55adc659a4f7f89c8cb7c5393a99340e2a",
+    "abilities": [
+      {
+        "abilityId": "reclaim",
+        "index": 0,
+        "handlerId": "scavenger/reclaim-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ],
+    "characteristics": {
+      "name": "SCAVENGER",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RECLAIM",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "d06a1bb5-a102-4338-9220-da7839542007",
+    "reviewMechanicsSha256": "38f0c31356c1ec5b7b575cb130263c54d17ce203de25978105c876350354d8fe",
+    "abilities": [
+      {
+        "abilityId": "asset-appreciation",
+        "index": 0,
+        "handlerId": "maximillion-gold/asset-appreciation-v1",
+        "handlerVersion": 1,
+        "installCount": 2
+      },
+      {
+        "abilityId": "blood-money",
+        "index": 1,
+        "handlerId": "maximillion-gold/blood-money-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "characteristics": {
+      "name": "MAXIMILLION GOLD",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Install 2 *RAM running.\nADDITIONAL COST [Destroy X *RAM in your RAM bank.] Deal X *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "ASSET APPRECIATION",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "BLOOD MONEY",
+          "ramCost": 2,
+          "run": true,
+          "additionalCostText": "Destroy X RAM in your RAM bank."
+        }
+      ],
+      "attack": 3,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    }
+  },
+  {
+    "cardId": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa",
+    "reviewMechanicsSha256": "0f41edb5e145b4c32f694f066c1d74c0ed906378f75d4fd62baae6c5254c5171",
+    "characteristics": {
+      "name": "NEOSEC FIRESTORM",
+      "cardType": "character",
+      "factions": ["CORPO", "MECH"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *BF damage to up to 3 target characters.\nDeal 3 *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "INCINERATE",
+          "ramCost": 2,
+          "run": false
+        },
+        {
+          "name": "SEEKER MISSILE",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 6,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "abilities": [
+      {
+        "damage": {
+          "minimum": 0,
+          "amount": 1,
+          "channel": "BF",
+          "recipient": "character",
+          "maximum": 3
+        },
+        "handlerId": "neosec-firestorm/incinerate-v1",
+        "abilityId": "incinerate",
+        "index": 0,
+        "handlerVersion": 1
+      },
+      {
+        "damage": {
+          "minimum": 1,
+          "amount": 3,
+          "channel": "BF",
+          "recipient": "player",
+          "maximum": 1
+        },
+        "handlerId": "neosec-firestorm/seeker-missile-v1",
+        "abilityId": "seeker-missile",
+        "index": 1,
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "7629d9ab-061c-4c8f-abdd-05e8a8457412",
+    "reviewMechanicsSha256": "9fcd5febd561bcc94c7667d09dd52b96c5e044720095fb1aef4b4e633b0aff0a",
+    "characteristics": {
+      "name": "OMNIS DEATHBRINGER",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": ["TRANSPORT"],
+      "iconic": false,
+      "rulesText": "Deal 4 *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "150MM RAILGUN",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "abilities": [
+      {
+        "damage": {
+          "minimum": 1,
+          "amount": 4,
+          "channel": "BF",
+          "recipient": "player",
+          "maximum": 1
+        },
+        "handlerId": "omnis-deathbringer/150mm-railgun-v1",
+        "abilityId": "150mm-railgun",
+        "index": 0,
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "138219c0-06f3-44de-b02b-1cb418c690c9",
+    "reviewMechanicsSha256": "e30fde9fdafb513017cd0c366d41ae4df43881424045b6774e5f78ae89427bd4",
+    "characteristics": {
+      "name": "ROGUE VALKYRIE",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "MECH"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 2 *BF damage to target character.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "SKYBREAKER",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "damage": {
+          "minimum": 1,
+          "amount": 2,
+          "channel": "BF",
+          "recipient": "character",
+          "maximum": 1
+        },
+        "handlerId": "rogue-valkyrie/skybreaker-v1",
+        "abilityId": "skybreaker",
+        "index": 0,
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "3ec2c11b-5714-4956-957b-d508d408fd53",
+    "reviewMechanicsSha256": "47ebc6ab0e84c349a9d75642424927192be0c06583375fd6a4371417e2930549",
+    "characteristics": {
+      "name": "CARTOGRAPHER",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "INDEX 3 ENVIRONMENT (Reveal the top 3 cards of your cyberdeck. Put 1 environment into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "EXPLORE",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerVersion": 1,
+        "index": 0,
+        "abilityId": "explore",
+        "topCards": {
+          "subtype": "environment",
+          "cardType": "program",
+          "count": 3,
+          "kind": "index"
+        },
+        "handlerId": "cartographer/explore-v1"
+      }
+    ]
+  },
+  {
+    "cardId": "58fa2817-dce4-4b38-9ec0-db4aff2ee275",
+    "reviewMechanicsSha256": "bafbbeb6f2b51af63defb06d741e90ec9fd908427feb6c44733cb523ca96e694",
+    "characteristics": {
+      "name": "CODER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "INDEX 3 *HACKER PROGRAM (Reveal the top 3 cards of your cyberdeck. Put 1 *HACKER program into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DATA SCRAPE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerVersion": 1,
+        "index": 0,
+        "abilityId": "data-scrape",
+        "topCards": {
+          "faction": "HACKER",
+          "cardType": "program",
+          "count": 3,
+          "kind": "index"
+        },
+        "handlerId": "coder/data-scrape-v1"
+      }
+    ]
+  },
+  {
+    "cardId": "85d94625-a106-419d-82ad-774bffc1442b",
+    "reviewMechanicsSha256": "527d89562a980805f37d4bf079c6e9e1d4485071052107f86915b4874c391dd2",
+    "characteristics": {
+      "name": "SEARCHER OF THE SKY",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER", "MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DIVINE 2 (Look at the top 2 cards of your cyberdeck. Put 1 into your hand, then bin the other.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "CELESTIAL VISIONS",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerVersion": 1,
+        "index": 0,
+        "abilityId": "celestial-visions",
+        "topCards": {
+          "count": 2,
+          "kind": "divine"
+        },
+        "handlerId": "searcher-of-the-sky/celestial-visions-v1"
+      }
+    ]
+  },
+  {
+    "cardId": "c3d25941-ff69-4cfb-9aaa-20b97c44c819",
+    "reviewMechanicsSha256": "4f77e599b0e21b54368b90146374b265241c11f69af0fd2823da9b38b2cbcf49",
+    "characteristics": {
+      "name": "BACK ALLEY BRUISERS",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DUEL target character. (Both characters' attacks hit each other.)",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "KNUCKLE UP",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 5,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "back-alley-bruisers/knuckle-up-v1",
+        "duel": true,
+        "abilityId": "knuckle-up",
+        "handlerVersion": 1,
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3",
+    "reviewMechanicsSha256": "b6b7841e156043a1c9a6101e160eebd2ad63cfcecbcd6a44983cc6a9f9640c7c",
+    "hitTriggers": [
+      {
+        "handlerId": "digital-spectre/attack-hit-v1",
+        "handlerVersion": 1,
+        "label": "Digital Spectre: deal 2 MF damage to the player its attack hit.",
+        "kind": "player-hit-damage",
+        "amount": 2,
+        "channel": "MF"
+      }
+    ],
+    "characteristics": {
+      "name": "DIGITAL SPECTRE",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "When Digital Spectre’s attack hits a player, it also deals 2 *MF damage to that player.\nDigital Spectre gets STEALTH until turn end. (Character can’t be blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "PHASE SHIFT",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "digital-spectre/phase-shift-v1",
+        "handlerVersion": 1,
+        "abilityId": "phase-shift",
+        "index": 0,
+        "temporaryCombat": {
+          "kind": "stealth-self"
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "cce48eab-aadc-44cf-bfbf-91e2aefe1195",
+    "reviewMechanicsSha256": "4783d63794a7c38cd3ef6476cbce0bcdfa446075620cd3d5dc8f7958c30af7d4",
+    "characteristics": {
+      "name": "DUST DEVIL ELITES",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": ["DUST DEVIL"],
+      "iconic": false,
+      "rulesText": "Target character with 3 or less defense can't block until turn end.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "INTIMIDATION",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 7,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 2,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "dust-devil-elites/intimidation-v1",
+        "handlerVersion": 1,
+        "abilityId": "intimidation",
+        "index": 0,
+        "temporaryCombat": {
+          "kind": "cannot-block",
+          "maximumDefence": 3
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "11fc2d4c-e24a-4556-baef-42ecf2b27838",
+    "reviewMechanicsSha256": "ab33006d5f8f5146355dcb94fdfb788419a2d19aba0c7b311ebaafd2c0695a0c",
+    "characteristics": {
+      "name": "LUG NUT",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "ANIMAL"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Target character with 3 or less defense can't block this turn.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "BORK",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "lug-nut/bork-v1",
+        "handlerVersion": 1,
+        "abilityId": "bork",
+        "index": 0,
+        "temporaryCombat": {
+          "kind": "cannot-block",
+          "maximumDefence": 3
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442",
+    "reviewMechanicsSha256": "9b632174fb714f61e4629164f4d657bd680fce6113c8420c269c37fb07664329",
+    "characteristics": {
+      "name": "FACELESS ONI",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DUEL target character. (Both characters' attacks hit each other.) If Faceless Oni destroys that character, deal 3 *BF damage to that character's controller.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SILENT EXECUTION",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 4,
+      "defence": 3,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "faceless-oni/silent-execution-v1",
+        "handlerVersion": 1,
+        "abilityId": "silent-execution",
+        "index": 0,
+        "duel": true,
+        "duelFollowup": {
+          "amount": 3,
+          "channel": "BF"
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "9771c36f-c100-4ac3-af9d-f54c32bbde1f",
+    "reviewMechanicsSha256": "57e1e92249e0989409e50a05b82816f7eb948c161e6df12df4ea4f8100d008b2",
+    "characteristics": {
+      "name": "LASERSAW BERSERKER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "OVERRUN (Character deals excess damage to defending player when blocked.)\nUntil turn end, Lasersaw Berserker gets +2/+0 for each *CYBERNETIC you control. On turn end, destroy him.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RAMPAGE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 5,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "lasersaw-berserker/rampage-v1",
+        "handlerVersion": 1,
+        "abilityId": "rampage",
+        "index": 0,
+        "rampage": true
+      }
+    ],
+    "keywords": [
+      {
+        "handlerId": "lasersaw-berserker/overrun-v1",
+        "handlerVersion": 1,
+        "keyword": "OVERRUN"
+      }
+    ]
+  },
+  {
+    "cardId": "1001a176-a381-42a9-be88-03ef67bdf944",
+    "reviewMechanicsSha256": "974221eaa7f8f7b39c0a5ecfb3128fbb7bad20ae4339268cac955c2775f0e0e2",
+    "characteristics": {
+      "name": "EXTERMINATOR",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *BF damage to all characters except [Exterminator].",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "GAS CLOUD",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "exterminator/gas-cloud-v1",
+        "handlerVersion": 1,
+        "abilityId": "gas-cloud",
+        "index": 0,
+        "sweep": {
+          "controllers": "all",
+          "amount": 1,
+          "channel": "BF",
+          "exceptNamedCard": "EXTERMINATOR"
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "d3ed772b-f0ac-4e77-a9ab-833544869315",
+    "reviewMechanicsSha256": "50dd3349421e289db3eda734b538a8062b27266a71bc0ad5d96cb4d75c3786f0",
+    "characteristics": {
+      "name": "ARC, CIRCUIT BREAKER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Deal 1 *MF damage to characters opponents control.\nUntil turn end, *CYBERNETIC characters you control get OVERRUN and +2/+0 for each cyberware attached to them.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SYSTEM SHOCK",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "CALL OF THE CHROME",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 6,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "arc/system-shock-v1",
+        "handlerVersion": 1,
+        "abilityId": "system-shock",
+        "index": 0,
+        "sweep": {
+          "controllers": "opponents",
+          "amount": 1,
+          "channel": "MF"
+        }
+      },
+      {
+        "handlerId": "arc/call-of-the-chrome-v1",
+        "handlerVersion": 1,
+        "abilityId": "call-of-the-chrome",
+        "index": 1,
+        "chrome": true
+      }
+    ]
+  },
+  {
+    "cardId": "88c0acda-d695-43b1-aff3-3f90616b5f2a",
+    "reviewMechanicsSha256": "b658bb76afde538ff57f862764d2135cc3dae7e5382b40082d84357eb85821e2",
+    "characteristics": {
+      "name": "BADLANDS SNIPER",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put a mark counter on target character.\nDeal 5 *BF damage to target character with a mark counter.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "MARK TARGET",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "TAKE THE SHOT",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 0,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "badlands-sniper/mark-target-v1",
+        "handlerVersion": 1,
+        "abilityId": "mark-target",
+        "index": 0,
+        "counter": {
+          "amount": 1,
+          "counter": "mark"
+        }
+      },
+      {
+        "handlerId": "badlands-sniper/take-the-shot-v1",
+        "handlerVersion": 1,
+        "abilityId": "take-the-shot",
+        "index": 1,
+        "damage": {
+          "channel": "BF",
+          "maximum": 1,
+          "recipient": "character",
+          "requiresCounter": "mark",
+          "amount": 5,
+          "minimum": 1
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "fd9f3afc-e12c-4219-93e8-95b450f0f57d",
+    "reviewMechanicsSha256": "574980e3f0e3c79e2ff81fe00bf3b33436851be2728cf3d689d124b05a818248",
+    "characteristics": {
+      "name": "TAGGER",
+      "cardType": "character",
+      "factions": ["HACKER", "ANARCHIST"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put a +1/+1 counter on another target *HACKER character.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "REVOLUTION",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "tagger/revolution-v1",
+        "handlerVersion": 1,
+        "abilityId": "revolution",
+        "index": 0,
+        "counter": {
+          "faction": "HACKER",
+          "another": true,
+          "amount": 1,
+          "counter": "+1/+1"
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "38e95da0-8b22-4672-97f0-459b5ec48d26",
+    "reviewMechanicsSha256": "d5fbd2dc7d7ca672339691c0986c33bb27cc55bf65616921dd2ee266e1ee8fda",
+    "characteristics": {
+      "name": "PHANTOM OS",
+      "cardType": "character",
+      "factions": ["A.I.", "HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for a virus or trojan and reveal it. Put it into your hand, then shuffle. Purge Phantom OS.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "GHOST IN THE MACHINE",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "phantom-os/ghost-in-the-machine-v1",
+        "handlerVersion": 1,
+        "abilityId": "ghost-in-the-machine",
+        "index": 0,
+        "search": {
+          "criteria": {
+            "kind": "tags",
+            "values": ["VIRUS", "TROJAN"]
+          },
+          "purgeSource": true
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "e3f8d3f3-634f-4b81-b4c2-1776920cee78",
+    "reviewMechanicsSha256": "18f36657a7e3ef61f41187ce9e5f2c8cb4af83f613dbdd31500700643a5e8908",
+    "characteristics": {
+      "name": "RIOT POLICE",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for [Riot Police] and reveal it. Put it into your hand, then shuffle.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "CALL FOR BACKUP",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "riot-police/call-for-backup-v1",
+        "handlerVersion": 1,
+        "abilityId": "call-for-backup",
+        "index": 0,
+        "search": {
+          "criteria": {
+            "kind": "name",
+            "value": "RIOT POLICE"
+          },
+          "purgeSource": false
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "240abe8f-929a-4bb6-b6b8-872033a7cc56",
+    "reviewMechanicsSha256": "aee87b33a917ad9f95444d3e94a683e6f6f5c3f6572301755d2ae2c375ed434a",
+    "characteristics": {
+      "name": "THE PLUG",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for a drug and reveal it. Put it into your hand, then shuffle.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "THE GOOD SHIT",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "the-plug/the-good-shit-v1",
+        "handlerVersion": 1,
+        "abilityId": "the-good-shit",
+        "index": 0,
+        "search": {
+          "criteria": {
+            "kind": "tags",
+            "values": ["DRUG"]
+          },
+          "purgeSource": false
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04",
+    "reviewMechanicsSha256": "f30f10507d432e7f563d01d44ce94c10f5658f1859672457534b106e25bdc403",
+    "characteristics": {
+      "name": "DUMPSTER DIVER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put target gear from your recycle bin into your hand.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SALVAGE",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "dumpster-diver/salvage-v1",
+        "handlerVersion": 1,
+        "abilityId": "salvage",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "63df8026-7eed-4a33-99a9-de4779b0ff77",
+    "reviewMechanicsSha256": "438097dd78d94a941c6b1f86120d4269cc0635edb77ac25bc2556eea41b5e90c",
+    "characteristics": {
+      "name": "BOARDROOM SHARK",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target character that has taken damage this turn.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "BLOOD IN THE WATER",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "boardroom-shark/blood-in-the-water-v1",
+        "handlerVersion": 1,
+        "abilityId": "blood-in-the-water",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "c8f91456-44ed-4d96-9a15-e9f2dd2f6a36",
+    "reviewMechanicsSha256": "5e68100f75608eb832fe4f951684fb137f604b3a286d542890b4e4c096161422",
+    "characteristics": {
+      "name": "SAND SCORPION",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Sand Scorpion deals *MF damage equal to its attack value to target running character.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "VENOM BLADE",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 2,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "sand-scorpion/venom-blade-v1",
+        "handlerVersion": 1,
+        "abilityId": "venom-blade",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "3408c423-f8e6-432e-8fff-7e87fcd403bf",
+    "reviewMechanicsSha256": "99301da63deabf53382e36623c029bb837062d53994f32fab6db7d7aec985b1f",
+    "characteristics": {
+      "name": "SEEKER DRONES",
+      "cardType": "character",
+      "factions": ["CORPO", "ROBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy Seeker Drones. If you do, deal 2 *BF damage to any target.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SEARCH AND DESTROY",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "seeker-drones/search-and-destroy-v1",
+        "handlerVersion": 1,
+        "abilityId": "search-and-destroy",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "75fb06fc-dcec-40f5-a501-ddc3e65c8242",
+    "reviewMechanicsSha256": "abd609696b51e75fc8173695e94178505734fcb7a69eab857f1cf706288340f4",
+    "characteristics": {
+      "name": "GOKUDO SILENCER",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target tether.\nPut a BLEED counter on target character. (On NETCHECK, each character controlled by the active player gets a -1/-1 counter for each BLEED counter on it.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SEVERANCE",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "DAMASCUS BLADE",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 4,
+      "defence": 3,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "gokudo-silencer/severance-v1",
+        "handlerVersion": 1,
+        "abilityId": "severance",
+        "index": 0
+      },
+      {
+        "handlerId": "gokudo-silencer/damascus-blade-v1",
+        "handlerVersion": 1,
+        "abilityId": "damascus-blade",
+        "index": 1,
+        "counter": {
+          "counter": "BLEED",
+          "amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "cf077870-faa4-4d49-bac3-6080d316c424",
+    "reviewMechanicsSha256": "efcb65352a28a34902f0991e7ed2c5b33a3316ad0e94fe72473f4130ecb94b5d",
+    "characteristics": {
+      "name": "BLACK HAT",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put 1 CORRUPTION counter on target opponent's mainframe. (On NETCHECK, the active player takes 1 *MF damage from each CORRUPTION counter on their mainframe.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "KERNEL PANIC",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "black-hat/kernel-panic-v1",
+        "handlerVersion": 1,
+        "abilityId": "kernel-panic",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "cf331915-54d5-4018-96ac-22635b683994",
+    "reviewMechanicsSha256": "7ed22d81e317c87f07e8e5f28f3ca0ee9a860b5495331502776d9ee3cc3892d5",
+    "characteristics": {
+      "name": "YES MAN",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Counter target program that targets an action on the cache. Put a -1/-1 counter on Yes Man.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "YES",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 2,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "yes-man/yes-v1",
+        "handlerVersion": 1,
+        "abilityId": "yes",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "cardId": "8b795fb7-e7d0-4d4b-9548-986550995814",
+    "reviewMechanicsSha256": "b4511f9d544d2c6f48d3edff658216183beb9d451c5a97bc66d518751112ce11",
+    "characteristics": {
+      "name": "CANYON STALKERS",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER", "ANIMAL"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "If Canyon Stalkers' attack hits a character with a counter on it, it deals double damage to that character.\nPut a mark counter on target character.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "PICK UP SCENT",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "canyon-stalkers/pick-up-scent-v1",
+        "handlerVersion": 1,
+        "abilityId": "pick-up-scent",
+        "index": 0,
+        "counter": {
+          "counter": "mark",
+          "amount": 1
+        }
+      }
+    ],
+    "damageReplacements": [
+      {
+        "handlerId": "canyon-stalkers/countered-character-damage-v1",
+        "handlerVersion": 1,
+        "kind": "double-attack-damage-to-countered-character"
+      }
+    ]
+  },
+  {
+    "cardId": "8ac649de-1476-4db0-adec-9d8d09ad53e2",
+    "reviewMechanicsSha256": "9fbf8d2b921d6f71b7b56c151d71f07497af10139063b3ff9f90a96afb92a0af",
+    "characteristics": {
+      "name": "IRON MAIDEN",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, Iron Maiden gets +2/+0 and, whenever her attack hits a character, she may also deal that much damage to another target character.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "MACHINA MORTIS",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "iron-maiden/machina-mortis-v1",
+        "handlerVersion": 1,
+        "abilityId": "machina-mortis",
+        "index": 0,
+        "temporaryCombat": {
+          "kind": "machina-mortis"
+        }
+      }
+    ],
+    "hitTriggers": [
+      {
+        "handlerId": "iron-maiden/machina-mortis-hit-v1",
+        "handlerVersion": 1,
+        "kind": "granted-character-hit-copy",
+        "label": "MACHINA MORTIS: optionally deal the attack-hit damage to another character."
+      }
+    ]
+  },
+  {
+    "cardId": "462c87e3-1c4d-4583-a689-af1b16acdd51",
+    "reviewMechanicsSha256": "41862e9a1ec0dce623e8bad9158e3eb634af7f758cd1e255b92ddea5b0ed8df5",
+    "characteristics": {
+      "name": "HEX, CODEMANCER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "On your turn, the first *HACKER program or trojan you play costs 3 *RAM less.\nDeal X *MF damage to target player, where X is double your *HACKER synergy.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DDOS ATTACK",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 4,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "hex-codemancer/ddos-attack-v1",
+        "handlerVersion": 1,
+        "abilityId": "ddos-attack",
+        "index": 0,
+        "damage": {
+          "recipient": "player",
+          "minimum": 1,
+          "maximum": 1,
+          "channel": "MF",
+          "amount": 0,
+          "synergy": {
+            "faction": "HACKER",
+            "multiplier": 2
+          }
+        }
+      }
+    ],
+    "programCostReductions": [
+      {
+        "handlerId": "hex-codemancer/first-program-discount-v1",
+        "handlerVersion": 1,
+        "kind": "first-hacker-program-or-trojan",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "cardId": "adf74d0d-3afa-448b-8568-de48bb7c40db",
+    "reviewMechanicsSha256": "d95ab40c34d90ae1464d043a21b1258aa30a9c2c475d849d47be5df2d736cf95",
+    "characteristics": {
+      "name": "ASHARA, HIGH PRIESTESS",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "If you would draw 1 or more cards outside of your initialize stage, instead draw that many cards plus 1.\nUntil turn end, if the ability of a *DUSTRUNNER environment would trigger, it triggers an additional time.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "QUICKEN THE PULSE",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 4,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "handlerId": "ashara/quicken-the-pulse-v1",
+        "handlerVersion": 1,
+        "abilityId": "quicken-the-pulse",
+        "index": 0
+      }
+    ],
+    "drawReplacements": [
+      {
+        "handlerId": "ashara/additional-draw-v1",
+        "handlerVersion": 1,
+        "kind": "extra-draw-outside-own-initialize",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "cardId": "a47412db-9db3-4040-89bb-19d52bfacf3c",
+    "reviewMechanicsSha256": "8bfb077e89fbf8c037a11096c4f012b95b9ce28a3393c9ff37c8c471122f883a",
+    "characteristics": {
+      "name": "BADLANDS MARAUDER",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, when Badlands Marauder's attack hits a player, destroy target *RAM they control, then you install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SMASH AND GRAB",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 3,
+      "defence": 2,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "abilities": [
+      {
+        "abilityId": "smash-and-grab",
+        "index": 0,
+        "handlerId": "badlands-marauder/smash-and-grab-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "hitTriggers": [
+      {
+        "kind": "granted-smash-and-grab",
+        "handlerId": "badlands-marauder/player-hit-v1",
+        "handlerVersion": 1,
+        "label": "SMASH AND GRAB: destroy target RAM controlled by the hit player, then install one RAM running."
+      }
+    ]
+  },
+  {
+    "cardId": "ec207828-a706-474a-9d96-f6cc98e15973",
+    "reviewMechanicsSha256": "3fef4e49913a690bd7e31c4bdd8cc42dab7c8b093648ada5473680c45cd4ea4a",
+    "characteristics": {
+      "name": "METAL HEAD",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "STAMINA (Character doesn’t run when it attacks.)\nDUEL target character. (Both characters' attacks hit each other.) You may then gain control of target gear attached to them and attach it to Metal Head.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SHRED",
+          "ramCost": 3,
+          "run": true
+        }
+      ],
+      "attack": 6,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "abilities": [
+      {
+        "abilityId": "shred",
+        "index": 0,
+        "handlerId": "metal-head/shred-v1",
+        "handlerVersion": 1
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "STAMINA",
+        "handlerId": "metal-head/stamina-v1",
+        "handlerVersion": 1
+      }
+    ]
+  }
+]

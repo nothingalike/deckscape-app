@@ -1,0 +1,35 @@
+{
+  "cardId": "3704a664-9f2b-4a3d-95c6-8880667c17f7",
+  "handlerId": "meltdown/program-v1",
+  "reviewMechanicsSha256": "363fcc49f9136847d0a7a03c893aac06836183033f10e63d48c81d3403efbb94",
+  "characteristics": {
+    "name": "MELTDOWN",
+    "cardType": "mainframe",
+    "prefix": "When you play a HACKER or DUSTRUNNER program, you may —",
+    "rulesText": "When you play a HACKER or DUSTRUNNER program, you may —\r\nPut a +1/+1 counter on target character.\r\nPut two +1/+1 counters on target character.",
+    "factions": ["HACKER", "DUSTRUNNER"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "HACKER": 1,
+          "DUSTRUNNER": 1
+        },
+        "operator": "base",
+        "text": "Put a +1/+1 counter on target character."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "HACKER": 2,
+          "DUSTRUNNER": 2
+        },
+        "operator": "instead",
+        "text": "Put two +1/+1 counters on target character."
+      }
+    ],
+    "tags": []
+  }
+}

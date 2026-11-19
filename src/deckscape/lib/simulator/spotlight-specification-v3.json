@@ -1,0 +1,35 @@
+{
+  "characteristics": {
+    "factions": ["THRASHER", "CORPO"],
+    "cardType": "mainframe",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "THRASHER": 1,
+          "CORPO": 1
+        },
+        "operator": "base",
+        "text": "Once per turn, install 1 RAM running."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "THRASHER": 2,
+          "CORPO": 2
+        },
+        "operator": "instead",
+        "text": "Install 1 RAM running."
+      }
+    ],
+    "copiesLimit": 4,
+    "prefix": "Whenever you destroy a character an opponent controls —",
+    "rulesText": "Whenever you destroy a character an opponent controls —\nOnce per turn, install 1 RAM running.\nInstall 1 RAM running.",
+    "iconic": false,
+    "name": "SPOTLIGHT",
+    "tags": []
+  },
+  "handlerId": "spotlight/destruction-v1",
+  "cardId": "be912031-0354-45e1-8e64-5569c0ce77be",
+  "reviewMechanicsSha256": "41412617a58efe3df7d214acbf0d69e6e6a90e6c9e2866991851f7fdc808e597"
+}

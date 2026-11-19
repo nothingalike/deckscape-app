@@ -1,0 +1,22 @@
+{
+  "cardId": "a699f13f-3461-4226-bef3-64a024c9c9d2",
+  "reviewMechanicsSha256": "92e00e6670733ff9a38c0fc88d91ccf5f574eae9cbc39be3417fb5529f395b86",
+  "handlerId": "debt-collector/last-refreshed-ram-v1",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "DEBT COLLECTOR",
+    "cardType": "character",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "When the last refreshed *RAM an opponent controls is run or committed, Debt Collector deals 2 *BF damage to them.",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "activatedAbilities": [],
+    "attack": 2,
+    "defence": 1,
+    "attackType": "BF",
+    "ports": { "head": 1, "body": 1, "leftArm": 1, "rightArm": 1 }
+  }
+}

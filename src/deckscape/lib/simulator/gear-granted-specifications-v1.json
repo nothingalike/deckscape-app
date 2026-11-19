@@ -1,0 +1,108 @@
+[
+  {
+    "cardId": "8f020b4c-1b7b-41e8-a0ab-e4a7ed93a1ea",
+    "kind": "riot-blade",
+    "handlerId": "riot-blade/slash-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "d8096f44e8b829a1f41ff6c11cf1e763e52ceacc42135648bdc11448c8b3551c",
+    "reviewArtworkSha256": "0273da932aa19aaea82589db5016575019b57b6fe1c36a60a500e98c8a427d98",
+    "characteristics": {
+      "name": "RIOT BLADE",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *BF damage to any target.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SLASH",
+          "ramCost": 1,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "192ff5bc-3da1-4ea6-ba4d-f6ec9fce73c7",
+    "kind": "knux",
+    "handlerId": "knux/pummel-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "28e895cf8ae420fd2f408c5c1cea82386215a25a463022e8303ded27ce6a8143",
+    "reviewArtworkSha256": "ca022a957ce67652e571af69035d3a3630359eb4725f4c998c5726b7f438b069",
+    "characteristics": {
+      "name": "KNUX",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +4/+0 and +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\nDUEL target character. (Both characters’ attacks hit each other.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "PUMMEL",
+          "ramCost": 3,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    }
+  },
+  {
+    "cardId": "bc1b6a83-9114-428a-a804-b1accd8affb2",
+    "kind": "codebreaker",
+    "handlerId": "codebreaker/brain-blast-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e849d5a272073689c97f09b7f19ce3fde9abe4f0f74fb37cc9b4abceeedb6473",
+    "reviewArtworkSha256": "b7ee454ee6bc57585003d6c13759ea5a1f121b5dcf0bb14e01eaed1030048a79",
+    "characteristics": {
+      "name": "CODEBREAKER",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\nDestroy target program.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "BRAIN BLAST",
+          "ramCost": 0,
+          "run": true,
+          "grantedTo": "attached-character"
+        }
+      ],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 3,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    }
+  }
+]

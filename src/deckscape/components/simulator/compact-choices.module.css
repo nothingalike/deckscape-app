@@ -1,0 +1,48 @@
+.group {
+  margin: 8px 0;
+}
+.group p {
+  margin: 0 0 5px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.buttons button {
+  padding: 4px 8px;
+  min-height: 32px;
+  border: 1px solid #42606b;
+  border-radius: 5px;
+  background: #152733;
+  color: #eaf5f7;
+}
+.buttons button[aria-pressed="true"] {
+  background: #304727;
+  border-color: #c4ff65;
+  color: #dcffae;
+}
+.amount {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+.amount output {
+  min-width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.amount button {
+  padding: 4px 8px;
+  min-width: 32px;
+  min-height: 32px;
+}
+@media (pointer: coarse) {
+  .buttons button,
+  .amount button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}

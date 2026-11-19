@@ -1,0 +1,33 @@
+{
+  "cardId": "24fdccde-d45f-4997-9383-89df537307ad",
+  "characteristics": {
+    "name": "NEURAL DISRUPTOR",
+    "cardType": "gear",
+    "factions": [],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "MALICIOUS (Attach to any target character.)\n\nAttached character gets +15 PSYCHOSIS and must attack if able. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+    "ramCost": 3,
+    "requirements": {},
+    "subtype": "cyberware",
+    "ports": {
+      "head": 1,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": []
+  },
+  "handlers": [
+    {
+      "id": "neural-disruptor/gear-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "24fdccde-d45f-4997-9383-89df537307ad/da5fd43bdf1d98787962636337f8a10dc8b8a06c6401bbbdfe4e825cf45e3024.webp",
+    "sha256": "da5fd43bdf1d98787962636337f8a10dc8b8a06c6401bbbdfe4e825cf45e3024"
+  }
+}

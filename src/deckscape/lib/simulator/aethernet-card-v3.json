@@ -1,0 +1,44 @@
+{
+  "cardId": "bf0b42ac-a675-4cc2-bb29-649f19fa2820",
+  "characteristics": {
+    "name": "AETHERNET",
+    "cardType": "mainframe",
+    "factions": ["HACKER", "MYSTIC"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "You may play tarots or HACKER scripts from your recycle bin —\nFor double their cost. As they resolve, purge them.\nInstead, For their base cost. As they resolve, purge them.",
+    "prefix": "You may play tarots or HACKER scripts from your recycle bin —",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "HACKER": 1,
+          "MYSTIC": 1
+        },
+        "operator": "base",
+        "text": "For double their cost. As they resolve, purge them."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "HACKER": 2,
+          "MYSTIC": 2
+        },
+        "operator": "instead",
+        "text": "For their base cost. As they resolve, purge them."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "aethernet/replay-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "bf0b42ac-a675-4cc2-bb29-649f19fa2820/2df93719cfd3dae96bfc9c5aab4f7898d768b44f40fc546c61f142939d196b72.webp",
+    "sha256": "2df93719cfd3dae96bfc9c5aab4f7898d768b44f40fc546c61f142939d196b72"
+  }
+}

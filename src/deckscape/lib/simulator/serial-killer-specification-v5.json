@@ -1,0 +1,39 @@
+{
+  "cardId": "3d5ed8ac-e1a5-4d92-9bc6-0761cbf05cd5",
+  "reviewMechanicsSha256": "616c0a52e2b2aa10b2307d3f5e1a69d8afeffb4e5b04d1410847f46b4fbe9593",
+  "characteristics": {
+    "name": "SERIAL KILLER",
+    "cardType": "character",
+    "factions": ["HACKER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Move target action on the cache to the top of the cache.",
+    "ramCost": 3,
+    "requirements": {},
+    "activatedAbilities": [
+      {
+        "name": "REWRITE",
+        "ramCost": 1,
+        "run": true
+      }
+    ],
+    "attack": 3,
+    "defence": 1,
+    "attackType": "MF",
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 3,
+      "rightArm": 3
+    }
+  },
+  "abilities": [
+    {
+      "abilityId": "rewrite",
+      "index": 0,
+      "handlerId": "serial-killer/rewrite-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

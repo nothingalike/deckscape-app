@@ -1,0 +1,35 @@
+{
+  "cardId": "beca8aeb-a1fe-4d0c-8890-4e14521879db",
+  "characteristics": {
+    "name": "CORTEX CRAB",
+    "cardType": "gear",
+    "factions": ["HACKER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "MALICIOUS (Attach to any target character.)\n\n\nWhen Cortex Crab becomes attached to a character an opponent controls, refresh that character and reboot its abilities. \n\nYou control attached character and its attack type is *MF. On turn end, destroy Cortex Crab.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {
+      "HACKER": 1
+    },
+    "activatedAbilities": [],
+    "subtype": "cyberware",
+    "ports": {
+      "head": 3,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    }
+  },
+  "handlers": [
+    {
+      "version": 1,
+      "parameters": {},
+      "id": "gear/cortex-crab"
+    }
+  ],
+  "artwork": {
+    "sha256": "9fa1d4dd75792f335730982961e36ca0218f0f48b85b34f2c70711663adc5b6e",
+    "path": "beca8aeb-a1fe-4d0c-8890-4e14521879db/9fa1d4dd75792f335730982961e36ca0218f0f48b85b34f2c70711663adc5b6e.webp"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "cardId": "7dfd538f-dcb3-4ec6-b6ef-76e8e79ca469",
+  "reviewMechanicsSha256": "f04ada3aa4c01202a882c94871b700f42c6eb00c3ad2f8d0dc3f2923d7a214e9",
+  "characteristics": {
+    "name": "TRIXIE, TECHNO QUEEN",
+    "cardType": "character",
+    "factions": ["MYSTIC"],
+    "tags": [],
+    "iconic": true,
+    "rulesText": "When you play a tarot, draw 1.\nThe next drug you play this turn costs 0 *RAM.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 2,
+      "body": 2,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [
+      {
+        "name": "FLOOR SCORE",
+        "ramCost": 1,
+        "run": true
+      }
+    ],
+    "attack": 1,
+    "defence": 1,
+    "attackType": "MF"
+  },
+  "abilities": [
+    {
+      "abilityId": "floor-score",
+      "index": 0,
+      "handlerId": "trixie/floor-score-v1",
+      "handlerVersion": 1
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "trixie/tarot-draw-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

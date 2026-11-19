@@ -1,0 +1,147 @@
+[
+  {
+    "cardId": "b004fdc9-8d52-4f27-87d0-92ed6255b37a",
+    "characteristics": {
+      "name": "AEKANI BLOODLETTER",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Whenever attached character's attack hits a character, put 2 BLEED counters on the character that was hit. (On NETCHECK, each character controlled by the active player gets a -1/-1 counter for each BLEED counter on it.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "weapon",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "kind": "bloodletter",
+    "handlerId": "bloodletter/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "b95975963fb370aa60e6eb9edb41235d30fe87756aee69da3a9f37270ce8d4be",
+    "reviewArtworkSha256": "ff61b4bc054eb050a260118b696c8908452479dbebe7299662a502199dfa59bc"
+  },
+  {
+    "cardId": "27220600-7672-4783-a05a-9204aa503a89",
+    "characteristics": {
+      "name": "CHAIN AMPLIFIER",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "TETHER (Attach to 2 target characters. If either character leaves play, the tether follows.)\nAll characters in this tether chain get +1/+1.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "tether",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "kind": "amplifier",
+    "handlerId": "amplifier/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e11bc04c22fe7ef403b31e8deda960dc9e9e4d16cac8920454d8ed6082247768",
+    "reviewArtworkSha256": "e3fbcc694cfaa840ed9644baa8cabec1e3a4304a5965f8b4fc26abada196fb6f"
+  },
+  {
+    "cardId": "48020ef5-d5a5-49e5-aca5-dbf2c922476c",
+    "characteristics": {
+      "name": "DUST DEVIL GLAIVE",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +2/+0. If this character is a Dust Devil, it gets an additional +4/+0.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "weapon",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "kind": "glaive",
+    "handlerId": "glaive/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "7a212b1481fd0c7f9ff02bd65ac445d7858d698b8c586042e7e0bcc927d84d9e",
+    "reviewArtworkSha256": "ccaee60e667166907b4754118ce16965aa50e819eb27323f34393e307310eda7"
+  },
+  {
+    "cardId": "e0f980f5-2933-482a-9933-6025f14233ce",
+    "characteristics": {
+      "name": "HOT WIRE",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "TETHER (Attach to 2 target characters. If either character leaves play, the tether follows.)\nAll characters in this tether chain get OVERRUN. (Character deals excess damage to defending player when blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "tether",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "kind": "hot-wire",
+    "handlerId": "hot-wire/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c866d7eded0c4ed652c2afa6f45aa35ed2ac55159f7498374b8186e9def2b313",
+    "reviewArtworkSha256": "118f6faaa0af03e50dacdf9b07cd9ef1bfbb663967c51efc7d9dc21264e9762b"
+  },
+  {
+    "cardId": "67832741-300f-4036-947c-68e94315ed2b",
+    "characteristics": {
+      "name": "SYNCHRONIZE",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "TETHER (Attach to 2 target characters. If either character leaves play, the tether follows.)\nThe highest base attack value of any character in this tether chain becomes the attack value of all characters in this tether chain. The same is true for defense values.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "tether",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "kind": "synchronize",
+    "handlerId": "synchronize/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "75e1bc0be7d48be6c7d00e60a9cc8adcd413d98a69edaf1f44c2792ae6f664c4",
+    "reviewArtworkSha256": "4bb127a2072569f800729d6e70daa501043abea999017ab6bf9a09d706e893b3"
+  }
+]

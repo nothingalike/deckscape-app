@@ -1,0 +1,42 @@
+{
+  "cardId": "7bdc7769-a438-4673-b57f-2cf3e63ef089",
+  "characteristics": {
+    "name": "RADIANT",
+    "cardType": "mainframe",
+    "factions": ["MYSTIC"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "When you play a tarot, look at the top card of your cyberdeck. You may bin it.\nYou may play tarots reversed.",
+    "prefix": "",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "MYSTIC": 2
+        },
+        "operator": "base",
+        "text": "When you play a tarot, look at the top card of your cyberdeck. You may bin it."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "MYSTIC": 4
+        },
+        "operator": "independent",
+        "text": "You may play tarots reversed."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "radiant/tarot-top-card-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "7bdc7769-a438-4673-b57f-2cf3e63ef089/c5493716dd17b9f600337c02c7280b6a2ba22e17f8c596c87b46a8ef7504b386.webp",
+    "sha256": "c5493716dd17b9f600337c02c7280b6a2ba22e17f8c596c87b46a8ef7504b386"
+  }
+}

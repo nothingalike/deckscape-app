@@ -1,0 +1,33 @@
+{
+  "cardId": "d489e59f-f9ca-49ac-98ed-0e66ff3262a9",
+  "reviewMechanicsSha256": "46f6aafb1794781b7fce605da656a487202fb54efe383f2875cf87c585a10a14",
+  "handlerId": "hive-dynamics/destruction-v1",
+  "characteristics": {
+    "name": "HIVE DYNAMICS",
+    "cardType": "mainframe",
+    "prefix": "",
+    "rulesText": "When 1 or more non-token NANOBOT characters you control are destroyed by an opponent, create a BF 1/1 NANOBOT Drone token character.\r\nAll NANOBOT characters you control get +1/+1.",
+    "factions": ["NANOBOT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "tiers": [
+      {
+        "persistents": 3,
+        "factions": {
+          "NANOBOT": 3
+        },
+        "operator": "base",
+        "text": "When 1 or more non-token NANOBOT characters you control are destroyed by an opponent, create a BF 1/1 NANOBOT Drone token character."
+      },
+      {
+        "persistents": 6,
+        "factions": {
+          "NANOBOT": 6
+        },
+        "operator": "independent",
+        "text": "All NANOBOT characters you control get +1/+1."
+      }
+    ],
+    "tags": []
+  }
+}

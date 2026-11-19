@@ -1,0 +1,23 @@
+[
+  {
+    "cardId": "01b945b8-b22b-45ae-b8af-5d7060bc28ed",
+    "kind": "simulated-solace",
+    "handlerId": "protocol/simulated-solace",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "b9dc49adfad80d5e6ff82bfd8e4c919bce2051f1b74037b01901629aab22e2e2",
+    "characteristics": {
+      "name": "SIMULATED SOLACE",
+      "cardType": "program",
+      "factions": [],
+      "tags": ["VIRUS"],
+      "iconic": false,
+      "rulesText": "Attach to target player's mainframe. On their SYSTEM CHECK, they take 2 *MF and 2 *BF damage, then they draw 1.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "protocol",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  }
+]

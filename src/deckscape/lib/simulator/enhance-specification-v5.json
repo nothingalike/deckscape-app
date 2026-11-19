@@ -1,0 +1,23 @@
+{
+  "cardId": "f9ff8c5f-65c0-43ef-8731-c9038ec7514c",
+  "reviewMechanicsSha256": "5d3647beac5c8742d866abad710e6644f126cec4970cbb3639dccb726528e624",
+  "kind": "enhance",
+  "handlerId": "script/enhance",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "ENHANCE",
+    "cardType": "program",
+    "factions": ["DUSTRUNNER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Look at the top 5 cards of target opponent's cyberdeck, then put them back in any order.",
+    "ramCost": 1,
+    "requirements": {
+      "DUSTRUNNER": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

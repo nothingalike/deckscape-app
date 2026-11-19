@@ -1,0 +1,138 @@
+[
+  {
+    "cardId": "391a83d4-5ca3-4d4f-9c90-06ba6ee7f108",
+    "characteristics": {
+      "name": "FATAL ERROR 75",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": ["TROJAN"],
+      "iconic": false,
+      "rulesText": "TROJAN (Attach face down on target player's mainframe. You may flip and pay its ability cost to activate on any swift check after the turn it was played, then bin it.)\nDestroy attacking characters controlled by this player.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACTIVATE",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "trojan/fatal-error-75",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "391a83d4-5ca3-4d4f-9c90-06ba6ee7f108/00ce906bcd5e741494088f35bb31d7f28ae8ba969a070d30e99a4d41b7a49b53.webp",
+      "sha256": "00ce906bcd5e741494088f35bb31d7f28ae8ba969a070d30e99a4d41b7a49b53"
+    }
+  },
+  {
+    "cardId": "9109471f-7635-4fa6-b777-5f8ee66732a0",
+    "characteristics": {
+      "name": "MEMORY LEAK",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": ["TROJAN"],
+      "iconic": false,
+      "rulesText": "TROJAN (Attach face down on target player's mainframe. You may flip and pay its ability cost to activate on any swift check after the turn it was played, then bin it.)\nIf all of this player's *RAM is running or committed, deal 4 *MF damage to them.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACTIVATE",
+          "ramCost": 0,
+          "run": false
+        }
+      ],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "trojan/memory-leak",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "9109471f-7635-4fa6-b777-5f8ee66732a0/29639c1c65ea7c3a176d4a20d686db807a1e31d39f566a23717816568d8d76eb.webp",
+      "sha256": "29639c1c65ea7c3a176d4a20d686db807a1e31d39f566a23717816568d8d76eb"
+    }
+  },
+  {
+    "cardId": "ae9d640e-b2c0-4eec-84b5-da1768cbeb20",
+    "characteristics": {
+      "name": "POWER SPIKE",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": ["TROJAN"],
+      "iconic": false,
+      "rulesText": "TROJAN (Attach face down on target player's mainframe. You may flip and pay its ability cost to activate on any swift check after the turn it was played, then bin it.)\nDeal 3 *MF damage to this player for each of their attacking characters.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACTIVATE",
+          "ramCost": 0,
+          "run": false
+        }
+      ],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "trojan/power-spike",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "ae9d640e-b2c0-4eec-84b5-da1768cbeb20/3badf014f7c0b5ebf98241725c961fbc3ef69cd08be1fd1f68b5ad631c838c45.webp",
+      "sha256": "3badf014f7c0b5ebf98241725c961fbc3ef69cd08be1fd1f68b5ad631c838c45"
+    }
+  },
+  {
+    "cardId": "a998fc2a-dfed-42f7-b733-dab3fa36c641",
+    "characteristics": {
+      "name": "REDIRECT",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": ["TROJAN"],
+      "iconic": false,
+      "rulesText": "TROJAN (Attach face down on target player's mainframe. You may flip and pay its ability cost to activate on any swift check after the turn it was played, then bin it.)\nChange the target(s) of target activated ability on the cache.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACTIVATE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "trojan/redirect",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "a998fc2a-dfed-42f7-b733-dab3fa36c641/d0825e43f9dd535a1290944e6e42d4624047a642204773a031022604fdaa807a.webp",
+      "sha256": "d0825e43f9dd535a1290944e6e42d4624047a642204773a031022604fdaa807a"
+    }
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "cardId": "7cf334b4-defd-4ff9-a827-527f997c45b0",
+  "artwork": {
+    "path": "7cf334b4-defd-4ff9-a827-527f997c45b0/771c819625fb6ba6966dd7d223a7b9b790b565ae9e4e98a8b06babfd43a48d42.webp",
+    "sha256": "771c819625fb6ba6966dd7d223a7b9b790b565ae9e4e98a8b06babfd43a48d42"
+  },
+  "handlers": [
+    {
+      "id": "third-eye/gear-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "characteristics": {
+    "name": "THIRD EYE",
+    "cardType": "gear",
+    "factions": [
+      "MYSTIC"
+    ],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Opponents play with their hands revealed. \n\nYou may look at any facedown cards in play.",
+    "ramCost": 2,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "cyberware",
+    "ports": {
+      "head": 1,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": []
+  }
+}

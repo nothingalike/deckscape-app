@@ -1,0 +1,23 @@
+{
+  "cardId": "cc85dc7a-27bd-49aa-998b-6bbd0eab571e",
+  "reviewMechanicsSha256": "29094f6db002a35d43562452136a1efafbd990e3b3a06edd4de50786358e08b5",
+  "kind": "justice",
+  "handlerId": "script/justice",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "JUSTICE",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT If a character's attack hits target player this turn, prevent half that damage, rounded down, and deal *MF damage equal to the prevented damage to that character's controller.",
+    "ramCost": 4,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

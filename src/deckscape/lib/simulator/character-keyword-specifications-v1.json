@@ -1,0 +1,98 @@
+[
+  {
+    "cardId": "5806a128-2e44-4fe4-a275-2a3e7c2666b3",
+    "reviewMechanicsSha256": "3343af0dc9a8b7b573d8d64c29f6a446fd70b3b62a3817187d9e783e74ef087d",
+    "handlerId": "boonyen/overrun-v1",
+    "handlerVersion": 1,
+    "keyword": "OVERRUN",
+    "characteristics": {
+      "name": "BOONYEN, WARDRIVER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "ANIMAL"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "OVERRUN (Character deals excess damage to defending player when blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 7,
+      "defence": 8,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    }
+  },
+  {
+    "cardId": "9771c36f-c100-4ac3-af9d-f54c32bbde1f",
+    "reviewMechanicsSha256": "57e1e92249e0989409e50a05b82816f7eb948c161e6df12df4ea4f8100d008b2",
+    "handlerId": "lasersaw-berserker/overrun-v1",
+    "handlerVersion": 1,
+    "keyword": "OVERRUN",
+    "characteristics": {
+      "name": "LASERSAW BERSERKER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "OVERRUN (Character deals excess damage to defending player when blocked.)\nUntil turn end, Lasersaw Berserker gets +2/+0 for each *CYBERNETIC you control. On turn end, destroy him.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RAMPAGE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 5,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    }
+  },
+  {
+    "cardId": "ec207828-a706-474a-9d96-f6cc98e15973",
+    "reviewMechanicsSha256": "3fef4e49913a690bd7e31c4bdd8cc42dab7c8b093648ada5473680c45cd4ea4a",
+    "handlerId": "metal-head/stamina-v1",
+    "handlerVersion": 1,
+    "keyword": "STAMINA",
+    "characteristics": {
+      "name": "METAL HEAD",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "STAMINA (Character doesn’t run when it attacks.)\nDUEL target character. (Both characters' attacks hit each other.) You may then gain control of target gear attached to them and attach it to Metal Head.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SHRED",
+          "ramCost": 3,
+          "run": true
+        }
+      ],
+      "attack": 6,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    }
+  }
+]

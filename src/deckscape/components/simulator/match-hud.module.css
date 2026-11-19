@@ -1,0 +1,642 @@
+.hud {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  width: min(360px, calc(100vw - 24px));
+  z-index: 22;
+  color: #e4f1f2;
+}
+.content [data-gear-attachment],
+.content [data-gear-attachment] fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.content [data-gear-attachment] p { margin: 5px 0; }
+.content [data-gear-attachment] button {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 30px;
+  padding: 5px 8px;
+  margin: 5px 0 0;
+  border-radius: 6px;
+}
+.canvasHost {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.canvasHost canvas {
+  display: block;
+}
+.content {
+  position: relative;
+  padding: 12px;
+}
+.content [data-pixi-text] {
+  display: block;
+  min-height: 18px;
+  font-size: 12px;
+}
+.instruction {
+  margin: 3px 0 7px;
+}
+.stages {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  padding: 0;
+  margin: 0 0 8px;
+  list-style: none;
+}
+.content button,
+.content summary {
+  font: inherit;
+  cursor: pointer;
+}
+.stages button {
+  width: 100%;
+  height: 38px;
+  padding: 0;
+  font-size: 0;
+}
+.toolbar {
+  display: flex;
+  gap: 8px;
+}
+.toolbar > button,
+.options {
+  flex: 1;
+}
+.toolbar > button,
+.options summary {
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 12px;
+}
+.options summary {
+  list-style: none;
+}
+.options summary::-webkit-details-marker {
+  display: none;
+}
+.content:not([data-fallback]) [data-pixi-text],
+.content:not([data-fallback]) [data-pixi-button],
+.content:not([data-fallback]) [data-pixi-primary="true"] button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.content [data-pixi-button]:focus-visible,
+.primary button:focus-visible {
+  outline: 2px solid #fff;
+}
+.primary {
+  margin-bottom: 8px;
+}
+.primary fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.primary legend,
+.primary fieldset p:not([role="status"]) {
+  display: none;
+}
+.primary button {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+  font-size: 13px;
+}
+.primary [role="status"] {
+  padding: 6px;
+  margin: 4px 0;
+  background: #25313c;
+  font-size: 12px;
+}
+.tray:empty,
+.tray:has(> div:empty) {
+  display: none;
+}
+.tray,
+.optionsBody,
+.hint {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: min(45dvh, 460px);
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid #527080;
+  border-radius: 10px;
+  background: #10232bf5;
+  font-size: 13px;
+}
+.tray fieldset {
+  min-width: 0;
+}
+@media (max-width: 1000px) {
+  .tray {
+    bottom: calc(100% + 160px);
+    max-height: min(30dvh, 300px);
+  }
+}
+.tray fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.tray legend {
+  font-weight: 650;
+  padding: 0;
+  margin-bottom: 6px;
+}
+.tray p {
+  margin: 6px 0 10px;
+  line-height: 1.4;
+}
+.tray [data-action-summary] {
+  margin: 5px 0;
+  color: #e4f1f2;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.tray [data-action-cost] {
+  margin: 10px 0 4px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  background: #1c3540;
+  color: #d8e6e8;
+  font-size: 12px;
+}
+.tray [data-trigger-order] {
+  padding-left: 24px;
+  margin: 8px 0 0;
+}
+.tray [data-trigger-order] li {
+  padding: 8px 0;
+  border-top: 1px solid #345251;
+}
+.tray [data-trigger-order] li p {
+  margin: 0 0 6px;
+  overflow-wrap: anywhere;
+}
+.tray [data-reorder-controls] {
+  display: flex;
+  gap: 8px;
+}
+.tray [data-reorder-controls] button {
+  width: 32px;
+  min-height: 32px;
+  padding: 0;
+  font-size: 16px;
+}
+.tray [data-card-action] > fieldset > p:first-of-type {
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.tray button,
+.optionsBody button {
+  min-height: 32px;
+  padding: 5px 9px;
+  line-height: 1.25;
+  font-size: 13px;
+}
+@media (pointer: coarse) {
+  .tray button,
+  .tray [data-reorder-controls] button,
+  .optionsBody button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+.optionsBody {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.optionsBody > button,
+.optionsBody > a {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 7px 10px;
+  border: 1px solid #527080;
+  border-radius: 5px;
+  background: #183440;
+  color: #e4f1f2;
+  text-decoration: none;
+}
+.optionsBody > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.optionsBody input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+.optionsBody fieldset {
+  border: 0;
+  border-top: 1px solid #705052;
+  padding: 10px 0 0;
+  margin: 4px 0 0;
+}
+.optionsBody legend {
+  color: #e9b5b8;
+  padding: 0 0 6px;
+}
+.optionsBody fieldset button {
+  margin: 4px 6px 0 0;
+  background: #462d35;
+  color: #f3dce0;
+  border: 1px solid #90616a;
+}
+.turnHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.autoPass {
+  flex: 0 0 auto;
+  width: 122px;
+}
+.autoPass [data-pixi-text] { min-width: 54px; }
+.content .autoPass > div {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  gap: 0;
+}
+.autoPass label {
+  flex-direction: row;
+}
+.content:not([data-fallback]) [data-pixi-switch] {
+  opacity: 0;
+}
+.content:not([data-fallback]) [data-pixi-button] svg {
+  opacity: 0;
+}
+.hint {
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logDialog {
+  position: fixed;
+  right: calc(12px + var(--game-safe-right, 0px));
+  bottom: calc(12px + var(--game-safe-bottom, 0px));
+  z-index: 90;
+  width: min(620px, calc(100vw - 24px - var(--game-safe-left, 0px) - var(--game-safe-right, 0px)));
+  max-height: calc(100dvh - 24px);
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid #71d6c0;
+  border-radius: 12px;
+  background: #0e2229fa;
+  color: #e4f1f2;
+  box-shadow: 0 12px 60px #000b;
+}
+.logDialog[hidden] {
+  display: none;
+}
+.logDialog h2 {
+  margin-top: 0;
+  padding-right: 40px;
+}
+.logDialog [role="log"] {
+  max-height: min(58dvh, 540px) !important;
+}
+.close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+}
+.content[data-fallback] {
+  background: transparent;
+  border: 0;
+}
+.content[data-fallback] .stages button {
+  font-size: 0;
+  background: transparent;
+  color: #d3e5e8;
+}
+.content[data-fallback] .stages button::before {
+  content: attr(data-pixi-label);
+  font-size: 27px;
+  font-weight: bold;
+  text-shadow: 0 0 7px #7dc8d8;
+}
+.content[data-fallback] .stages button[aria-current="step"] {
+  color: #d5ff9d;
+}
+.content[data-fallback] .stages button[aria-current="step"]::before {
+  text-shadow: 0 0 8px #a7ed5e;
+}
+@media (max-width: 1280px) {
+  .hud {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 12px 0 12px auto;
+  }
+}
+@media (max-width: 480px) {
+  .stages {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stages button {
+    height: 44px;
+  }
+}
+:global([data-game-viewport]) .hud {
+  position: fixed;
+  right: calc(12px + var(--game-safe-right, 0px));
+  bottom: calc(12px + var(--game-safe-bottom, 0px));
+  margin: 0;
+}
+
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 1280px) {
+  :global([data-game-viewport]) .hud {
+    right: calc(8px + var(--game-safe-right, 0px));
+    bottom: calc(8px + var(--game-safe-bottom, 0px));
+    width: 200px;
+  }
+  .content {
+    padding: 4px;
+  }
+  .content [data-pixi-text] {
+    font-size: 11px;
+    min-height: 15px;
+  }
+  .turnHeading { gap: 4px; }
+  .content [data-turn-panel] {
+    position: fixed;
+    left: calc(6px + var(--game-safe-left, 0px));
+    bottom: calc(4px + var(--game-safe-bottom, 0px));
+    top: auto;
+    transform: none;
+    width: 192px;
+    padding: 4px;
+  }
+  .turnHeading { flex-wrap: wrap; }
+  .stages { grid-template-columns: repeat(8, 1fr); }
+  .toolbar { flex-direction: column; }
+  .optionsBody { width: 220px; }
+  .autoPass { width: 96px; }
+  .instruction { margin: 1px 0 2px; }
+  .stages { gap: 2px; margin-bottom: 2px; }
+  .stages button { height: 26px; }
+  .toolbar { gap: 4px; }
+  .toolbar > button,
+  .options summary { height: 26px; line-height: 26px; font-size: 11px; }
+  .primary { margin-bottom: 4px; }
+  .primary button { padding: 4px; min-height: 36px; font-size: 12px; }
+  .tray {
+    bottom: 0;
+    max-height: max(60px, calc(100dvh - 210px));
+    padding: 5px;
+    font-size: 11px;
+  }
+  .tray p { margin: 3px 0 4px; line-height: 1.25; }
+  .tray fieldset { margin-bottom: 0; }
+  .tray legend { margin-bottom: 2px; }
+  .tray button,
+  .optionsBody button { font-size: 11px; padding: 3px 7px; min-height: 30px; }
+  .tray [data-reorder-controls] button { min-height: 30px; }
+  .tray button { margin: 2px; }
+  .optionsBody,
+  .hint { max-height: calc(100dvh - 250px); padding: 8px; }
+  .logDialog { padding: 10px; }
+  :global([data-game-viewport]):has(:global([data-confirmation-dock]) > div:not(:empty)) .hud {
+    bottom: 68px;
+  }
+}
+
+/* Utility actions are global, separate from the current decision. */
+.toolbar {
+  position: fixed;
+  top: calc(16px + var(--game-safe-top, 0px));
+  right: calc(16px + var(--game-safe-right, 0px));
+  flex-direction: row;
+  gap: 4px;
+}
+.toolbar > button,
+.toolbar .options summary {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  font-size: 0;
+}
+.toolbar .optionsBody {
+  top: 36px;
+  bottom: auto;
+  width: min(300px, calc(100vw - 16px));
+  max-height: calc(100dvh - 52px);
+}
+
+.actionRow { position: relative; }
+.content .autoPass { position: absolute; right: calc(100% + 18px); bottom: 0; width: 32px; margin: 0; }
+.actionRow .primary { margin-bottom: 0; }
+.actionRow .primary [role="status"]:last-child { margin-bottom: 0; }
+.content [data-turn-stage="attack"] fieldset { margin: 0; padding: 0; min-width: 0; }
+.content [data-turn-stage="block"] fieldset { margin: 0; padding: 0; min-width: 0; }
+.content [data-turn-stage="block"] button {
+  box-sizing: border-box;
+  min-height: 30px;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.content [data-block-clear],
+.content [data-block-confirm] {
+  display: block;
+  width: 100%;
+  margin: 5px 0 0;
+}
+.content [data-attack-selection-controls] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 5px;
+}
+.content [data-attack-selection-controls] button {
+  width: 100%;
+  margin: 0;
+  min-height: 30px;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.content [data-attack-selection-controls] button:last-child { grid-column: 1 / -1; }
+.content .autoPass [data-pixi-switch] { width: 32px; height: 28px; }
+.content .autoPass label { min-width: 32px; }
+@media (max-width: 480px) {
+  :global([data-game-viewport]) .hud { width: calc(100vw - 60px); }
+}
+.primary, .tray { display: flow-root; }
+.stages button { border: 0; }
+.content .turnHeading,
+.content .instruction {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+/* Phase progression belongs directly above the current decision. */
+.content [data-turn-panel] {
+  position: relative;
+  inset: auto;
+  transform: none;
+  width: auto;
+  padding: 0;
+}
+.content .tray {
+  position: relative;
+  inset: auto;
+  border: 0;
+  padding: 4px 0 0;
+  background: transparent;
+}
+.content [data-turn-stage="draw-install"] fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.content [data-turn-stage="draw-install"] fieldset > p:first-of-type {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.content [data-turn-stage="draw-install"] fieldset > button {
+  flex: 1;
+  margin: 0;
+  padding: 4px;
+  white-space: nowrap;
+}
+@media (max-width: 1000px) {
+  :global([data-game-viewport]):has(:global([data-confirmation-dock]) > div:not(:empty)) .hud { bottom: 76px; }
+}
+
+.hud { width: min(240px, calc(100vw - 60px)); }
+.content .stages {
+  grid-template-columns: repeat(3, 44px);
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.content .stages button { height: 42px; }
+@media (pointer: coarse) and (orientation: portrait) {
+  .content .stages button { height: 44px; }
+}
+.content [data-card-action] > fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.content [data-card-action] [data-cancel-card-action] { order: 99; }
+.content [data-card-action] button {
+  margin: 0;
+  min-height: 30px;
+  padding: 2px 6px;
+}
+.content [data-card-action] [data-card-play-confirm],
+.content [data-card-action] [data-cancel-card-action] {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 6px;
+}
+.content [data-card-action] fieldset {
+  min-width: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.content [data-card-action] [data-card-play-confirm] {
+  display: block;
+  margin-top: 6px;
+}
+.content .tray:has([data-turn-stage="force-quit"]) {
+  overflow: visible;
+  max-height: none;
+}
+.content [data-turn-stage="force-quit"] fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+.content [data-force-quit-confirm] {
+  display: block;
+  width: 100%;
+  margin: 6px 0 0;
+  padding: 4px 10px;
+  min-height: 32px;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.content [data-turn-stage="draw-install"] fieldset { flex-direction: column; }
+.content [data-turn-stage="draw-install"] fieldset > button { width: 100%; flex: none; }
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 1280px) {
+  :global([data-game-viewport]) .hud { width: 160px; }
+  .content .autoPass { right: calc(100% + 10px); }
+  .content .stages { grid-template-columns: repeat(3, 40px); gap: 6px; margin-bottom: 2px; }
+  .content .stages button { height: 32px; }
+}
+
+/* Desktop keeps history above the existing bottom action controls. */
+.actionPanel { position: relative; }
+@media (min-width: 1281px) {
+  .hud[data-persistent-log] {
+    width: var(--match-column-width, 280px);
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100dvh - 76px - var(--game-safe-top, 0px) - var(--game-safe-bottom, 0px));
+  }
+  .hud[data-persistent-log] .actionPanel { flex: 0 0 auto; min-height: 0; }
+  .logPanel {
+    display: flex; flex-direction: column; height: clamp(150px, 34dvh, 360px);
+    min-height: 100px; flex: 0 1 auto; padding: 10px; border: 1px solid #293236;
+    background: #101719f5; border-radius: 7px; overflow: hidden; box-sizing: border-box; color: #e8eeec;
+  }
+  .logStatus { display: grid; gap: 4px; margin-bottom: 8px; font-size: 12px; overflow-wrap: anywhere; }
+  .logStatus strong { color: #c3f66b; }
+  .logStatus span { color: #c7d4dd; }
+}
+
+@media (min-width: 1281px) {
+  .content .stages { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .content[data-fallback] .stages button::before { font-size: 12px; }
+}
+
+@media (min-width: 1281px) {
+  .actionPanel { margin-top: 8px; }
+  .content[data-action-surface] { padding: 10px; }
+  .content[data-action-surface] .actionRow { display: flex; align-items: flex-end; gap: 10px; }
+  .content[data-action-surface] .primary,
+  .content[data-action-surface] .tray { flex: 1; min-width: 0; }
+  .content[data-action-surface] .autoPass { position: static; flex: 0 0 32px; }
+  .content[data-action-surface][data-fallback] { background: #101719f5; border: 1px solid #293236; border-radius: 7px; }
+}

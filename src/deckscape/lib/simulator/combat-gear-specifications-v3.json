@@ -1,0 +1,56 @@
+[
+  {
+    "cardId": "6c06c7ef-e3f1-4517-b753-70adfcc247f3",
+    "kind": "battle-axe",
+    "handlerId": "battle-axe/gear-v1",
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "BATTLE AXE",
+      "cardType": "gear",
+      "subtype": "weapon",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +3/+0. When it becomes blocked, it deals 1 *BF damage to each character blocking it.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "72abbaf5-caa4-421f-aa08-ae86837366e0",
+    "kind": "snatcher",
+    "handlerId": "snatcher/gear-v1",
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "SNATCHER",
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\n\nWhen its attack hits a player, destroy target *RAM they control and install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": []
+    }
+  }
+]

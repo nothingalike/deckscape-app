@@ -1,0 +1,25 @@
+{
+  "cardId": "53ee9c7a-7f89-4e11-9405-771b17bf3b1b",
+  "reviewMechanicsSha256": "d926aa655f46842f1b68e3e56b6b2a45369fd38b7da09033d45e6c5e01c59f25",
+  "kind": "wall-of-death",
+  "handlerId": "protocol/wall-of-death",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "WALL OF DEATH",
+    "cardType": "program",
+    "factions": [
+      "THRASHER"
+    ],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "On NETCHECK, put 1 mosh counter on Wall of Death. Then, if it has 2 or more mosh counters, purge it. If you do, until turn end, all characters must attack or block if able and all *THRASHER characters get +2/+2.",
+    "ramCost": 3,
+    "requirements": {
+      "THRASHER": 1
+    },
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

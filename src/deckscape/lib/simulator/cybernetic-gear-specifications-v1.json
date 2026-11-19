@@ -1,0 +1,87 @@
+[
+  {
+    "cardId": "a4fc6736-0561-4d7a-a824-788c44595f9d",
+    "kind": "spectre-9mm",
+    "handlerId": "spectre-9mm/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "3f593c640559c766dbe6223256f0da428a5bb7e4aa02c768ec5208a6bd99183e",
+    "reviewArtworkSha256": "4c84e586ef08878c29926e21f0c295a000ec47e856c4003236a0d7ab281effe4",
+    "characteristics": {
+      "name": "SPECTRE 9MM",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +2/+0.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "weapon",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    }
+  },
+  {
+    "cardId": "8683c419-1c9f-4d37-8a22-0f88c7dca0ac",
+    "kind": "drive-saw",
+    "handlerId": "drive-saw/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "eebf781695113f57d0a39bd03cd24915ccbadeeddec918d7db563b0d0e3b4565",
+    "reviewArtworkSha256": "568f02d0c59a5d2b56fafdd59a8be284c8418b548ea941c1b945f0460016e206",
+    "characteristics": {
+      "name": "DRIVE SAW",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +2/+0 for each *CYBERNETIC you control and +10 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    }
+  },
+  {
+    "cardId": "4a830aa1-c719-4a3f-9800-d404d4de5f55",
+    "kind": "flux-cannon",
+    "handlerId": "flux-cannon/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e6939e12bc8225d8720bcdd2992a66fe709721a32a9b27120fd034bbf0228df8",
+    "reviewArtworkSha256": "6318dc4afcc74ab5d057fcc8c1b945e9676e241e196ce7164f71d2f11102f413",
+    "characteristics": {
+      "name": "FLUX CANNON",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Attached character gets +2/+0 and +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\n\nWhenever its attack hits a character, it may also deal that much damage to another target character.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    }
+  }
+]

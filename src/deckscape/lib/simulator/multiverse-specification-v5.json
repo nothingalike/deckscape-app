@@ -1,0 +1,21 @@
+{
+  "cardId": "6bc39707-82e9-463d-87fc-aa924fc1ab7a",
+  "reviewMechanicsSha256": "412f38bb54998a4502a2689d78496953c7c5a9eec39c2173981a6f0418bcfdb0",
+  "kind": "multiverse",
+  "handlerId": "environment/multiverse",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "MULTIVERSE",
+    "cardType": "program",
+    "factions": [],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "There can be any number of environments in play. Environments aren't destroyed when a new environment enters.\nWhen Multiverse leaves play, purge all other environments.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "environment",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

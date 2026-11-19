@@ -1,0 +1,34 @@
+{
+  "cardId": "e536dbeb-35b8-4cd2-b916-0860dbfb8792",
+  "artwork": {
+    "path": "e536dbeb-35b8-4cd2-b916-0860dbfb8792/82a36c9cea410d82060d48119126000c341de3a121e964d529b53b0dcfabf348.webp",
+    "sha256": "82a36c9cea410d82060d48119126000c341de3a121e964d529b53b0dcfabf348"
+  },
+  "handlers": [
+    {
+      "id": "trojan/rubber-ducky",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "characteristics": {
+    "name": "RUBBER DUCKY",
+    "cardType": "program",
+    "factions": ["HACKER"],
+    "tags": ["TROJAN"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "TROJAN (Attach face down on target player's mainframe. You may flip and pay its ability cost to activate on any swift check after the turn it was played, then bin it.)\nCopy target script on the cache controlled by an opponent.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": [
+      {
+        "name": "ACTIVATE",
+        "ramCost": 0,
+        "run": false
+      }
+    ]
+  }
+}

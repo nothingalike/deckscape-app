@@ -1,0 +1,41 @@
+{
+  "cardId": "57dde979-ebe8-4e97-af65-1da0a735414c",
+  "reviewMechanicsSha256": "144590fdca44d145b73a50d7a55ddbd9f3abc9c52a1a3d72ed39cde0538e0724",
+  "characteristics": {
+    "name": "MIND DELVER",
+    "cardType": "character",
+    "factions": [
+      "MYSTIC"
+    ],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Take control of target character an opponent controls until turn end. Refresh it and reboot its abilities.",
+    "ramCost": 4,
+    "requirements": {},
+    "attack": 1,
+    "defence": 1,
+    "attackType": "MF",
+    "ports": {
+      "head": 3,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [
+      {
+        "name": "INVASIVE THOUGHTS",
+        "ramCost": 1,
+        "run": true
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "abilityId": "invasive-thoughts",
+      "index": 0,
+      "handlerId": "mind-delver/invasive-thoughts-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

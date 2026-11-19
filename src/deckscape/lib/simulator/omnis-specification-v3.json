@@ -1,0 +1,33 @@
+{
+  "reviewMechanicsSha256": "af05fffa82f874e00f334dd3edc5acb8bf64b3c8774b2c06ca75cf683395b5d0",
+  "handlerId": "omnis-blood-diamond/netcheck-v1",
+  "characteristics": {
+    "cardType": "mainframe",
+    "tags": [],
+    "name": "OMNIS BLOOD DIAMOND",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "CORPO": 2
+        },
+        "operator": "base",
+        "text": "You lose 1 MF and 1 BF health. Install 1 RAM running."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "CORPO": 4
+        },
+        "operator": "instead",
+        "text": "You lose 2 MF and 2 BF. Install 2 RAM refreshed."
+      }
+    ],
+    "copiesLimit": 4,
+    "prefix": "On your NETCHECK —",
+    "iconic": false,
+    "rulesText": "On your NETCHECK —\nYou lose 1 MF and 1 BF health. Install 1 RAM running.\nYou lose 2 MF and 2 BF. Install 2 RAM refreshed.",
+    "factions": ["CORPO"]
+  },
+  "cardId": "e11563cf-93d4-4fde-8b6e-eb2ddc6c9a67"
+}

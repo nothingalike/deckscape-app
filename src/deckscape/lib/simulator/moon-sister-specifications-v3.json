@@ -1,0 +1,80 @@
+[
+  {
+    "cardId": "64f1680f-b768-4feb-9dcb-f9a39b117283",
+    "reviewMechanicsSha256": "7699c55b47ac50ef0928829e5e48714f044652e08e85a45231a94f4128c7117a",
+    "characteristics": {
+      "name": "LILITH, THE DARK MOON",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "You may play tarots reversed.\nDeal 1 *MF damage to target player for each tarot in your recycle bin. If you also control [Luna, the Sacred Moon], double this effect.",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "attack": 6,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "THE PATH OF DARKNESS",
+          "ramCost": 3,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "path-of-darkness",
+        "index": 0,
+        "handlerId": "lilith/path-of-darkness-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "eebf8fb9-6e2d-4d5b-8a95-59a0c2541c26",
+    "reviewMechanicsSha256": "709e59f3482c5fa648b8823d2536223602014158e007c45b078216a97e688c11",
+    "characteristics": {
+      "name": "LUNA, THE SACRED MOON",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "You may play tarots reversed.\nYou gain 1 *MF and 1 *BF health for each tarot in your recycle bin. If you also control [Lilith, the Dark Moon], double this effect.",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "attack": 3,
+      "defence": 6,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "THE PATH OF LIGHT",
+          "ramCost": 3,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "path-of-light",
+        "index": 0,
+        "handlerId": "luna/path-of-light-v1",
+        "handlerVersion": 1
+      }
+    ]
+  }
+]

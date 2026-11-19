@@ -1,0 +1,40 @@
+{
+  "cardId": "89f968d2-410f-4eaf-911b-26fece4fcb44",
+  "characteristics": {
+    "name": "SINISTER MANAGER",
+    "cardType": "character",
+    "factions": ["CORPO", "THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "On enter, until Sinister Manager leaves play, target iconic *THRASHER character you control gets +4/+4 and OVERRUN. (Character deals excess damage to defending player when blocked.)\n\nWhen Sinister Manager leaves play, destroy that character.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [],
+    "attack": 1,
+    "defence": 1,
+    "attackType": "BF"
+  },
+  "handlers": [
+    {
+      "id": "sinister-manager/entry-bonus-v1",
+      "version": 1,
+      "parameters": {}
+    },
+    {
+      "id": "sinister-manager/leave-destroy-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "89f968d2-410f-4eaf-911b-26fece4fcb44/061187feb277ffa59ede3ad97693d88b2146f87f2bd0cf9b8404b1e9fa2fc2d1.webp",
+    "sha256": "061187feb277ffa59ede3ad97693d88b2146f87f2bd0cf9b8404b1e9fa2fc2d1"
+  }
+}

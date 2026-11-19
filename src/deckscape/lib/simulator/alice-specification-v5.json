@@ -1,0 +1,50 @@
+{
+  "cardId": "df45c11a-31c2-4838-a128-a0385346cc61",
+  "reviewMechanicsSha256": "308f277b135402e17909751d299c99b9957b35599daa86255cb91d7e40058634",
+  "characteristics": {
+    "attack": 1,
+    "rulesText": "Put an INVERT counter on target *WONDERLAND character. If it already has one, remove 1 instead. (Character swaps its attack type.)\nIf you control a Pawn token, a Bishop token, and a Rook token, and your opponents control a total of 1 character, you win the game.",
+    "name": "ALICE, DREAMWALKER",
+    "attackType": "MF",
+    "defence": 2,
+    "cardType": "character",
+    "activatedAbilities": [
+      {
+        "name": "LIVING BACKWARDS",
+        "ramCost": 2,
+        "run": true
+      },
+      {
+        "name": "CHECKMATE",
+        "ramCost": 0,
+        "run": true
+      }
+    ],
+    "iconic": true,
+    "factions": ["WONDERLAND"],
+    "requirements": {},
+    "ramCost": 2,
+    "ports": {
+      "head": 3,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "copiesLimit": 4,
+    "tags": []
+  },
+  "abilities": [
+    {
+      "abilityId": "living-backwards",
+      "index": 0,
+      "handlerId": "alice/living-backwards-v1",
+      "handlerVersion": 1
+    },
+    {
+      "abilityId": "checkmate",
+      "index": 1,
+      "handlerId": "alice/checkmate-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

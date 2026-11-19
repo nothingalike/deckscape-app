@@ -1,0 +1,173 @@
+[
+  {
+    "cardId": "a321f201-d6ed-4a98-b197-6c759593f5ec",
+    "kind": "mirage",
+    "handlerId": "script/mirage",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "dc5d7bbb8df03d91fd18a4c5e6625be7d72c7b33bc81d2399545bbe30e02a2ad",
+    "characteristics": {
+      "name": "MIRAGE",
+      "cardType": "program",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT Put target *DUSTRUNNER character you control into its owner's hand.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "357099b4-9dd6-403b-ac1c-52b0018c36cf",
+    "kind": "the-hermit",
+    "handlerId": "script/the-hermit",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "51b7711d5199d4fbeffa21340c83fe481b71d5772035ddde7c4630306ce877f7",
+    "characteristics": {
+      "name": "THE HERMIT",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "rulesText": "*SWIFT Put target character into its owner's hand.\nREVERSED on top of its owner's cyberdeck.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": [],
+      "reversal": {
+        "normalText": "Put target character into its owner's hand.",
+        "pinkText": "into its owner's hand",
+        "replacementText": "on top of its owner's cyberdeck",
+        "reversedText": "Put target character on top of its owner's cyberdeck."
+      }
+    }
+  },
+  {
+    "cardId": "2cc1438d-76e1-49e5-9205-920290750728",
+    "kind": "trample",
+    "handlerId": "script/trample",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "72c4f4dabdaee356014ffa75d14f37f7cb32c53b736dab5306ec1d709597e489",
+    "characteristics": {
+      "name": "TRAMPLE",
+      "cardType": "program",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT Destroy target blocking character with defense value of 2 or less.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "52dc9db0-a12c-41e3-a9a1-0e92208cb3fa",
+    "kind": "beatdown",
+    "handlerId": "script/beatdown",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "af82bc739697aa9f3a6d4139e3f39d411765913efa2c01e16fc61152eba9b475",
+    "characteristics": {
+      "name": "BEATDOWN",
+      "cardType": "program",
+      "subtype": "script",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target character. You lose *MF and *BF health equal to its attack value.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "399735bb-a03f-4925-82e3-f2536773ff65",
+    "kind": "death",
+    "handlerId": "script/death",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ef40591461812b185610191e2a4f556aaba23c942d66b6fd17203779fafb4ca3",
+    "characteristics": {
+      "name": "DEATH",
+      "cardType": "program",
+      "subtype": "script",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "rulesText": "Destroy target character. If you do, its controller creates a *MF 2/2 Revenant token character.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "handlerVersion": 1,
+    "kind": "dust-to-dust",
+    "handlerId": "script/dust-to-dust",
+    "characteristics": {
+      "iconic": false,
+      "ramCost": 5,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "factions": ["DUSTRUNNER"],
+      "swift": false,
+      "rulesText": "Destroy target *RAM and target character.",
+      "activatedAbilities": [],
+      "cardType": "program",
+      "subtype": "script",
+      "name": "DUST TO DUST",
+      "copiesLimit": 4,
+      "tags": []
+    },
+    "reviewMechanicsSha256": "8803c3224cac89afbbfdba51339426049a5651df4659f0bb48a80c7cfbc93fa7",
+    "cardId": "64d55cee-07e7-4e11-9baf-0ddb0fadefd0"
+  },
+  {
+    "handlerVersion": 1,
+    "kind": "the-emperor",
+    "handlerId": "script/the-emperor",
+    "characteristics": {
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "factions": ["MYSTIC"],
+      "swift": true,
+      "rulesText": "*SWIFT Put up to 2 target characters into their owners' hands.\nREVERSED programs",
+      "activatedAbilities": [],
+      "cardType": "program",
+      "subtype": "script",
+      "name": "THE EMPEROR",
+      "copiesLimit": 4,
+      "tags": ["TAROT"],
+      "reversal": {
+        "normalText": "Put up to 2 target characters into their owners' hands.",
+        "pinkText": "characters",
+        "replacementText": "programs",
+        "reversedText": "Put up to 2 target programs into their owners' hands."
+      }
+    },
+    "reviewMechanicsSha256": "47d8b44ff6fc723c8fba5b5749d2c3c1f4076c266247305f595b531e9e1bf043",
+    "cardId": "6f93e3d7-7e23-45b9-a07a-b542ee00078c"
+  }
+]

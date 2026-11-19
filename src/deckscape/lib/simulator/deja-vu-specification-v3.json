@@ -1,0 +1,22 @@
+{
+  "cardId": "ec418f32-2ecc-4f94-92c4-0d3c76af8240",
+  "kind": "deja-vu",
+  "handlerId": "script/deja-vu",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "20ff12a294d7bb2649c55f77fd733fd744c3746733facaead5366c100d513f4f",
+  "characteristics": {
+    "name": "DÉJÀ VU",
+    "cardType": "program",
+    "factions": [],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "ADDITIONAL COST [Pay 3 *MF and 3 *BF health.]\n\nTake an extra turn after this one. Purge Déjà Vu.",
+    "ramCost": 6,
+    "requirements": {},
+    "subtype": "script",
+    "swift": false,
+    "activatedAbilities": [],
+    "additionalPlayCostText": "Pay 3 MF and 3 BF health."
+  }
+}

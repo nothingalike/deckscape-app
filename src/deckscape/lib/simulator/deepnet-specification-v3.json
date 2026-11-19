@@ -1,0 +1,33 @@
+{
+  "cardId": "6bf7bc32-ce69-4684-93df-56c7929612b2",
+  "handlerId": "deepnet/protocol-v1",
+  "reviewMechanicsSha256": "bed0e4745035850dfc25b171fe2d0bace1834db6c86553bcae2ebec05a2c2dfb",
+  "characteristics": {
+    "name": "DEEPNET",
+    "cardType": "mainframe",
+    "prefix": "When you play a protocol —",
+    "rulesText": "When you play a protocol —\r\nDeal 2 MF damage to target player.\r\nDraw 1.",
+    "factions": ["HACKER"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "HACKER": 2
+        },
+        "operator": "base",
+        "text": "Deal 2 MF damage to target player."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "HACKER": 4
+        },
+        "operator": "plus",
+        "text": "Draw 1."
+      }
+    ],
+    "tags": []
+  }
+}

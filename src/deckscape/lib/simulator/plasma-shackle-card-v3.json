@@ -1,0 +1,33 @@
+{
+  "cardId": "02f126db-8c28-4611-b88b-ed4fd4d07a32",
+  "characteristics": {
+    "name": "PLASMA SHACKLE",
+    "cardType": "gear",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "MALICIOUS (Attach to any target character.)\n\nAttached character gets +8 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)\n\nOn its controller's NETCHECK, put a -1/-1 counter on attached character.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "cyberware",
+    "ports": {
+      "head": 0,
+      "body": 1,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": []
+  },
+  "handlers": [
+    {
+      "id": "plasma-shackle/gear-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "02f126db-8c28-4611-b88b-ed4fd4d07a32/284da08c11285a3178da3a0c27f809db46ba99fe9042346f246a8253be7253e8.webp",
+    "sha256": "284da08c11285a3178da3a0c27f809db46ba99fe9042346f246a8253be7253e8"
+  }
+}

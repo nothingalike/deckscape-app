@@ -1,0 +1,50 @@
+{
+  "cardId": "ba3eb1a7-24fe-4f14-ac1a-c82eaaf95688",
+  "characteristics": {
+    "name": "WNDRTECH",
+    "cardType": "mainframe",
+    "factions": ["WONDERLAND"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "When you play a WONDERLAND program, create a —\n0/1 Pawn token character with MF or BF attack.\n3/3 Bishop token character with MF or BF attack.\n5/5 Rook token character with MF or BF attack.",
+    "prefix": "When you play a WONDERLAND program, create a —",
+    "tiers": [
+      {
+        "persistents": 1,
+        "factions": {
+          "WONDERLAND": 1
+        },
+        "operator": "base",
+        "text": "0/1 Pawn token character with MF or BF attack."
+      },
+      {
+        "persistents": 3,
+        "factions": {
+          "WONDERLAND": 3
+        },
+        "operator": "or",
+        "text": "3/3 Bishop token character with MF or BF attack."
+      },
+      {
+        "persistents": 5,
+        "factions": {
+          "WONDERLAND": 5
+        },
+        "operator": "or",
+        "text": "5/5 Rook token character with MF or BF attack."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "wndrtech/create-token-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "ba3eb1a7-24fe-4f14-ac1a-c82eaaf95688/65169f5d735ecd0ab308f1011fb96953987459a0ff9c8aa092f1c74d182a31e7.webp",
+    "sha256": "65169f5d735ecd0ab308f1011fb96953987459a0ff9c8aa092f1c74d182a31e7"
+  }
+}

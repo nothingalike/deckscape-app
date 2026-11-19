@@ -1,0 +1,33 @@
+{
+  "cardId": "d00cc1f9-9d37-401e-b849-26c44556b426",
+  "reviewMechanicsSha256": "3428cd99c36f99d77ac57513cc42361c97923271bee373e1ef1206ac38d9d40a",
+  "handlerId": "berserker/attack-v1",
+  "characteristics": {
+    "factions": ["THRASHER"],
+    "prefix": "Whenever a THRASHER character you control attacks, it gets —",
+    "tags": [],
+    "iconic": false,
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "THRASHER": 2
+        },
+        "operator": "base",
+        "text": "+1/+0 until turn end."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "THRASHER": 4
+        },
+        "operator": "plus",
+        "text": "OVERRUN until turn end."
+      }
+    ],
+    "rulesText": "Whenever a THRASHER character you control attacks, it gets —\n+1/+0 until turn end.\nOVERRUN until turn end.",
+    "name": "BERSERKER",
+    "cardType": "mainframe",
+    "copiesLimit": 4
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cardId": "ff9ef3b9-9f34-4931-a066-f76da996d416",
+  "reviewMechanicsSha256": "2d68bb5627d51fc7441590382b9f445dc716384fdcc8c94ebf03102605c2816f",
+  "characteristics": {
+    "name": "THE SINGULARITY",
+    "cardType": "character",
+    "factions": [
+      "A.I."
+    ],
+    "tags": [],
+    "iconic": true,
+    "copiesLimit": 4,
+    "rulesText": "On enter, destroy all *RAM you control.\n\nThe *RAM cost of all cards in play that you control and their activated abilities is 0.\nUntil turn end, you may play up to 2 cards without paying their *RAM cost.",
+    "ramCost": 7,
+    "requirements": {},
+    "activatedAbilities": [
+      {
+        "name": "WILL INTO BEING",
+        "ramCost": 0,
+        "run": true
+      }
+    ],
+    "attack": 1,
+    "defence": 6,
+    "attackType": "MF",
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    }
+  },
+  "abilities": [
+    {
+      "abilityId": "will-into-being",
+      "index": 0,
+      "handlerId": "singularity/will-into-being-v1",
+      "handlerVersion": 1
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "singularity/enter-v1",
+      "handlerVersion": 1
+    }
+  ],
+  "continuousEffects": [
+    {
+      "handlerId": "singularity/costs-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

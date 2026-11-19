@@ -1,0 +1,209 @@
+[
+  {
+    "cardId": "62d84894-abea-45b2-811c-ff34841a5b43",
+    "reviewMechanicsSha256": "1c9c25dd96e1e004f8709b756a464cda9e7a46f605b20034f0fa8442e0542f21",
+    "characteristics": {
+      "name": "NANOBOT HARVESTER",
+      "cardType": "character",
+      "factions": ["NANOBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": [
+        {
+          "name": "POLLINATE",
+          "ramCost": 2,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "pollinate",
+        "index": 0,
+        "handlerId": "nanobot-harvester/pollinate-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ]
+  },
+  {
+    "cardId": "d794d496-116a-43b3-92af-fcca1b5ade7f",
+    "reviewMechanicsSha256": "350ca26747fd4c2e67c9576faa07c894fce126b3fe617f5a13e13114fcab4d6a",
+    "characteristics": {
+      "name": "PSYCHIC",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "ABUNDANCE",
+          "ramCost": 2,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "abundance",
+        "index": 0,
+        "handlerId": "psychic/abundance-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ]
+  },
+  {
+    "cardId": "5fd1c313-2fbf-4d85-97ef-2a16a2a07632",
+    "reviewMechanicsSha256": "a96f3159fc44aa57ed100aaa9d81d93310c1ea1d53bd1135d2198dbf9bceb2ae",
+    "characteristics": {
+      "name": "ROADIE",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "LOAD IN",
+          "ramCost": 2,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "load-in",
+        "index": 0,
+        "handlerId": "roadie/load-in-v1",
+        "handlerVersion": 1,
+        "installCount": 1
+      }
+    ]
+  },
+  {
+    "cardId": "fab833a5-8e4f-43e3-ba48-37a2f906b4fb",
+    "reviewMechanicsSha256": "00cde465311bfbd091e37bbd1308caf76a9f28eec404129a0bc0e26e0722ad2a",
+    "characteristics": {
+      "name": "ARMS DEALER",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "INDEX 3 GEAR (Reveal the top 3 cards of your cyberdeck. Put 1 gear into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "TOP SHELF",
+          "ramCost": 1,
+          "run": false
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "top-shelf",
+        "index": 0,
+        "handlerId": "arms-dealer/top-shelf-v1",
+        "handlerVersion": 1,
+        "topCards": {
+          "kind": "index",
+          "count": 3,
+          "cardType": "gear"
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "f967cbe6-2859-489e-9932-9e389f2647e7",
+    "reviewMechanicsSha256": "1c8a3baf2e1d79d3b1530169aba6a622f82cdc4cc835effd9efe24d9256260eb",
+    "characteristics": {
+      "name": "SEER",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DIVINE 2 (Look at the top 2 cards of your cyberdeck. Put 1 into your hand, then bin the other.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "attack": 0,
+      "defence": 2,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "SECOND SIGHT",
+          "ramCost": 1,
+          "run": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityId": "second-sight",
+        "index": 0,
+        "handlerId": "seer/second-sight-v1",
+        "handlerVersion": 1,
+        "topCards": {
+          "kind": "divine",
+          "count": 2
+        }
+      }
+    ]
+  }
+]

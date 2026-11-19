@@ -1,0 +1,21 @@
+{
+  "cardId": "818c13e3-3692-4c06-891c-b7b99de2bb4c",
+  "reviewMechanicsSha256": "fea83540fc01becc2e5b75bbb71c338456b69ee3e2d7f585384fecad24c2d2a4",
+  "kind": "amethyst-datashard",
+  "handlerId": "protocol/amethyst-datashard",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "AMETHYST DATASHARD",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["DATASHARD"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "If a source would deal *BF damage to you, prevent that damage and put a fracture counter on Amethyst Datashard.\n\nWhenever you put a fracture counter on Amethyst Datashard, if it has 2 or more, purge it.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "cardId": "a2b327b6-5b12-449d-b753-59dd698df4fe",
+  "characteristics": {
+    "name": "ROXY RIOT",
+    "cardType": "character",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": true,
+    "rulesText": "On your NETCHECK, put 1 rage counter on Roxy Riot. When her attack hits a player, she deals 1 *BF damage to them for each rage counter on her. When a player destroys her, deal 3 *BF damage to them for each rage counter on her.",
+    "copiesLimit": 4,
+    "ramCost": 4,
+    "requirements": {},
+    "ports": {
+      "head": 3,
+      "body": 2,
+      "leftArm": 3,
+      "rightArm": 3
+    },
+    "activatedAbilities": [],
+    "attack": 5,
+    "defence": 2,
+    "attackType": "BF"
+  },
+  "handlers": [
+    {
+      "id": "roxy-riot/rage-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "a2b327b6-5b12-449d-b753-59dd698df4fe/22449912a94da597aa041360f530aff9e20acba632352c0edebb656ddbae584a.webp",
+    "sha256": "22449912a94da597aa041360f530aff9e20acba632352c0edebb656ddbae584a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cardId": "3d961b4e-2aec-4a5e-a4a5-9c41f3b8904f",
+  "reviewMechanicsSha256": "5ea495db725012a711888d62ec1a25358770bef17fd67018cca365051210a6fd",
+  "kind": "the-tower",
+  "handlerId": "script/the-tower",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "THE TOWER",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Reveal the top 4 cards of your cyberdeck. Target opponent puts them facedown into 2 piles. Put 1 pile into your hand, then bin the other.",
+    "ramCost": 3,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

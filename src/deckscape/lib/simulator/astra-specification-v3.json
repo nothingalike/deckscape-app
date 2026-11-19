@@ -1,0 +1,26 @@
+{
+  "cardId": "bd097028-d46c-46b9-aafc-ab0fa2c66ff1",
+  "handlerId": "astra/draw-on-enter-v1",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "ASTRA, COSMIC KITTY",
+    "cardType": "character",
+    "factions": ["MYSTIC", "ANIMAL"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "On enter, draw 1.",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": [],
+    "attack": 1,
+    "defence": 1,
+    "attackType": "MF"
+  }
+}

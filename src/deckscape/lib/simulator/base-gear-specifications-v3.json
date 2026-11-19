@@ -1,0 +1,31 @@
+[
+  {
+    "cardId": "09cb28c6-3b58-437d-95f1-50fdeaea4f2f",
+    "kind": "gigadyne-amp",
+    "handlerId": "gigadyne-amp/base-attack-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "4a268eb2d71927b4a95b5b400a5ae78d7aaf566a245756b0f88be416bc827391",
+    "reviewArtworkSha256": "12d3b59d733e2b7ad94a0833d8de6e2c629608d08f5cd1367a897755b1928e9c",
+    "characteristics": {
+      "name": "GIGADYNE AMP",
+      "cardType": "gear",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Double the base attack value of attached character.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "ports": {
+        "head": 0,
+        "body": 2,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": [],
+      "subtype": "cyberware"
+    }
+  }
+]

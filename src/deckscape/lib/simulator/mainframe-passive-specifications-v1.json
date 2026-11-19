@@ -1,0 +1,32 @@
+[
+  {
+    "cardId": "13bedd76-c98b-4508-a6d0-15eb4afe3f86",
+    "reviewHash": "44fd6cbffb2529d3063ac34f1f0bb539a37e628bb19b18103077242ce67321c7",
+    "handlerId": "synthetix/cyberware-stats-v1",
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "SYNTHETIX",
+      "cardType": "mainframe",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "+1/+1 for each cyberware attached to them.\nInstead, +2/+1 for each cyberware attached to them.",
+      "prefix": "All CYBERNETIC characters you control get —",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": { "CYBERNETIC": 2 },
+          "operator": "base",
+          "text": "+1/+1 for each cyberware attached to them."
+        },
+        {
+          "persistents": 4,
+          "factions": { "CYBERNETIC": 4 },
+          "operator": "instead",
+          "text": "+2/+1 for each cyberware attached to them."
+        }
+      ]
+    }
+  }
+]

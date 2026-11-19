@@ -1,0 +1,200 @@
+[
+  {
+    "cardId": "bc4124e0-3cb2-427a-bab2-57471171f056",
+    "kind": "hackathon",
+    "handlerId": "script/hackathon",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "187bd86bba4c63e22d9e5b1ec5dcacac932ab629a60c230388aad72030252f7a",
+    "characteristics": {
+      "name": "HACKATHON",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT Reboot the abilities of all *HACKER characters you control.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "eefd23a1-deda-4b73-ab47-4d4ea1a2a328",
+    "kind": "mad-honey",
+    "handlerId": "script/mad-honey",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "069bdf89eb2fa460f3fedad04fdddfadb2de91c37995075e1b907d595a0456c9",
+    "characteristics": {
+      "name": "MAD HONEY",
+      "cardType": "program",
+      "factions": ["NANOBOT"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "rulesText": "Until turn end, *NANOBOT characters you control get +1/+1 and OVERRUN.\n(Character deals excess damage to defending player when blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "subtype": "script",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "1e5b033a-fba1-42ac-ad70-e4fb59136cf7",
+    "kind": "stim-pack",
+    "handlerId": "script/stim-pack",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "8295384a2d8eb14d0292b23028c281cb20cb7bd20dd8b6c8b02fbfdcc1472af5",
+    "characteristics": {
+      "name": "STIM PACK",
+      "cardType": "program",
+      "factions": ["CYBERNETIC"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "rulesText": "*SWIFT Until turn end, target character gets +1/+1 and STAMINA. (Character doesn’t run when it attacks.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "63f6c83a-f307-46a7-b6c9-2e016c1c88cd",
+    "kind": "static-blast",
+    "handlerId": "script/static-blast",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "897f08b96204453966bcf7539efd02d661929edaeac97e22520b1eb99929a1e7",
+    "characteristics": {
+      "name": "STATIC BLAST",
+      "cardType": "program",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *MF damage to each character target player controls.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "HACKER": 1
+      },
+      "subtype": "script",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "ceeaf795-f83a-43e1-9f7d-2e54d7454c1c",
+    "kind": "oil-spill",
+    "handlerId": "script/oil-spill",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "dbf0dc641382c553012488892567f9e903eabe8377c04f2a6fb1fac7faa8091c",
+    "characteristics": {
+      "name": "OIL SPILL",
+      "cardType": "program",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put a -1/-1 counter on all characters.\n\nInstall 2 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "CORPO": 1
+      },
+      "subtype": "script",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "189cfefe-3ec7-411a-9ac0-667709f0613c",
+    "kind": "blue-screen-of-death",
+    "handlerId": "script/blue-screen-of-death",
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "BLUE SCREEN OF DEATH",
+      "cardType": "program",
+      "subtype": "script",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT Target player’s mainframe becomes UNSTABLE. (They roll a d20 for each character and program they control. If they roll 10 or below, destroy that character or program.)",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "HACKER": 1
+      },
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "6e16f16a-7ad7-479e-af7d-83e20a05ed3f",
+    "characteristics": {
+      "copiesLimit": 4,
+      "activatedAbilities": [],
+      "tags": [],
+      "requirements": {},
+      "factions": ["WONDERLAND"],
+      "cardType": "program",
+      "ramCost": 3,
+      "rulesText": "*SWIFT Put an INVERT counter on target character. If it already has one, remove 1 instead. (Character swaps its attack type.)",
+      "subtype": "script",
+      "name": "THROUGH THE LOOKING GLASS",
+      "iconic": false,
+      "swift": true
+    },
+    "kind": "through-looking-glass",
+    "reviewMechanicsSha256": "48bbaee586ffaa182590b4190ab562ce29caa0995deaa6a7372f5cc4a8e7068c",
+    "handlerId": "script/through-looking-glass",
+    "handlerVersion": 1
+  },
+  {
+    "reviewMechanicsSha256": "79a2398d136b583cd31b592bfd7201da0e5c847095a1fb2ab81e04d0af85c0ff",
+    "handlerId": "script/the-fool",
+    "handlerVersion": 1,
+    "characteristics": {
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "ramCost": 1,
+      "factions": ["MYSTIC"],
+      "swift": true,
+      "rulesText": "*SWIFT Draw 1, then discard 1.",
+      "cardType": "program",
+      "tags": ["TAROT"],
+      "iconic": false,
+      "subtype": "script",
+      "copiesLimit": 4,
+      "name": "THE FOOL",
+      "activatedAbilities": []
+    },
+    "kind": "the-fool",
+    "cardId": "b6a944d8-b8a1-4880-b88c-c96409dc0ce8"
+  },
+  {
+    "kind": "garbage-day",
+    "reviewMechanicsSha256": "9897173d5f5697de65ef20702f378b1438b006b27d14623270963b9d3cbf9785",
+    "handlerVersion": 1,
+    "handlerId": "script/garbage-day",
+    "characteristics": {
+      "rulesText": "Purge all recycle bins.",
+      "name": "GARBAGE DAY",
+      "factions": [],
+      "activatedAbilities": [],
+      "iconic": false,
+      "subtype": "script",
+      "swift": false,
+      "ramCost": 3,
+      "tags": [],
+      "cardType": "program",
+      "copiesLimit": 4,
+      "requirements": {}
+    },
+    "cardId": "931699df-4536-4a7f-a66b-d206f32de6e8"
+  }
+]

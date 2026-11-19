@@ -1,0 +1,39 @@
+{
+  "cardId": "92382274-bc7b-4073-823c-71288136889b",
+  "reviewMechanicsSha256": "f864b02bb11e45d35ba7e46cc2fc234e94684de49e6b2bb0895c078011d4f990",
+  "characteristics": {
+    "name": "GEARHEAD",
+    "cardType": "mainframe",
+    "factions": ["CYBERNETIC"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Characters you control get —\n-5 PSYCHOSIS.\n-10 PSYCHOSIS.",
+    "prefix": "Characters you control get —",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "CYBERNETIC": 2
+        },
+        "operator": "base",
+        "text": "-5 PSYCHOSIS."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "CYBERNETIC": 4
+        },
+        "operator": "instead",
+        "text": "-10 PSYCHOSIS."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "gearhead/psychosis-reduction-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ]
+}

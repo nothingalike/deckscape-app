@@ -1,0 +1,433 @@
+[
+  {
+    "cardId": "a6f8cebc-608f-43b5-881e-173024825ca4",
+    "reviewMechanicsSha256": "57900dcc32d12f2f0646586fd40edcb315fd0760f1952f7fe373a8e88d351647",
+    "characteristics": {
+      "name": "THE PRODIGY",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal X *MF damage to target player, where X is your *HACKER synergy.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "EMP BLAST",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "abilityId": "emp-blast",
+        "index": 0,
+        "handlerId": "the-prodigy/emp-blast-v1",
+        "handlerVersion": 1,
+        "damage": {
+          "recipient": "player",
+          "minimum": 1,
+          "maximum": 1,
+          "channel": "MF",
+          "amount": 0,
+          "synergy": {
+            "faction": "HACKER",
+            "multiplier": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "39b31485-0391-4513-a5b9-d003baeccb9e",
+    "reviewMechanicsSha256": "be26cc572de9a92d70e2b3d9e7778baedb88e8f673e510c8264852fbc14b43c9",
+    "characteristics": {
+      "name": "NANOBOT MESSENGER",
+      "cardType": "character",
+      "factions": ["NANOBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for [Xandra, Hive Queen] and reveal her. Put her into your hand, then shuffle. Purge Nanobot Messenger.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": [
+        {
+          "name": "ALERT THE QUEEN",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "alert-the-queen",
+        "index": 0,
+        "handlerId": "nanobot-messenger/alert-the-queen-v1",
+        "handlerVersion": 1,
+        "search": {
+          "criteria": {
+            "kind": "name",
+            "value": "XANDRA, HIVE QUEEN"
+          },
+          "purgeSource": true
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "f4d3be3b-0f9d-41c9-8439-5e35996452e2",
+    "reviewMechanicsSha256": "864e427a68ee0bc8b56bdbefa6bc928ed5291518e8d1f0720bfb0e5693372f50",
+    "characteristics": {
+      "name": "ANIMA PROXY",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *MF damage to target player for each program attached to their mainframe.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "REVERSE POLARITY",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "abilityId": "reverse-polarity",
+        "index": 0,
+        "handlerId": "anima-proxy/reverse-polarity-v1",
+        "handlerVersion": 1,
+        "damage": {
+          "recipient": "player",
+          "minimum": 1,
+          "maximum": 1,
+          "channel": "MF",
+          "amount": 0,
+          "mainframePrograms": true
+        }
+      }
+    ]
+  },
+  {
+    "cardId": "03704a37-37eb-4539-ad4c-7ac74d6b20d3",
+    "reviewMechanicsSha256": "7579ab4c2107d4b25de289b26cd36c8bd3f9d93fceab4d863836f37b22804821",
+    "characteristics": {
+      "name": "MOSHER",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *BF damage to all other characters in play. Put a -1/-1 counter on Mosher.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "WINDMILL",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "windmill",
+        "index": 0,
+        "handlerId": "mosher/windmill-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "9ffa99b5-98d2-4614-9656-08d2c3cb219c",
+    "reviewMechanicsSha256": "3c60d966f6d219146418b8482ed2b764007aed33b3b1b079d7020c03794d82eb",
+    "characteristics": {
+      "name": "QUEEN OF HEARTS",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "CYBERNETIC"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Destroy up to 2 target characters.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "WONDERLAND": 1
+      },
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      },
+      "activatedAbilities": [
+        {
+          "name": "OFF WITH THEIR HEADS",
+          "ramCost": 5,
+          "run": true
+        }
+      ],
+      "attack": 5,
+      "defence": 3,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "off-with-their-heads",
+        "index": 0,
+        "handlerId": "queen-of-hearts/off-with-their-heads-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "29f208bf-7c04-4060-bc99-7497cd7570dc",
+    "reviewMechanicsSha256": "11913e34631721faf8622e99152a4bf0fddb9c1c0c771d308d69d8d153d355c8",
+    "characteristics": {
+      "name": "ASTRAL PROJECTOR",
+      "cardType": "character",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "When you play a tarot, Astral Projector gets +1/+1 until turn end.\nAstral Projector gets STEALTH until turn end. (Character can’t be blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "PHASE SHIFT",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "handlerId": "astral-projector/abilities-v1",
+        "index": 0,
+        "temporaryCombat": {
+          "kind": "stealth-self"
+        },
+        "abilityId": "phase-shift",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "e14fb87b-e226-4b26-ac46-c6af5e7a9176",
+    "reviewMechanicsSha256": "3510042c54d9dab3ee4ba1561044fadf0d6510c216420f4a8a0fa526ac762839",
+    "characteristics": {
+      "name": "B.O.B.",
+      "cardType": "character",
+      "factions": ["ROBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy B.O.B. If you do, deal 4 *MF and 4 *BF damage to all players, and deal 4 *BF damage to all characters.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": [
+        {
+          "name": "BOOM",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "attack": 0,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "handlerVersion": 1,
+        "index": 0,
+        "abilityId": "boom",
+        "handlerId": "bob/boom-v1"
+      }
+    ]
+  },
+  {
+    "cardId": "aff69b51-215f-4f6b-926b-7d880e12ebd9",
+    "reviewMechanicsSha256": "bc6210a21fef327ee201adf8fcabfe022f4a5ccc2e2643d2baa3596d5eee19ca",
+    "characteristics": {
+      "name": "STAGE DIVER",
+      "cardType": "character",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy Stage Diver. If you do, deal 1 *BF damage to up to 2 target characters.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "LEAP OF FAITH",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "handlerVersion": 1,
+        "index": 0,
+        "abilityId": "leap-of-faith",
+        "handlerId": "stage-diver/leap-of-faith-v1"
+      }
+    ]
+  },
+  {
+    "cardId": "8777ff92-5db6-4c11-aecb-2894160ec659",
+    "reviewMechanicsSha256": "fd128e84cb69ff61c8b463a1049d17c7c2bfc2bbd6a03a79d6befd741d6257ed",
+    "characteristics": {
+      "name": "COYOTE RAIDERS",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, when Coyote Raiders' attack hits a player, destroy target *RAM they control.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "UNCHAINED RAGE",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "abilityId": "unchained-rage",
+        "handlerId": "coyote-raiders/unchained-rage-v1",
+        "index": 0,
+        "handlerVersion": 1
+      }
+    ],
+    "hitTriggers": [
+      {
+        "kind": "granted-unchained-rage",
+        "handlerId": "coyote-raiders/player-hit-v1",
+        "label": "UNCHAINED RAGE: destroy target RAM controlled by the hit player.",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "420e5511-e5b0-4aa8-8e5c-3e9ca7363f5e",
+    "reviewMechanicsSha256": "144cf02c9a8ef29672aa2dde0ae3adaed0afd2a64407a81c0256104f5b5efc41",
+    "characteristics": {
+      "name": "VENTURE CAPITALIST",
+      "cardType": "character",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Venture Capitalist enters play with 1 interest counter on her. On your NETCHECK, double the number of interest counters on her.\nRemove all interest counters from Venture Capitalist and install 1 *RAM running for each interest counter removed.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "CASH OUT",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "cash-out",
+        "handlerId": "venture-capitalist/interest-v1",
+        "handlerVersion": 1,
+        "index": 0
+      }
+    ]
+  }
+]

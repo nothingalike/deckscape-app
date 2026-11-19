@@ -1,0 +1,142 @@
+[
+  {
+    "cardId": "b919573a-22c1-4e33-9578-451ff74731d5",
+    "kind": "death-metal",
+    "handlerId": "script/death-metal",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c0561a6d572b1c72640df9c9572af70e2b3e3847adfd3d69f9f75afd7e0fc63d",
+    "characteristics": {
+      "name": "DEATH METAL",
+      "cardType": "program",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target character.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "THRASHER": 1
+      },
+      "subtype": "script",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "a8b67493-42e8-46db-b463-57e4b2a4c7ca",
+    "kind": "short-circuit",
+    "handlerId": "script/short-circuit",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "bf2d6c1d858ffc3a33b8fb0f004f92579b22862144e0aed6c49af99c8fb62546",
+    "characteristics": {
+      "name": "SHORT CIRCUIT",
+      "cardType": "program",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT Destroy target cyberware.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "68e17e96-ee1c-448e-ad38-31f0d6a6ffb9",
+    "kind": "solar-flare",
+    "handlerId": "script/solar-flare",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "8385daab27a4d36a7d9a5144d54196de6c2006b9cac187d3a018902256f6bdb9",
+    "characteristics": {
+      "name": "SOLAR FLARE",
+      "cardType": "program",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy all characters and programs.",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "subtype": "script",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "bd4c960c-4d97-4b23-83f7-e6954d8ab8ed",
+    "kind": "the-star",
+    "handlerId": "script/the-star",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "47f4fdddfd6a62e6e2924fd68c7a84688baca14a76e901e977c6405c9fc1329b",
+    "characteristics": {
+      "name": "THE STAR",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "rulesText": "*SWIFT DIVINE 3 (Look at the top 3 cards of your cyberdeck. Put 1 into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "1c0a43e0-9c47-4ba6-a548-f9f42abd4a48",
+    "kind": "the-sun",
+    "handlerId": "script/the-sun",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "29d1fcb4a76eeb9beed6a477d933e7a78f3924312e53786935d307f169db23af",
+    "characteristics": {
+      "name": "THE SUN",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "rulesText": "*SWIFT Search your cyberdeck for a tarot and reveal it. Put it into your hand, then shuffle.\nREVERSED program",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": [],
+      "reversal": {
+        "normalText": "Search your cyberdeck for a tarot and reveal it. Put it into your hand, then shuffle.",
+        "pinkText": "tarot",
+        "replacementText": "program",
+        "reversedText": "Search your cyberdeck for a program and reveal it. Put it into your hand, then shuffle."
+      }
+    }
+  },
+  {
+    "cardId": "369571e1-32fe-46c7-ba63-2eaf22e3db9e",
+    "kind": "the-world",
+    "handlerId": "script/the-world",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "3602dfad5407de1c1ba552f0f2982f207e50be2982c0297811ad38861dcd78a2",
+    "characteristics": {
+      "name": "THE WORLD",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "rulesText": "*SWIFT Search your cyberdeck for an environment and reveal it. Put it into your hand, then shuffle.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "subtype": "script",
+      "swift": true,
+      "activatedAbilities": []
+    }
+  }
+]

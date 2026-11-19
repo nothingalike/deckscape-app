@@ -1,0 +1,21 @@
+{
+  "cardId": "d2899192-b0f0-4627-805d-e367c3a2162d",
+  "kind": "claritex",
+  "handlerId": "script/claritex",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "070839de1d718a2330cb3ee61a4d74d72fd33a0dd2b4373b8c762f666b06ad34",
+  "characteristics": {
+    "name": "CLARITEX",
+    "cardType": "program",
+    "factions": ["CYBERNETIC"],
+    "tags": ["DRUG"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Target character is immune to PSYCHOSIS until your next SYSTEM CHECK.",
+    "ramCost": 1,
+    "requirements": {},
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

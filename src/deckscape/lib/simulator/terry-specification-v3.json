@@ -1,0 +1,39 @@
+{
+  "cardId": "ff3b06ca-3429-46af-b4c9-a29223c6019a",
+  "reviewMechanicsSha256": "d765326a2495e0c69ffd8aa81acedf0b79c8f3f24c8fe2f078a89b6a5d9b3cd0",
+  "characteristics": {
+    "name": "TERRY, THE ACCOUNTANT",
+    "cardType": "character",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": true,
+    "copiesLimit": 4,
+    "rulesText": "Terry, the Accountant is immune to PSYCHOSIS.\nSwipe Terry, the Accountant across the arena like a credit card. Attach target gear to him.",
+    "ramCost": 3,
+    "requirements": {},
+    "attack": 0,
+    "defence": 3,
+    "attackType": "BF",
+    "ports": {
+      "head": 3,
+      "body": 3,
+      "leftArm": 3,
+      "rightArm": 3
+    },
+    "activatedAbilities": [
+      {
+        "name": "SWIPE PLATINUM",
+        "ramCost": 0,
+        "run": true
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "abilityId": "swipe-platinum",
+      "index": 0,
+      "handlerId": "terry/swipe-platinum-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "cardId": "40a7ace6-6e73-4aec-ba61-c463e101f5a8",
+  "kind": "rush-the-stage",
+  "handlerId": "script/rush-the-stage",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "3101c69589443b20a19db45b73e47a904d4f83dca162b08e5669988fe0af8612",
+  "characteristics": {
+    "name": "RUSH THE STAGE",
+    "cardType": "program",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT ADDITIONAL COST [Pay X *MF and X *BF health.]\n\nTarget *THRASHER character gets +X/+0 until turn end. On turn end, destroy it.",
+    "ramCost": 5,
+    "requirements": {
+      "THRASHER": 2
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

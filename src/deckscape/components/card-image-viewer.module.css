@@ -1,0 +1,43 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(8px, env(safe-area-inset-top))
+    max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom))
+    max(8px, env(safe-area-inset-left));
+  overflow: hidden;
+  background: #050a0ce8;
+  backdrop-filter: blur(7px);
+}
+
+.viewer {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 1;
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 10px #000a;
+}
+
+.viewer :global(.card-art) {
+  width: auto;
+  height: calc(
+    100dvh - 16px - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+  );
+  max-width: 100%;
+  object-fit: contain;
+}

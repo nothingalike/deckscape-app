@@ -1,0 +1,441 @@
+{
+  "decks": [
+    {
+      "key": "genesis-starter-corpo",
+      "cyberdeck": [
+        {
+          "name": "UNPAID INTERN",
+          "quantity": 3
+        },
+        {
+          "name": "EXECUTIVE",
+          "quantity": 4
+        },
+        {
+          "name": "TRUSTFUND BABY",
+          "quantity": 3
+        },
+        {
+          "name": "SEEKER DRONES",
+          "quantity": 3
+        },
+        {
+          "name": "ACPD DRONES",
+          "quantity": 3
+        },
+        {
+          "name": "RIOT POLICE",
+          "quantity": 3
+        },
+        {
+          "name": "BOARDROOM SHARK",
+          "quantity": 2
+        },
+        {
+          "name": "YES MAN",
+          "quantity": 1
+        },
+        {
+          "name": "GOKUDO SILENCER",
+          "quantity": 2
+        },
+        {
+          "name": "DEBT COLLECTOR",
+          "quantity": 3
+        },
+        {
+          "name": "NEOSEC FIRESTORM",
+          "quantity": 1
+        },
+        {
+          "name": "OMNIS DEATHBRINGER",
+          "quantity": 2
+        },
+        {
+          "name": "MAXIMILLION GOLD",
+          "quantity": 1
+        },
+        {
+          "name": "GENERATIONAL WEALTH",
+          "quantity": 3
+        },
+        {
+          "name": "MARKET MANIPULATION",
+          "quantity": 1
+        },
+        {
+          "name": "GENOCIDE",
+          "quantity": 1
+        },
+        {
+          "name": "TAX EVASION",
+          "quantity": 2
+        },
+        {
+          "name": "INSURANCE POLICY",
+          "quantity": 2
+        },
+        {
+          "name": "PROPAGANDA",
+          "quantity": 2
+        },
+        {
+          "name": "A-Z GLASS",
+          "quantity": 2
+        },
+        {
+          "name": "SNEAKERHEAD",
+          "quantity": 2
+        },
+        {
+          "name": "BOARDROOM",
+          "quantity": 1
+        },
+        {
+          "name": "TERMINATE",
+          "quantity": 1
+        },
+        {
+          "name": "DELETE",
+          "quantity": 1
+        },
+        {
+          "name": "ACID RAIN",
+          "quantity": 1
+        }
+      ],
+      "name": "Corpo Starter",
+      "mainframe": "A-Z LUXUREON",
+      "ram": {
+        "name": "Basic Ram",
+        "quantity": 25
+      },
+      "set_code": "GENESIS"
+    },
+    {
+      "key": "genesis-starter-dustrunner",
+      "cyberdeck": [
+        {
+          "name": "SCAVENGER",
+          "quantity": 4
+        },
+        {
+          "name": "CARTOGRAPHER",
+          "quantity": 2
+        },
+        {
+          "name": "CANYON STALKERS",
+          "quantity": 2
+        },
+        {
+          "name": "SAND SCORPION",
+          "quantity": 2
+        },
+        {
+          "name": "SEARCHER OF THE SKY",
+          "quantity": 2
+        },
+        {
+          "name": "BADLANDS SNIPER",
+          "quantity": 2
+        },
+        {
+          "name": "BADLANDS MARAUDER",
+          "quantity": 3
+        },
+        {
+          "name": "DUST DEVIL VULTURES",
+          "quantity": 3
+        },
+        {
+          "name": "DUST DEVIL ELITES",
+          "quantity": 1
+        },
+        {
+          "name": "ASHARA, HIGH PRIESTESS",
+          "quantity": 1
+        },
+        {
+          "name": "BADLANDS INFANTRY",
+          "quantity": 3
+        },
+        {
+          "name": "DUST DEVIL INITIATE",
+          "quantity": 2
+        },
+        {
+          "name": "SAVAGE DUSTSTORM",
+          "quantity": 2
+        },
+        {
+          "name": "GROWING UNREST",
+          "quantity": 2
+        },
+        {
+          "name": "COMB THE DESERT",
+          "quantity": 2
+        },
+        {
+          "name": "MOON FLOWER CACTUS",
+          "quantity": 2
+        },
+        {
+          "name": "EMP GRENADE",
+          "quantity": 2
+        },
+        {
+          "name": "AEKANI BLOODLETTER",
+          "quantity": 2
+        },
+        {
+          "name": "DUST DEVIL GLAIVE",
+          "quantity": 2
+        },
+        {
+          "name": "THE AMRITA",
+          "quantity": 1
+        },
+        {
+          "name": "THE PULSE",
+          "quantity": 1
+        },
+        {
+          "name": "SYNCHRONIZE",
+          "quantity": 3
+        },
+        {
+          "name": "CHAIN AMPLIFIER",
+          "quantity": 3
+        },
+        {
+          "name": "HOT WIRE",
+          "quantity": 1
+        }
+      ],
+      "name": "Dustrunner Starter",
+      "mainframe": "COYOTE",
+      "ram": {
+        "name": "Basic Ram",
+        "quantity": 25
+      },
+      "set_code": "GENESIS"
+    },
+    {
+      "key": "genesis-starter-cybernetic",
+      "cyberdeck": [
+        {
+          "name": "SCRAPPER",
+          "quantity": 4
+        },
+        {
+          "name": "DUMPSTER DIVER",
+          "quantity": 3
+        },
+        {
+          "name": "LUG NUT",
+          "quantity": 1
+        },
+        {
+          "name": "VIRTUAL KID",
+          "quantity": 2
+        },
+        {
+          "name": "BLACKOUT BOYS",
+          "quantity": 3
+        },
+        {
+          "name": "THE PLUG",
+          "quantity": 3
+        },
+        {
+          "name": "IRON MAIDEN",
+          "quantity": 3
+        },
+        {
+          "name": "ROGUE VALKYRIE",
+          "quantity": 2
+        },
+        {
+          "name": "BOONYEN, WARDRIVER",
+          "quantity": 1
+        },
+        {
+          "name": "BACK ALLEY BRUISERS",
+          "quantity": 2
+        },
+        {
+          "name": "FACELESS ONI",
+          "quantity": 3
+        },
+        {
+          "name": "LASERSAW BERSERKER",
+          "quantity": 1
+        },
+        {
+          "name": "METAL HEAD",
+          "quantity": 1
+        },
+        {
+          "name": "ARC, CIRCUIT BREAKER",
+          "quantity": 1
+        },
+        {
+          "name": "MEGAROIDS, KIWI KRUSH",
+          "quantity": 2
+        },
+        {
+          "name": "REDLINE",
+          "quantity": 1
+        },
+        {
+          "name": "FLUX CANNON",
+          "quantity": 2
+        },
+        {
+          "name": "RIOT BLADE",
+          "quantity": 3
+        },
+        {
+          "name": "DRIVE SAW",
+          "quantity": 1
+        },
+        {
+          "name": "KNUX",
+          "quantity": 2
+        },
+        {
+          "name": "CODEBREAKER",
+          "quantity": 2
+        },
+        {
+          "name": "MAX GAINZ",
+          "quantity": 2
+        },
+        {
+          "name": "ANTIVIRUS",
+          "quantity": 2
+        },
+        {
+          "name": "DELETE",
+          "quantity": 1
+        },
+        {
+          "name": "SPECTRE 9MM",
+          "quantity": 2
+        }
+      ],
+      "name": "Cybernetic Starter",
+      "mainframe": "SYNTHETIX",
+      "ram": {
+        "name": "Basic Ram",
+        "quantity": 25
+      },
+      "set_code": "GENESIS"
+    },
+    {
+      "key": "genesis-starter-hacker",
+      "cyberdeck": [
+        {
+          "name": "HEX, CODEMANCER",
+          "quantity": 1
+        },
+        {
+          "name": "ADMIN",
+          "quantity": 4
+        },
+        {
+          "name": "CODER",
+          "quantity": 3
+        },
+        {
+          "name": "DEEP DIVER",
+          "quantity": 3
+        },
+        {
+          "name": "DIGITAL SPECTRE",
+          "quantity": 3
+        },
+        {
+          "name": "BLACK HAT",
+          "quantity": 2
+        },
+        {
+          "name": "PHANTOM OS",
+          "quantity": 2
+        },
+        {
+          "name": "TAGGER",
+          "quantity": 3
+        },
+        {
+          "name": "NOVA, THE WHITE RABBIT",
+          "quantity": 1
+        },
+        {
+          "name": "OVERLOAD MK. I",
+          "quantity": 3
+        },
+        {
+          "name": "OVERLOAD MK. II",
+          "quantity": 3
+        },
+        {
+          "name": "SYSTEM ERROR",
+          "quantity": 3
+        },
+        {
+          "name": "QUANTUM ENCRYPTION",
+          "quantity": 2
+        },
+        {
+          "name": "THE NET",
+          "quantity": 1
+        },
+        {
+          "name": "THE GRID",
+          "quantity": 1
+        },
+        {
+          "name": "PHISHING",
+          "quantity": 2
+        },
+        {
+          "name": "BINARY BLAST",
+          "quantity": 1
+        },
+        {
+          "name": "CORTEX CRAB",
+          "quantity": 3
+        },
+        {
+          "name": "FATAL ERROR 75",
+          "quantity": 2
+        },
+        {
+          "name": "MEMORY LEAK",
+          "quantity": 2
+        },
+        {
+          "name": "POWER SPIKE",
+          "quantity": 3
+        },
+        {
+          "name": "REDIRECT",
+          "quantity": 1
+        },
+        {
+          "name": "DELETE",
+          "quantity": 1
+        }
+      ],
+      "name": "Hacker Starter",
+      "mainframe": "FIRESTARTER",
+      "ram": {
+        "name": "Basic Ram",
+        "quantity": 25
+      },
+      "set_code": "GENESIS"
+    }
+  ],
+  "edition": "Genesis two-player starter kits"
+}

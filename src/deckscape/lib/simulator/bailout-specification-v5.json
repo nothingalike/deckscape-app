@@ -1,0 +1,23 @@
+{
+  "cardId": "e535bad3-0200-4068-b05a-66f747b4041c",
+  "kind": "bailout",
+  "handlerId": "script/bailout",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "81eaee948f097613c7b801ea6f55d5ac7772ce77f0d01c355daf0c677f764cf7",
+  "characteristics": {
+    "name": "BAILOUT",
+    "cardType": "program",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT If you would lose the game this turn, instead set your *MF and *BF health to 1 and destroy half of your *RAM, rounded down.",
+    "ramCost": 2,
+    "requirements": {
+      "CORPO": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

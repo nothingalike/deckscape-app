@@ -1,0 +1,566 @@
+[
+  {
+    "cardId": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb",
+    "kind": "binary-blast",
+    "handlerId": "script/binary-blast",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "15496aa1950b08ade081834d32917de3f2a894b3d57092da70be34d84e59af34",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Refresh target character. If that character is a *HACKER, put a +1/+1 counter on it.",
+      "copiesLimit": 4,
+      "name": "BINARY BLAST",
+      "factions": ["HACKER"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "860e270a-cee2-4a5f-83bb-8400f35e8059",
+    "kind": "drink-me",
+    "handlerId": "script/drink-me",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ee1f29c1607749892e9c4f4a95a5c0e1b3cc544514c9f8feaae08ac6cfa6d676",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT All characters your opponents control get -1/-1 until turn end.\n\nIf you control [Alice, Dreamwalker], instead put a -1/-1 counter on these characters.",
+      "copiesLimit": 4,
+      "name": "DRINK ME",
+      "factions": ["WONDERLAND"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "WONDERLAND": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "3e022d3a-16e9-48ee-90f5-e3a27442fe71",
+    "kind": "eat-me",
+    "handlerId": "script/eat-me",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "7a382d8fddb69b348095ec7b35270439e8fee374689b92e090d2a5f2392558a1",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT All characters you control get +1/+1 until turn end.\n\nIf you control [Alice, Dreamwalker], instead put a +1/+1 counter on these characters.",
+      "copiesLimit": 4,
+      "name": "EAT ME",
+      "factions": ["WONDERLAND"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "WONDERLAND": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "22dcc5d2-76a3-4d50-8472-afb300855593",
+    "kind": "moon-flower-cactus",
+    "handlerId": "script/moon-flower-cactus",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "8c1747659642060e89184f9ccd9db8bcfd89629d94ab5909ec9176cc1f0ee291",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Draw 2.",
+      "copiesLimit": 4,
+      "name": "MOON FLOWER CACTUS",
+      "factions": ["DUSTRUNNER"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "2fc57a7e-eb1d-4893-a291-c17224e57a4e",
+    "kind": "strength",
+    "handlerId": "script/strength",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "440a2aaa9c2170eed58a74aeda6ddb33d96b00e842307a71fb501aff3ce633cb",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Target character gets +2/+2 until turn end.\nREVERSED -2/-2",
+      "copiesLimit": 4,
+      "name": "STRENGTH",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "reversal": {
+        "normalText": "Target character gets +2/+2 until turn end.",
+        "pinkText": "+2/+2",
+        "replacementText": "-2/-2",
+        "reversedText": "Target character gets -2/-2 until turn end."
+      }
+    }
+  },
+  {
+    "cardId": "87f1a7d0-3f53-4e95-9222-78c1d69a5c52",
+    "kind": "the-empress",
+    "handlerId": "script/the-empress",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "81646dae4e89b85e5c815efff300cb15c8205644e02c9c2bc20080dd19235dbb",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Draw 1 and install 1 *RAM running.\nREVERSED 2 *RAM.",
+      "copiesLimit": 4,
+      "name": "THE EMPRESS",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "reversal": {
+        "normalText": "Draw 1 and install 1 *RAM running.",
+        "pinkText": "1 *RAM",
+        "replacementText": "2 *RAM",
+        "reversedText": "Draw 1 and install 2 *RAM running."
+      }
+    }
+  },
+  {
+    "cardId": "d02bb901-d744-4730-b0da-4cd9cd9e42aa",
+    "kind": "hierophant",
+    "handlerId": "script/hierophant",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "a950962e9b408ae0cb56e30228f22a1ef4da98d1bf08406a738d4b0995cb625a",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Counter target card unless its controller pays 1 *RAM.\nREVERSED 3 *RAM",
+      "copiesLimit": 4,
+      "name": "THE HIEROPHANT",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "reversal": {
+        "normalText": "Counter target card unless its controller pays 1 *RAM.",
+        "pinkText": "1 *RAM",
+        "replacementText": "3 *RAM",
+        "reversedText": "Counter target card unless its controller pays 3 *RAM."
+      }
+    }
+  },
+  {
+    "cardId": "07a77771-8534-46bd-ac57-26c322fb14a9",
+    "kind": "high-priestess",
+    "handlerId": "script/high-priestess",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "8600645e1f3f7200639e38b483a915911d30772c19f661fafce40c2de91651ba",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Counter target character.\nREVERSED program",
+      "copiesLimit": 4,
+      "name": "THE HIGH PRIESTESS",
+      "factions": ["MYSTIC"],
+      "tags": ["TAROT"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "reversal": {
+        "normalText": "Counter target character.",
+        "pinkText": "character",
+        "replacementText": "program",
+        "reversedText": "Counter target program."
+      }
+    }
+  },
+  {
+    "cardId": "def7475e-80f7-4f96-9164-01b90fbca60c",
+    "kind": "time",
+    "handlerId": "script/time",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "428c075e5cbd8c4865ce664b883469fc6887c9fba55c7ab1982a160d855d64e4",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Refresh target character and reboot their abilities.",
+      "copiesLimit": 4,
+      "name": "TIME",
+      "factions": ["RAVER"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "72967874-2318-4e18-9fc2-a8b5e364787f",
+    "kind": "delete",
+    "handlerId": "script/delete",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "205d157c419db8565ffe8c50627f9fab1250a87f2b990fc2d67cb5088b9a9fda",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Destroy target character.",
+      "copiesLimit": 4,
+      "name": "DELETE",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "63308855-5322-4802-96d5-d9b5644bde57",
+    "kind": "emp-grenade",
+    "handlerId": "script/emp-grenade",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "238db56147ef1d42665d8b14da24e8d4378a22d4684212c858d66c1ac4a39f72",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Destroy target *RAM.",
+      "copiesLimit": 4,
+      "name": "EMP GRENADE",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8",
+    "kind": "terminate",
+    "handlerId": "script/terminate",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "eee6e9e297f6dfdebbbda769cb1a5b2d18cd0a3d0995fa1122461f9e69e5e38c",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Destroy target program.",
+      "copiesLimit": 4,
+      "name": "TERMINATE",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc",
+    "kind": "overload-mk-i",
+    "handlerId": "script/overload-mk-i",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "022f0090e2dd201bdebd13752c2f3a5485aa991748ce48c24eac64349c7f5e5f",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Deal 2 *MF damage to any target.",
+      "copiesLimit": 4,
+      "name": "OVERLOAD MK. I",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b",
+    "kind": "overload-mk-ii",
+    "handlerId": "script/overload-mk-ii",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c2edd132f9ed5733861fd9138345cbf28b1641dd4017f5e56e42182f6dce09a3",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Deal 4 *MF damage to any target.",
+      "copiesLimit": 4,
+      "name": "OVERLOAD MK. II",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "b8cc9e18-f767-4c36-be11-70c41700605f",
+    "kind": "market-manipulation",
+    "handlerId": "script/market-manipulation",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "70c098f65ca806099eb537f1756fdf6ce41e819ca2878c0a7ce8c3827b24a8a3",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Install X *RAM running, where X is your *CORPO synergy.",
+      "copiesLimit": 4,
+      "name": "MARKET MANIPULATION",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "fac479cf-cd61-4517-9d05-da6719ecd6f1",
+    "kind": "savage-duststorm",
+    "handlerId": "script/savage-duststorm",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "6279a818fa17fa6476f4c36d840a73eec1aeb300aed925601efeb40b16ef9793",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Run all non-*DUSTRUNNER characters.",
+      "copiesLimit": 4,
+      "name": "SAVAGE DUSTSTORM",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5",
+    "kind": "redline",
+    "handlerId": "script/redline",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "aae1beb50194b42409fe83f1c693da3c0dd8e857fbc0881dd150f2d44626c677",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Until turn end, target character you control gets +7/-1 and +8 PSYCHOSIS. If that character is non-*CYBERNETIC, it gets an additional +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "name": "REDLINE",
+      "factions": ["CYBERNETIC"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "b7f56830-c78c-48a8-b013-53bbb4c9d123",
+    "kind": "megaroids",
+    "handlerId": "script/megaroids",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "774957a5d5a70fa5233a331b03e4af4dcf4509d29c17007683ccbe0f286187b7",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Until turn end, target character you control gets +4/+4 and +5 PSYCHOSIS. If that character is non-*CYBERNETIC, it gets an additional +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "name": "MEGAROIDS, KIWI KRUSH",
+      "factions": ["CYBERNETIC"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "6bc3ceab-04fe-455b-9c9c-b0470f122286",
+    "kind": "antivirus",
+    "handlerId": "script/antivirus",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e8f69d62fb447d384f352c61a4f71c8c3f54f9a6c45c9061b649e8d7f929b593",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Select one — \n\n• Destroy target program attached to your mainframe.\n• Remove all counters on your mainframe.",
+      "copiesLimit": 4,
+      "name": "ANTIVIRUS",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "chooseModes": 1,
+      "modes": [
+        "Destroy target program attached to your mainframe.",
+        "Remove all counters on your mainframe."
+      ]
+    }
+  },
+  {
+    "cardId": "9904cdfa-fb57-4115-81b6-f4c6802c3623",
+    "kind": "quantum-encryption",
+    "handlerId": "script/quantum-encryption",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "f6c99c73bcf5bb9e0b0ff4837c96c6b52f403ed69156367cdeaea0c29e526ac5",
+    "characteristics": {
+      "cardType": "program",
+      "name": "QUANTUM ENCRYPTION",
+      "rulesText": "*SWIFT Prevent all damage until turn end.",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "2d1190d3-7dec-4e42-9905-428896d968ac",
+    "kind": "genocide",
+    "handlerId": "script/genocide",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "429e48a48dd77780e59ada9728d1365b38a7fecc83299d227d1ac2a1793380a1",
+    "characteristics": {
+      "cardType": "program",
+      "name": "GENOCIDE",
+      "rulesText": "Name a faction. Destroy all characters of that faction, then you lose 1 *MF and 1 *BF health for each character destroyed this way.",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "29ee1174-f6e0-43f1-91ff-d44688bf7e11",
+    "kind": "phishing",
+    "handlerId": "script/phishing",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e1c44006f98d5d562d1902ec1fa2e29af7ebb0b0288ad026c33d3bbd43136af5",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Target player reveals their hand and you choose a card from it. They discard that card.",
+      "copiesLimit": 4,
+      "name": "PHISHING",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  },
+  {
+    "cardId": "280fd50c-4edb-4ebb-832c-a9852b63d62a",
+    "kind": "comb-the-desert",
+    "handlerId": "script/comb-the-desert",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "3a4edeb927d198063a836b43de9a5550292a76b43945a553edf74e2c816e048b",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "ADDITIONAL COST [Run X *DUSTRUNNER characters you control.]\n\nDraw X.",
+      "copiesLimit": 4,
+      "name": "COMB THE DESERT",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false,
+      "additionalPlayCostText": "Run X DUSTRUNNER characters you control."
+    }
+  },
+  {
+    "cardId": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7",
+    "kind": "propaganda",
+    "handlerId": "script/propaganda",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e13ccae56b8c4f0769b94ec34b709e0e7024f729f72d00661c325195350cca75",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Change target(s) of target program.",
+      "copiesLimit": 4,
+      "name": "PROPAGANDA",
+      "factions": ["CORPO", "POLITICIAN"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    }
+  }
+]

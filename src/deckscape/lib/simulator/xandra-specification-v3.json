@@ -1,0 +1,41 @@
+{
+  "cardId": "73c5a5e9-1376-4915-8af5-45a110931db2",
+  "reviewMechanicsSha256": "1ef75c452ebc1a754aea80abb353d80fa545486847dd8136c75efb6a0cac67c6",
+  "characteristics": {
+    "name": "XANDRA, HIVE QUEEN",
+    "cardType": "character",
+    "factions": ["NANOBOT"],
+    "tags": [],
+    "iconic": true,
+    "rulesText": "ADDITIONAL COST [Run 2 *NANOBOT characters you control.]\nADDITIONAL COST [Run and destroy any number of *NANOBOT characters you control.] For each *NANOBOT destroyed this way, deal *BF damage equal to its attack value to target character.",
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    },
+    "activatedAbilities": [
+      {
+        "name": "SWARM STRIKE",
+        "ramCost": 0,
+        "run": true,
+        "additionalCostText": "Run and destroy any number of NANOBOT characters you control."
+      }
+    ],
+    "attack": 4,
+    "defence": 3,
+    "attackType": "BF",
+    "additionalPlayCostText": "Run 2 NANOBOT characters you control."
+  },
+  "abilities": [
+    {
+      "abilityId": "swarm-strike",
+      "index": 0,
+      "handlerId": "xandra/swarm-strike-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

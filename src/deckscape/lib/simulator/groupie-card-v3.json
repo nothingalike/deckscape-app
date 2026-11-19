@@ -1,0 +1,35 @@
+{
+  "cardId": "f58c2cd0-8d71-4d20-91d0-fc23f26e6c9e",
+  "characteristics": {
+    "name": "GROUPIE",
+    "cardType": "character",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "On enter, target iconic *THRASHER character you control gets +2/+0 until Groupie leaves play.",
+    "copiesLimit": 4,
+    "ramCost": 1,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [],
+    "attack": 0,
+    "defence": 1,
+    "attackType": "BF"
+  },
+  "handlers": [
+    {
+      "id": "groupie/entry-bonus-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "f58c2cd0-8d71-4d20-91d0-fc23f26e6c9e/3ec20b57d853473636c9dcedfb7493cb7d56f8f6eb05484e27b84f5a83d159d3.webp",
+    "sha256": "3ec20b57d853473636c9dcedfb7493cb7d56f8f6eb05484e27b84f5a83d159d3"
+  }
+}

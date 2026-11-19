@@ -1,0 +1,112 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@import "../deckscape/app/globals.css" layer(components);
+@import "./style.css" layer(components);
+@source "./**/*.{ts,tsx}";
+@custom-variant dark (&:is(.dark *));
+
+/* Hosted variable names remain compatible with shadcn's theme contract. */
+:root {
+  color-scheme: dark;
+  --background: #080b12;
+  --foreground: #e8f0fc;
+  --card: #111925;
+  --card-foreground: #e8f0fc;
+  --popover: #131d2b;
+  --popover-foreground: #e8f0fc;
+  --primary: #42e8e0;
+  --primary-foreground: #042529;
+  --secondary: #1b2a3e;
+  --secondary-foreground: #e1edfc;
+  --muted-surface: #182131;
+  --muted-foreground: #a5b5cb;
+  --accent: #42e8e0;
+  --accent-foreground: #042529;
+  --destructive: #ff8c9c;
+  --border: #293a50;
+  --input: #344960;
+  --ring: #42e8e0;
+  --radius: 0.5rem;
+  --bg: var(--background);
+  --text: var(--foreground);
+  --panel: var(--card);
+  --panel2: var(--secondary);
+  --line: var(--border);
+  --muted: var(--muted-foreground);
+  --danger: var(--destructive);
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted-surface);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+body { background: radial-gradient(ellipse at 95% 0%, #13243b66, transparent 55%), var(--background); color: var(--foreground); font-family: 'Segoe UI', Arial, sans-serif; }
+.app :where(h1, h2, h3, h4, button, input, select, textarea, .breadcrumb, .save-status) { font-family: 'Segoe UI', Arial, sans-serif; }
+.app :where(.eyebrow, .workspace-footer, .card-meta) { font-family: Consolas, 'Liberation Mono', monospace; }
+.workspace-header { position: relative; }
+.workspace-header::before { content: ''; position: absolute; height: 2px; width: 96px; top: 0; right: 0; background: #e777df; box-shadow: 0 0 18px #e777df50; }
+.nav-caption { color: #eaa1e5; }
+.brand-mark { box-shadow: -3px 3px 0 #e777df33, inset 0 0 18px #2de2e611; }
+* { box-sizing: border-box; }
+::selection { background: #42e8e044; color: white; }
+:where(button, a, input, select, textarea):focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; }
+:where(button, .button):not([data-slot]) { border-radius: 6px; }
+:where(input, select, textarea) { background-color: #0b1320; border-color: var(--input); color: var(--foreground); }
+:where(input, textarea)::placeholder { color: #8e9eb6; }
+:where(.secondary, .deck-panel, .filters, .card-dialog, .import-dialog, .starter-dialog, .deck-export-options) { border-color: var(--border); }
+.secondary { background: #182639; color: #d8e8fb; }
+.selected { background: #133b40; color: var(--primary); border-color: #318b91; }
+.search-field { background: #0e1827; border-color: #344b64; border-radius: 8px; }
+.search-field:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px #42e8e015; }
+.search-field input { background: transparent; }
+.filters, .deck-panel, .workspace-deck { background: linear-gradient(135deg, #121e2d, #101722); }
+.card-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 24px 18px; }
+.art-button:hover .card-art { box-shadow: 0 0 0 1px #42e8e0aa, 0 0 22px #42e8e020; }
+.card-dialog { width: min(850px, 100%); border-top: 2px solid #e777df; box-shadow: 0 24px 100px #000a, 0 0 35px #e777df14; }
+.app .editor-page { padding: 28px 0 0; max-width: none; }
+.app .editor-heading { flex-wrap: wrap; }
+.app .editor-heading > div { min-width: 0; }
+.app .editor-actions { flex-wrap: wrap; }
+.app .editor-columns.builder-layout { grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); gap: 24px; }
+.app .deck-title-input { font-family: 'Segoe UI', Arial, sans-serif; font-size: clamp(24px, 3vw, 36px); }
+.app .builder-layout .card-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+.app :where(.catalog, .editor-library, .deck-panel, .builder-layout, .search-row, .results-meta) { min-width: 0; }
+.app .results-meta { flex-wrap: wrap; gap: 12px; }
+.app .filters { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.app .card-dialog h2 { overflow-wrap: anywhere; }
+.app-match > main { padding-inline: 16px; }
+.app-match .workspace-header, .app-match .workspace-footer { display: none; }
+.app .deck-drawer-opener { inset-inline-start: 238px; width: calc(100% - 238px); }
+@media (max-width: 1100px) {
+  .app .deck-drawer-opener { inset-inline-start: 82px; width: calc(100% - 82px); }
+}
+@media (max-width: 1000px) {
+  .app .editor-columns.builder-layout { grid-template-columns: minmax(0, 1fr); }
+  .app .builder-layout > .editor-library { position: static; max-height: none; }
+  .app .builder-layout .card-grid { grid-template-columns: repeat(auto-fill, minmax(135px, 1fr)); }
+}
+@media (max-width: 850px) {
+  .card-grid { grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); gap: 18px 12px; }
+  .app .editor-actions { width: 100%; }
+  .app .card-dialog { grid-template-columns: minmax(150px, .7fr) minmax(0, 1fr); gap: 22px; padding: 26px; }
+}

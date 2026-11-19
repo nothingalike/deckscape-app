@@ -1,0 +1,23 @@
+{
+  "cardId": "f9497880-e82b-433b-b590-a5318065dfc2",
+  "kind": "the-magician",
+  "handlerId": "script/the-magician",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "2fcaf8ee047185cca88a53b395d5a63f8fb85e9849b4d7eed98f17dcbeb93810",
+  "characteristics": {
+    "name": "THE MAGICIAN",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "*SWIFT Put target program on the cache on top of it's owner's cyberdeck.",
+    "ramCost": 1,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": []
+  }
+}

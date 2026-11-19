@@ -1,0 +1,995 @@
+[
+  {
+    "cardId": "88add5df-ae68-42e6-916a-6f62f1e03863",
+    "characteristics": {
+      "name": "UNPAID INTERN",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "",
+      "copiesLimit": 4,
+      "cardType": "character",
+      "ramCost": 0,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 0,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [],
+    "artwork": {
+      "path": "88add5df-ae68-42e6-916a-6f62f1e03863/17ace1b04db8084b425344b86e7c9d44650e3ca63540f47ca6e3e3378b663ae6.webp",
+      "sha256": "17ace1b04db8084b425344b86e7c9d44650e3ca63540f47ca6e3e3378b663ae6"
+    }
+  },
+  {
+    "cardId": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35",
+    "characteristics": {
+      "name": "EXECUTIVE",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "ACQUISITION",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "executive/acquisition-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "88b93ac4-7cd6-4f81-8dcb-563bb4c55b35/ecb370f40ca10156fce4d1926189e6cd215ccd20f40ef654e54db074db2b2ad9.webp",
+      "sha256": "ecb370f40ca10156fce4d1926189e6cd215ccd20f40ef654e54db074db2b2ad9"
+    }
+  },
+  {
+    "cardId": "922a3d65-a5f5-42ff-a3db-a32166f27f3f",
+    "characteristics": {
+      "name": "TRUSTFUND BABY",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "On enter, install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "trustfund-baby/enter-install-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "922a3d65-a5f5-42ff-a3db-a32166f27f3f/5c274e24c4e08647b34d06fa54c868c081fc1c7e2c9358cd25c6aaf774146828.webp",
+      "sha256": "5c274e24c4e08647b34d06fa54c868c081fc1c7e2c9358cd25c6aaf774146828"
+    }
+  },
+  {
+    "cardId": "3408c423-f8e6-432e-8fff-7e87fcd403bf",
+    "characteristics": {
+      "name": "SEEKER DRONES",
+      "cardType": "character",
+      "factions": [
+        "CORPO",
+        "ROBOT"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy Seeker Drones. If you do, deal 2 *BF damage to any target.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SEARCH AND DESTROY",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "seeker-drones/search-and-destroy-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "3408c423-f8e6-432e-8fff-7e87fcd403bf/3ab87a50e9176156c0f3fdbd2579377af62f8f8f4c780cceb9e8109ded6955b0.webp",
+      "sha256": "3ab87a50e9176156c0f3fdbd2579377af62f8f8f4c780cceb9e8109ded6955b0"
+    }
+  },
+  {
+    "cardId": "ecc9914d-7879-46ff-9015-0c58a75cb31b",
+    "characteristics": {
+      "name": "ACPD DRONES",
+      "cardType": "character",
+      "factions": [
+        "CORPO",
+        "ROBOT"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Run target character.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DETAIN",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "acpd/detain-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "ecc9914d-7879-46ff-9015-0c58a75cb31b/c6b34eae776c5b571a99dd01893ea7ddc9fdf7f2c5a5397c68c80e09287357d0.webp",
+      "sha256": "c6b34eae776c5b571a99dd01893ea7ddc9fdf7f2c5a5397c68c80e09287357d0"
+    }
+  },
+  {
+    "cardId": "e3f8d3f3-634f-4b81-b4c2-1776920cee78",
+    "characteristics": {
+      "name": "RIOT POLICE",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for [Riot Police] and reveal it. Put it into your hand, then shuffle.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "CALL FOR BACKUP",
+          "ramCost": 3,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "riot-police/call-for-backup-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "e3f8d3f3-634f-4b81-b4c2-1776920cee78/27d11559dbf26607c2cb10e58136e59450b0cdd9350d1383dcb7d9053527cacc.webp",
+      "sha256": "27d11559dbf26607c2cb10e58136e59450b0cdd9350d1383dcb7d9053527cacc"
+    }
+  },
+  {
+    "cardId": "63df8026-7eed-4a33-99a9-de4779b0ff77",
+    "characteristics": {
+      "name": "BOARDROOM SHARK",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target character that has taken damage this turn.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "BLOOD IN THE WATER",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "boardroom-shark/blood-in-the-water-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "63df8026-7eed-4a33-99a9-de4779b0ff77/39cc11cce46bc23331ef380d65e0f40f8a658ffa2907f95569b5808385552a4d.webp",
+      "sha256": "39cc11cce46bc23331ef380d65e0f40f8a658ffa2907f95569b5808385552a4d"
+    }
+  },
+  {
+    "cardId": "cf331915-54d5-4018-96ac-22635b683994",
+    "characteristics": {
+      "name": "YES MAN",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Counter target program that targets an action on the cache. Put a -1/-1 counter on Yes Man.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "YES",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 2,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "yes-man/yes-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "cf331915-54d5-4018-96ac-22635b683994/cef697af11a120669ee060abe909dd6ed5e90f8c9bdf81ced5c1fd89fb660f1d.webp",
+      "sha256": "cef697af11a120669ee060abe909dd6ed5e90f8c9bdf81ced5c1fd89fb660f1d"
+    }
+  },
+  {
+    "cardId": "75fb06fc-dcec-40f5-a501-ddc3e65c8242",
+    "characteristics": {
+      "name": "GOKUDO SILENCER",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Destroy target tether.\nPut a BLEED counter on target character. (On NETCHECK, each character controlled by the active player gets a -1/-1 counter for each BLEED counter on it.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SEVERANCE",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "DAMASCUS BLADE",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 4,
+      "defence": 3,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "gokudo-silencer/severance-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "gokudo-silencer/damascus-blade-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "75fb06fc-dcec-40f5-a501-ddc3e65c8242/be779f9ec550c80d17702d4969c669a8919c96de0d6ccb8a3d617643ed1dca6c.webp",
+      "sha256": "be779f9ec550c80d17702d4969c669a8919c96de0d6ccb8a3d617643ed1dca6c"
+    }
+  },
+  {
+    "cardId": "a699f13f-3461-4226-bef3-64a024c9c9d2",
+    "characteristics": {
+      "name": "DEBT COLLECTOR",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "When the last refreshed *RAM an opponent controls is run or committed, Debt Collector deals 2 *BF damage to them.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 2,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "debt-collector/last-refreshed-ram-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "a699f13f-3461-4226-bef3-64a024c9c9d2/fd7dee82f5d67040c9fce659df32750ea80a84e0088eed0900be164bc4013a30.webp",
+      "sha256": "fd7dee82f5d67040c9fce659df32750ea80a84e0088eed0900be164bc4013a30"
+    }
+  },
+  {
+    "cardId": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa",
+    "characteristics": {
+      "name": "NEOSEC FIRESTORM",
+      "cardType": "character",
+      "factions": [
+        "CORPO",
+        "MECH"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 1 *BF damage to up to 3 target characters.\nDeal 3 *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "INCINERATE",
+          "ramCost": 2,
+          "run": false
+        },
+        {
+          "name": "SEEKER MISSILE",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 6,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "neosec-firestorm/incinerate-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "neosec-firestorm/seeker-missile-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "69b17fd7-7e73-4d9d-bf8f-1ddda362edfa/0a2d1b3c00ace6afa176b560bdc551e44747ef2a01167b05beb629a2ecfb214a.webp",
+      "sha256": "0a2d1b3c00ace6afa176b560bdc551e44747ef2a01167b05beb629a2ecfb214a"
+    }
+  },
+  {
+    "cardId": "7629d9ab-061c-4c8f-abdd-05e8a8457412",
+    "characteristics": {
+      "name": "OMNIS DEATHBRINGER",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [
+        "TRANSPORT"
+      ],
+      "iconic": false,
+      "rulesText": "Deal 4 *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "150MM RAILGUN",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "omnis-deathbringer/150mm-railgun-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "7629d9ab-061c-4c8f-abdd-05e8a8457412/81dbe367199c68c1a2e51d02be3e33898de8bd399af32e12e649b9c5f023a14d.webp",
+      "sha256": "81dbe367199c68c1a2e51d02be3e33898de8bd399af32e12e649b9c5f023a14d"
+    }
+  },
+  {
+    "cardId": "d06a1bb5-a102-4338-9220-da7839542007",
+    "characteristics": {
+      "name": "MAXIMILLION GOLD",
+      "cardType": "character",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Install 2 *RAM running.\nADDITIONAL COST [Destroy X *RAM in your RAM bank.] Deal X *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "ASSET APPRECIATION",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "BLOOD MONEY",
+          "ramCost": 2,
+          "run": true,
+          "additionalCostText": "Destroy X RAM in your RAM bank."
+        }
+      ],
+      "attack": 3,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "maximillion-gold/asset-appreciation-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "maximillion-gold/blood-money-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "d06a1bb5-a102-4338-9220-da7839542007/a9cae67f74421977f4281b7ccc66384116d3c5e30ba88937c3ab7b876b06aac3.webp",
+      "sha256": "a9cae67f74421977f4281b7ccc66384116d3c5e30ba88937c3ab7b876b06aac3"
+    }
+  },
+  {
+    "cardId": "733c4d90-6934-4dfe-8401-c42b9da7d291",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On your NETCHECK, roll a d20. If you roll 9 or higher, install 1 *RAM running.",
+      "copiesLimit": 4,
+      "name": "GENERATIONAL WEALTH",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "protocol/generational-wealth",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "733c4d90-6934-4dfe-8401-c42b9da7d291/ce6147bad0b9ab2a0780c65c5e8dfb764b0ecfc3ffcd6bf530bddffacbc1ae5a.webp",
+      "sha256": "ce6147bad0b9ab2a0780c65c5e8dfb764b0ecfc3ffcd6bf530bddffacbc1ae5a"
+    }
+  },
+  {
+    "cardId": "b8cc9e18-f767-4c36-be11-70c41700605f",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Install X *RAM running, where X is your *CORPO synergy.",
+      "copiesLimit": 4,
+      "name": "MARKET MANIPULATION",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "script/market-manipulation",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "b8cc9e18-f767-4c36-be11-70c41700605f/1686bfdfe75116c7477633a595e9c14f4b42ee8b997fc7764e1d8de68196e62b.webp",
+      "sha256": "1686bfdfe75116c7477633a595e9c14f4b42ee8b997fc7764e1d8de68196e62b"
+    }
+  },
+  {
+    "cardId": "2d1190d3-7dec-4e42-9905-428896d968ac",
+    "characteristics": {
+      "cardType": "program",
+      "name": "GENOCIDE",
+      "rulesText": "Name a faction. Destroy all characters of that faction, then you lose 1 *MF and 1 *BF health for each character destroyed this way.",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "script/genocide",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "2d1190d3-7dec-4e42-9905-428896d968ac/236c56eaa7e10e98b55309a175b7fb3e8e60d05fa278d8e8ad940c638fcd57d3.webp",
+      "sha256": "236c56eaa7e10e98b55309a175b7fb3e8e60d05fa278d8e8ad940c638fcd57d3"
+    }
+  },
+  {
+    "cardId": "bfd8e1d4-493d-4ced-a02e-72c6082061c8",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "If a character you control is destroyed by an opponent, its committed *RAM returns to its owner's RAM bank refreshed.",
+      "copiesLimit": 4,
+      "name": "TAX EVASION",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "protocol/tax-evasion",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "bfd8e1d4-493d-4ced-a02e-72c6082061c8/319c6dafa7d9f0624fd40e322593e190c7ba0b95622fe2a894c24aed670b6587.webp",
+      "sha256": "319c6dafa7d9f0624fd40e322593e190c7ba0b95622fe2a894c24aed670b6587"
+    }
+  },
+  {
+    "cardId": "9b3b9b91-4e46-4e71-a354-4de90fa98674",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Whenever a *CORPO character you control is destroyed by an opponent, install 1 *RAM running.",
+      "copiesLimit": 4,
+      "name": "INSURANCE POLICY",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "protocol/insurance-policy",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "9b3b9b91-4e46-4e71-a354-4de90fa98674/4bf1dd613f39fa2c4ea29f8010bf8e55b5d18f01434613f5b5572a6e39496e9d.webp",
+      "sha256": "4bf1dd613f39fa2c4ea29f8010bf8e55b5d18f01434613f5b5572a6e39496e9d"
+    }
+  },
+  {
+    "cardId": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Change target(s) of target program.",
+      "copiesLimit": 4,
+      "name": "PROPAGANDA",
+      "factions": [
+        "CORPO",
+        "POLITICIAN"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/propaganda",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "c4a7a222-0dda-4cd5-b17f-0d79525d92c7/2ec21134eaa0dbf1be2d1d3df892eeac972d7d37a0481c9f507436986eab9410.webp",
+      "sha256": "2ec21134eaa0dbf1be2d1d3df892eeac972d7d37a0481c9f507436986eab9410"
+    }
+  },
+  {
+    "cardId": "7c4f7168-d89b-422a-bb23-9f672d393aba",
+    "characteristics": {
+      "name": "A-Z GLASS",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "On enter, draw 1.\n\nYou may look at any facedown cards in play.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 1,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "az-glass/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "7c4f7168-d89b-422a-bb23-9f672d393aba/f060e0858cac9e182a64f5576bf1019b41fac08807bc16f82f30542e80da6eb4.webp",
+      "sha256": "f060e0858cac9e182a64f5576bf1019b41fac08807bc16f82f30542e80da6eb4"
+    }
+  },
+  {
+    "cardId": "e5a07806-0e36-429e-aae2-ca74bc4afd8a",
+    "characteristics": {
+      "name": "SNEAKERHEAD",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT On enter, prevent all damage to attached character until turn end.\n\nAttached character gets +0/+2.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "sneakerhead/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "e5a07806-0e36-429e-aae2-ca74bc4afd8a/f64e7f552393660c1c617610b7937584b0a7c9e8faf752b3acb0df05c7deeea3.webp",
+      "sha256": "f64e7f552393660c1c617610b7937584b0a7c9e8faf752b3acb0df05c7deeea3"
+    }
+  },
+  {
+    "cardId": "1c2af8d0-6085-4319-9411-b509601cab75",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, the player with the most characters in play may install 1 *RAM running. If tied, nothing happens.\nEach *CORPO character counts as two for this ability.",
+      "copiesLimit": 4,
+      "name": "BOARDROOM",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "environment/boardroom",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "1c2af8d0-6085-4319-9411-b509601cab75/beca7233d4e90d6e0591a86b81f1fea7734e570075009cfbaca967879fcc9a22.webp",
+      "sha256": "beca7233d4e90d6e0591a86b81f1fea7734e570075009cfbaca967879fcc9a22"
+    }
+  },
+  {
+    "cardId": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Destroy target program.",
+      "copiesLimit": 4,
+      "name": "TERMINATE",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/terminate",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "4d9bea64-fab4-4694-b299-0a4b3b44f7a8/080ed41e47bcc141738836bbe3510dc9d1a238b6fb1a35e10260a042a7411b54.webp",
+      "sha256": "080ed41e47bcc141738836bbe3510dc9d1a238b6fb1a35e10260a042a7411b54"
+    }
+  },
+  {
+    "cardId": "72967874-2318-4e18-9fc2-a8b5e364787f",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Destroy target character.",
+      "copiesLimit": 4,
+      "name": "DELETE",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "script/delete",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "72967874-2318-4e18-9fc2-a8b5e364787f/5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f.webp",
+      "sha256": "5e538ea1add8ef743c925a59ca8b6c09c51eadea33ea802b6edbd15b9c169d1f"
+    }
+  },
+  {
+    "cardId": "e1ec1411-c056-4cf8-9553-ed6e8208dadd",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, Acid Rain deals 1 *BF damage to all characters.",
+      "copiesLimit": 4,
+      "name": "ACID RAIN",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "environment/acid-rain",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "e1ec1411-c056-4cf8-9553-ed6e8208dadd/6b665477bc02ccc700557b6ae2899f6f2ffcd5d949c32bfeb9f2a78f80d1e84a.webp",
+      "sha256": "6b665477bc02ccc700557b6ae2899f6f2ffcd5d949c32bfeb9f2a78f80d1e84a"
+    }
+  },
+  {
+    "cardId": "b5d8de27-032f-4098-aebf-f1f9f132a504",
+    "characteristics": {
+      "name": "A-Z LUXUREON",
+      "cardType": "mainframe",
+      "factions": [
+        "CORPO"
+      ],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Your *RAM comes into play refreshed.\n+ / On your SYSTEM CHECK, install 1 *RAM refreshed.",
+      "prefix": "",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": {
+            "CORPO": 2
+          },
+          "operator": "base",
+          "text": "Your RAM comes into play refreshed."
+        },
+        {
+          "persistents": 4,
+          "factions": {
+            "CORPO": 4
+          },
+          "operator": "independent",
+          "text": "On your SYSTEM CHECK, install 1 RAM refreshed."
+        }
+      ]
+    },
+    "handlers": [
+      {
+        "id": "az-luxureon/ram-entry-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "az-luxureon/system-check-install-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "b5d8de27-032f-4098-aebf-f1f9f132a504/77cebebe4c4c611e5e00fa9979447f1839b9653e32f6ed3d5bbeabbe4cf47bea.webp",
+      "sha256": "77cebebe4c4c611e5e00fa9979447f1839b9653e32f6ed3d5bbeabbe4cf47bea"
+    }
+  }
+]

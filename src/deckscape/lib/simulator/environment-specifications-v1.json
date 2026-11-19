@@ -1,0 +1,149 @@
+[
+  {
+    "cardId": "e1ec1411-c056-4cf8-9553-ed6e8208dadd",
+    "kind": "acid-rain",
+    "handlerId": "environment/acid-rain",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ba39ee4fc3f7fee6cbe1e90ba8e604d594d408385c22280cf6a0e501881ef704",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, Acid Rain deals 1 *BF damage to all characters.",
+      "copiesLimit": 4,
+      "name": "ACID RAIN",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "290acf42-33bf-44e8-ab3d-3465cf196acc",
+    "kind": "the-amrita",
+    "handlerId": "environment/the-amrita",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "3c355b359e75c83fd3cbe179b1798a7251f6d1cb003dde906aec6db77f8f8268",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, the active player gains 1 *MF and 1 *BF health for each *DUSTRUNNER character they control.",
+      "copiesLimit": 4,
+      "name": "THE AMRITA",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b",
+    "kind": "the-net",
+    "handlerId": "environment/the-net",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "bb03ed56695c7777a3c9d8c15a8c65669534611fa72e27d94341475f2a3b8eed",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "When a player plays a program, they draw 1.",
+      "copiesLimit": 4,
+      "name": "THE NET",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335",
+    "kind": "max-gainz",
+    "handlerId": "environment/max-gainz",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "8fa33660dabf071f2a13188ed06bc36b63f94acc43a071c1d3685e6084afd694",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "All characters get STAMINA. (Character doesn’t run when it attacks.)",
+      "copiesLimit": 4,
+      "name": "MAX GAINZ",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "bdaff2a5-7fb9-4338-8a79-2785f176f641",
+    "kind": "the-pulse",
+    "handlerId": "environment/the-pulse",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "e60b5ca5c461fec9b92e3efdef472a503d2f0490c39912fe4548dd47e65cde3f",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Whenever a *DUSTRUNNER character attacks, deal 1 *MF damage to the defending player.",
+      "copiesLimit": 4,
+      "name": "THE PULSE",
+      "factions": ["DUSTRUNNER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "1c2af8d0-6085-4319-9411-b509601cab75",
+    "kind": "boardroom",
+    "handlerId": "environment/boardroom",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "265ec33b303a00dfbe375835505f6a891aaca03fd1dd968871e7b3e6adc64a57",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, the player with the most characters in play may install 1 *RAM running. If tied, nothing happens.\nEach *CORPO character counts as two for this ability.",
+      "copiesLimit": 4,
+      "name": "BOARDROOM",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "11bd1619-6eb4-462e-953a-482258f87a99",
+    "kind": "the-grid",
+    "handlerId": "environment/the-grid",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ba6a7536b4820ec7a353d7dabd37abcf9c47d99b7ccb65a3ed7cc442083944c9",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, the active player may INDEX 3 PROGRAM. (Reveal the top 3 cards of your cyberdeck. Put 1 program into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "name": "THE GRID",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    }
+  }
+]

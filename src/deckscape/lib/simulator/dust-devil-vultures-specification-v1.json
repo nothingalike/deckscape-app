@@ -1,0 +1,27 @@
+{
+  "cardId": "34810daa-5fbe-4492-8a14-2626a6e3eca0",
+  "handlerId": "dust-devil-vultures/mirage-v1",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "9ac8623c96caecdcb6a68c847165000869f6f596fe90cc29b17fca9f1bfe2c12",
+  "characteristics": {
+    "cardType": "character",
+    "name": "DUST DEVIL VULTURES",
+    "rulesText": "MIRAGE (When character is targeted by an opponent, you may put it into its owner’s hand.)",
+    "factions": ["DUSTRUNNER"],
+    "tags": ["DUST DEVIL"],
+    "iconic": false,
+    "copiesLimit": 4,
+    "ramCost": 3,
+    "requirements": {},
+    "ports": {
+      "head": 0,
+      "body": 1,
+      "leftArm": 2,
+      "rightArm": 2
+    },
+    "attack": 4,
+    "defence": 2,
+    "attackType": "MF",
+    "activatedAbilities": []
+  }
+}

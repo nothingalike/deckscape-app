@@ -1,0 +1,27 @@
+{
+  "cardId": "922a3d65-a5f5-42ff-a3db-a32166f27f3f",
+  "reviewMechanicsSha256": "37819be80c39c1fcbe78e389eb8c95fc2bf98ba9650f5294983f8b055149e7d3",
+  "handlerId": "trustfund-baby/enter-install-v1",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "TRUSTFUND BABY",
+    "cardType": "character",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "On enter, install 1 *RAM running.",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "activatedAbilities": [],
+    "attack": 1,
+    "defence": 1,
+    "attackType": "BF",
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    }
+  }
+}

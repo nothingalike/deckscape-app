@@ -1,0 +1,35 @@
+{
+  "cardId": "41529cf8-29f8-44ef-8de9-01a4cad082c9",
+  "characteristics": {
+    "name": "SHREDDER",
+    "cardType": "character",
+    "factions": ["THRASHER"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "FEEDBACK (Whenever character is dealt damage, it deals that much *BF damage to the source's controller.)",
+    "copiesLimit": 4,
+    "ramCost": 2,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 2,
+      "rightArm": 2
+    },
+    "activatedAbilities": [],
+    "attack": 2,
+    "defence": 2,
+    "attackType": "BF"
+  },
+  "handlers": [
+    {
+      "id": "shredder/feedback-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "41529cf8-29f8-44ef-8de9-01a4cad082c9/a45b5681e5d63cd522b1e54b7c6402cf0bf6d4e600b567d2750d56774717f706.webp",
+    "sha256": "a45b5681e5d63cd522b1e54b7c6402cf0bf6d4e600b567d2750d56774717f706"
+  }
+}

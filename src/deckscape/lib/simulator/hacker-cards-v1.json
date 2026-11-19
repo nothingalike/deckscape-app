@@ -1,0 +1,672 @@
+[
+  {
+    "cardId": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3",
+    "characteristics": {
+      "name": "FIRESTARTER",
+      "cardType": "mainframe",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Deal 1 *MF damage to any target.\nInstead, deal 2 *MF damage to any target.",
+      "prefix": "When you play a HACKER script —",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": {
+            "HACKER": 2
+          },
+          "operator": "base",
+          "text": "Deal 1 MF damage to any target."
+        },
+        {
+          "persistents": 4,
+          "factions": {
+            "HACKER": 4
+          },
+          "operator": "instead",
+          "text": "Deal 2 MF damage to any target."
+        }
+      ]
+    },
+    "handlers": [
+      {
+        "id": "firestarter/script-damage-1-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "firestarter/script-damage-2-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "36ce13d0-c63e-4d4f-919d-b620cf8bfcc3/8144d9d16e2b122334e7fed75bc8508d0598131936b5ac1fd6daed36f90bb657.webp",
+      "sha256": "8144d9d16e2b122334e7fed75bc8508d0598131936b5ac1fd6daed36f90bb657"
+    }
+  },
+  {
+    "cardId": "3a0b4588-3b7d-4795-8d59-d5752eab616e",
+    "characteristics": {
+      "name": "ADMIN",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "UPGRADE",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "admin/upgrade-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "3a0b4588-3b7d-4795-8d59-d5752eab616e/846465c54a7be4baf6e364e2f7dbf4f9069bf5e9f939580463df98412c33a38d.webp",
+      "sha256": "846465c54a7be4baf6e364e2f7dbf4f9069bf5e9f939580463df98412c33a38d"
+    }
+  },
+  {
+    "cardId": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Deal 2 *MF damage to any target.",
+      "copiesLimit": 4,
+      "name": "OVERLOAD MK. I",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/overload-mk-i",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "d1aabcc8-f293-46c5-b945-c8e10e4d7ebc/65751aba54da4880cb38ca5a82a5bcf27890984228c92feb84faded6cea436cc.webp",
+      "sha256": "65751aba54da4880cb38ca5a82a5bcf27890984228c92feb84faded6cea436cc"
+    }
+  },
+  {
+    "cardId": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Deal 4 *MF damage to any target.",
+      "copiesLimit": 4,
+      "name": "OVERLOAD MK. II",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/overload-mk-ii",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "bdf192ef-83ab-4904-90a7-cd0b7cdad16b/06ed0907a0abdf6830975cd5c04bf9f52c23ce24842397f336dc095ca5105137.webp",
+      "sha256": "06ed0907a0abdf6830975cd5c04bf9f52c23ce24842397f336dc095ca5105137"
+    }
+  },
+  {
+    "cardId": "02ce98ff-74b8-410a-8671-95e16d3d5f02",
+    "characteristics": {
+      "name": "NOVA, THE WHITE RABBIT",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Draw 1.\nSearch your cyberdeck for a *HACKER or *WONDERLAND card and reveal it. Put it into your hand, then shuffle. Purge Nova, the White Rabbit.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "LUCIDITY",
+          "ramCost": 1,
+          "run": true
+        },
+        {
+          "name": "PAST LIFE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 3,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "nova/lucidity-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "nova/past-life-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "02ce98ff-74b8-410a-8671-95e16d3d5f02/44ba9da998e4f25875a1bfa475585c53c64402f0800a51b7f2bd2814dcccb2fd.webp",
+      "sha256": "44ba9da998e4f25875a1bfa475585c53c64402f0800a51b7f2bd2814dcccb2fd"
+    }
+  },
+  {
+    "cardId": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308",
+    "characteristics": {
+      "name": "DEEP DIVER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, you may play target *HACKER script in your recycle bin. As it resolves, purge it.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RECOVERY",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "deep-diver/recovery-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "6f41533e-a1cf-4c2e-a5ed-a9e62423e308/40061e0cb6c9d797bb364eb014e8d0c9e8219bfd8d2e46ab108f376f7397a087.webp",
+      "sha256": "40061e0cb6c9d797bb364eb014e8d0c9e8219bfd8d2e46ab108f376f7397a087"
+    }
+  },
+  {
+    "cardId": "58fa2817-dce4-4b38-9ec0-db4aff2ee275",
+    "characteristics": {
+      "name": "CODER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "INDEX 3 *HACKER PROGRAM (Reveal the top 3 cards of your cyberdeck. Put 1 *HACKER program into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DATA SCRAPE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "coder/data-scrape-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "58fa2817-dce4-4b38-9ec0-db4aff2ee275/53044664827253afb7b011c9a412a2a13ca73afd60c4af27ae3d6f1767381cbd.webp",
+      "sha256": "53044664827253afb7b011c9a412a2a13ca73afd60c4af27ae3d6f1767381cbd"
+    }
+  },
+  {
+    "cardId": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3",
+    "characteristics": {
+      "name": "DIGITAL SPECTRE",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "When Digital Spectre’s attack hits a player, it also deals 2 *MF damage to that player.\nDigital Spectre gets STEALTH until turn end. (Character can’t be blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "PHASE SHIFT",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "digital-spectre/phase-shift-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "digital-spectre/attack-hit-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "3c4c1afe-8d8a-4997-8f37-26c2f6751ff3/39afadad00cdeab12e9d74c8eb08912146fe48996669221207d0df683a43f350.webp",
+      "sha256": "39afadad00cdeab12e9d74c8eb08912146fe48996669221207d0df683a43f350"
+    }
+  },
+  {
+    "cardId": "fd9f3afc-e12c-4219-93e8-95b450f0f57d",
+    "characteristics": {
+      "name": "TAGGER",
+      "cardType": "character",
+      "factions": ["HACKER", "ANARCHIST"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put a +1/+1 counter on another target *HACKER character.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "REVOLUTION",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "tagger/revolution-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "fd9f3afc-e12c-4219-93e8-95b450f0f57d/87abe3be766208da35c6469ffadf2ea96233e94ad4654f9269153fe393544e12.webp",
+      "sha256": "87abe3be766208da35c6469ffadf2ea96233e94ad4654f9269153fe393544e12"
+    }
+  },
+  {
+    "cardId": "38e95da0-8b22-4672-97f0-459b5ec48d26",
+    "characteristics": {
+      "name": "PHANTOM OS",
+      "cardType": "character",
+      "factions": ["A.I.", "HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for a virus or trojan and reveal it. Put it into your hand, then shuffle. Purge Phantom OS.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "GHOST IN THE MACHINE",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "phantom-os/ghost-in-the-machine-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "38e95da0-8b22-4672-97f0-459b5ec48d26/a188d3a9ec4d239141ff923a3e7f7d4188aa051c111d01104e954eaa5ee6478b.webp",
+      "sha256": "a188d3a9ec4d239141ff923a3e7f7d4188aa051c111d01104e954eaa5ee6478b"
+    }
+  },
+  {
+    "cardId": "cf077870-faa4-4d49-bac3-6080d316c424",
+    "characteristics": {
+      "name": "BLACK HAT",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put 1 CORRUPTION counter on target opponent's mainframe. (On NETCHECK, the active player takes 1 *MF damage from each CORRUPTION counter on their mainframe.)",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "KERNEL PANIC",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 3,
+      "attackType": "MF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "handlers": [
+      {
+        "id": "black-hat/kernel-panic-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "cf077870-faa4-4d49-bac3-6080d316c424/9c702788a194e5a7cf303ad270fe9f05aa9596863553d334d3e42decd1ab692c.webp",
+      "sha256": "9c702788a194e5a7cf303ad270fe9f05aa9596863553d334d3e42decd1ab692c"
+    }
+  },
+  {
+    "cardId": "462c87e3-1c4d-4583-a689-af1b16acdd51",
+    "characteristics": {
+      "name": "HEX, CODEMANCER",
+      "cardType": "character",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "On your turn, the first *HACKER program or trojan you play costs 3 *RAM less.\nDeal X *MF damage to target player, where X is double your *HACKER synergy.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "DDOS ATTACK",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 4,
+      "attackType": "MF",
+      "ports": {
+        "head": 3,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "hex-codemancer/ddos-attack-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "hex-codemancer/first-program-discount-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "462c87e3-1c4d-4583-a689-af1b16acdd51/7d9460afaf7d41d98f6e24f8a9e0a46d8d0eb4d5fabef73856e57734dace8ba6.webp",
+      "sha256": "7d9460afaf7d41d98f6e24f8a9e0a46d8d0eb4d5fabef73856e57734dace8ba6"
+    }
+  },
+  {
+    "cardId": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Refresh target character. If that character is a *HACKER, put a +1/+1 counter on it.",
+      "copiesLimit": 4,
+      "name": "BINARY BLAST",
+      "factions": ["HACKER"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/binary-blast",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "d62179fa-8ec4-4d4c-ba2d-1dd9bba85adb/66821514d3c3a8524247c88151ad13adc6a4ecc461e0731e371bcdfc2b8a63cb.webp",
+      "sha256": "66821514d3c3a8524247c88151ad13adc6a4ecc461e0731e371bcdfc2b8a63cb"
+    }
+  },
+  {
+    "cardId": "9904cdfa-fb57-4115-81b6-f4c6802c3623",
+    "characteristics": {
+      "cardType": "program",
+      "name": "QUANTUM ENCRYPTION",
+      "rulesText": "*SWIFT Prevent all damage until turn end.",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/quantum-encryption",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "9904cdfa-fb57-4115-81b6-f4c6802c3623/15be9614cbc956f6901921297561d338f8314bdeaee1a4c1776752bb9948a93c.webp",
+      "sha256": "15be9614cbc956f6901921297561d338f8314bdeaee1a4c1776752bb9948a93c"
+    }
+  },
+  {
+    "cardId": "29ee1174-f6e0-43f1-91ff-d44688bf7e11",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Target player reveals their hand and you choose a card from it. They discard that card.",
+      "copiesLimit": 4,
+      "name": "PHISHING",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true
+    },
+    "handlers": [
+      {
+        "id": "script/phishing",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "29ee1174-f6e0-43f1-91ff-d44688bf7e11/883d4ec3e204c911bbfa2420ba926aa06aa7593568348bd859b75342e326fcdc.webp",
+      "sha256": "883d4ec3e204c911bbfa2420ba926aa06aa7593568348bd859b75342e326fcdc"
+    }
+  },
+  {
+    "cardId": "538f04c0-6e64-4bdd-b767-b2dbc68052d4",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Attach to target player's mainframe. On their NETCHECK, System Error deals 2 *MF damage to them.",
+      "copiesLimit": 4,
+      "name": "SYSTEM ERROR",
+      "factions": ["HACKER"],
+      "tags": ["VIRUS"],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "protocol/system-error",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "538f04c0-6e64-4bdd-b767-b2dbc68052d4/63d3f9507740c2cd452faa7c29c0c38ccb64a0bc5979c3768e9a3db5c32be34c.webp",
+      "sha256": "63d3f9507740c2cd452faa7c29c0c38ccb64a0bc5979c3768e9a3db5c32be34c"
+    }
+  },
+  {
+    "cardId": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "When a player plays a program, they draw 1.",
+      "copiesLimit": 4,
+      "name": "THE NET",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "environment/the-net",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "c8d2be7e-3a4e-4f6c-ba8e-f94c40f3751b/f6116e0518f86cd2101a749aeafbc6f044815123a850be1fe15b93e4306ce787.webp",
+      "sha256": "f6116e0518f86cd2101a749aeafbc6f044815123a850be1fe15b93e4306ce787"
+    }
+  },
+  {
+    "cardId": "11bd1619-6eb4-462e-953a-482258f87a99",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On NETCHECK, the active player may INDEX 3 PROGRAM. (Reveal the top 3 cards of your cyberdeck. Put 1 program into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "name": "THE GRID",
+      "factions": ["HACKER"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "environment/the-grid",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "11bd1619-6eb4-462e-953a-482258f87a99/010272d84525ca0c0576718e3a8a9d80206bd2670fefc88668afb7acdab6cc26.webp",
+      "sha256": "010272d84525ca0c0576718e3a8a9d80206bd2670fefc88668afb7acdab6cc26"
+    }
+  }
+]

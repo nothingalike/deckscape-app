@@ -1,0 +1,23 @@
+[
+  {
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "077aca1c8c7fd643a86f1c18ad0949eca2e92a360cadfb9435dd23c4e5198cd5",
+    "cardId": "afd75ae3-39ab-4b79-ae27-d30d84c7301d",
+    "handlerId": "protocol/butterfly-effect",
+    "characteristics": {
+      "name": "BUTTERFLY EFFECT",
+      "cardType": "program",
+      "rulesText": "On enter, create a *MF 0/1 Butterfly token character.\n\nOn your SYSTEM CHECK, double the number of Butterfly token characters you control.",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": true,
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "subtype": "protocol",
+      "swift": false,
+      "activatedAbilities": []
+    },
+    "kind": "butterfly-effect"
+  }
+]

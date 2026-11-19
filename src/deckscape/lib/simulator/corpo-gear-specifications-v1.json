@@ -1,0 +1,56 @@
+[
+  {
+    "cardId": "7c4f7168-d89b-422a-bb23-9f672d393aba",
+    "kind": "az-glass",
+    "handlerId": "az-glass/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "3541c8e2f0bbbb8ba8e0d863f3956035c8ad316ab7bdc9fb0408b1f3d62723fb",
+    "reviewArtworkSha256": "f060e0858cac9e182a64f5576bf1019b41fac08807bc16f82f30542e80da6eb4",
+    "characteristics": {
+      "name": "A-Z GLASS",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "On enter, draw 1.\n\nYou may look at any facedown cards in play.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 1,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    }
+  },
+  {
+    "cardId": "e5a07806-0e36-429e-aae2-ca74bc4afd8a",
+    "kind": "sneakerhead",
+    "handlerId": "sneakerhead/gear-v1",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ff3673c7fe818adf92b2931baecd50962c9f537f027f5461a8933fbc85adb5f9",
+    "reviewArtworkSha256": "f64e7f552393660c1c617610b7937584b0a7c9e8faf752b3acb0df05c7deeea3",
+    "characteristics": {
+      "name": "SNEAKERHEAD",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "*SWIFT On enter, prevent all damage to attached character until turn end.\n\nAttached character gets +0/+2.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "cardType": "gear",
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    }
+  }
+]

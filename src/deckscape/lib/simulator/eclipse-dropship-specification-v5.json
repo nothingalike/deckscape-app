@@ -1,0 +1,49 @@
+{
+  "cardId": "c5aae1d7-4d95-4958-9eb7-506b61aa3297",
+  "reviewMechanicsSha256": "a987335551ab203adac8ee69e79aa1c9223d11dd4e9709e85bdd6f431ebfee36",
+  "characteristics": {
+    "name": "ECLIPSE DROPSHIP",
+    "cardType": "character",
+    "factions": [
+      "DUSTRUNNER"
+    ],
+    "tags": [
+      "TRANSPORT"
+    ],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "MIRAGE (When character is targeted by an opponent, you may put it into its owner’s hand.)\nPut 1 *DUSTRUNNER character from your hand into play and set its *RAM cost to 0. On turn end, if this character is in play, put it into its owner's hand.",
+    "ramCost": 3,
+    "requirements": {},
+    "activatedAbilities": [
+      {
+        "name": "INFILTRATE",
+        "ramCost": 0,
+        "run": true
+      }
+    ],
+    "attack": 0,
+    "defence": 3,
+    "attackType": "MF",
+    "ports": {
+      "head": 0,
+      "body": 0,
+      "leftArm": 0,
+      "rightArm": 0
+    }
+  },
+  "abilities": [
+    {
+      "abilityId": "infiltrate",
+      "index": 0,
+      "handlerId": "eclipse-dropship/infiltrate-v1",
+      "handlerVersion": 1
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "eclipse-dropship/mirage-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

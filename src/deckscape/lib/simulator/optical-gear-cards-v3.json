@@ -1,0 +1,70 @@
+[
+  {
+    "cardId": "537c842c-dea1-4a97-a414-4b9c81ac1e0f",
+    "characteristics": {
+      "name": "CLOAKING FIELD",
+      "cardType": "gear",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Attached character gets CLOAKED. (Character can't be targeted.)",
+      "ramCost": 2,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "subtype": "cyberware",
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": []
+    },
+    "handlers": [
+      {
+        "id": "cloaking-field/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "537c842c-dea1-4a97-a414-4b9c81ac1e0f/2bd85cdc4b3d86d6fb0416ef5e17cb0f81394c6e8fca2e3f16a3cb8fe0644234.webp",
+      "sha256": "2bd85cdc4b3d86d6fb0416ef5e17cb0f81394c6e8fca2e3f16a3cb8fe0644234"
+    }
+  },
+  {
+    "cardId": "9d2c4df6-8728-47a6-ae57-ecdb9e133a25",
+    "characteristics": {
+      "name": "A-Z OPTICS",
+      "cardType": "gear",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Attached character gets VISION. (Character can block characters with STEALTH.) \n\nAll characters opponents control lose and can't get CLOAKED.",
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "cyberware",
+      "ports": {
+        "head": 1,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      },
+      "activatedAbilities": []
+    },
+    "handlers": [
+      {
+        "id": "a-z-optics/gear-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "9d2c4df6-8728-47a6-ae57-ecdb9e133a25/3fafe0bcf520a7c4b618932975d560371e2cc43a5e8b411866f562782e2b6825.webp",
+      "sha256": "3fafe0bcf520a7c4b618932975d560371e2cc43a5e8b411866f562782e2b6825"
+    }
+  }
+]

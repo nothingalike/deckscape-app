@@ -1,0 +1,113 @@
+[
+  {
+    "cardId": "10526e1b-0820-4a60-922c-fefc1e63ccae",
+    "kind": "growing-unrest",
+    "handlerId": "protocol/growing-unrest",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "c771b719fd684ea97dbcdc7038022a2f55f8f0118f86df1eefdbb593fa50e4ce",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Attach to target player’s mainframe. Whenever they install a *RAM, Growing Unrest deals 1 *MF damage to them.",
+      "copiesLimit": 4,
+      "name": "GROWING UNREST",
+      "factions": ["DUSTRUNNER"],
+      "tags": ["VIRUS"],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {
+        "DUSTRUNNER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "538f04c0-6e64-4bdd-b767-b2dbc68052d4",
+    "kind": "system-error",
+    "handlerId": "protocol/system-error",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "93973edc76fdb95db684130238590fc85bdb944535ee5959dbc4812a6ea290fe",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Attach to target player's mainframe. On their NETCHECK, System Error deals 2 *MF damage to them.",
+      "copiesLimit": 4,
+      "name": "SYSTEM ERROR",
+      "factions": ["HACKER"],
+      "tags": ["VIRUS"],
+      "iconic": false,
+      "ramCost": 4,
+      "requirements": {
+        "HACKER": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "733c4d90-6934-4dfe-8401-c42b9da7d291",
+    "kind": "generational-wealth",
+    "handlerId": "protocol/generational-wealth",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "44f3d91e87be014bd0fa155baf8d378073a7c276aef3f87470936c14f131c2c9",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "On your NETCHECK, roll a d20. If you roll 9 or higher, install 1 *RAM running.",
+      "copiesLimit": 4,
+      "name": "GENERATIONAL WEALTH",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {
+        "CORPO": 1
+      },
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "9b3b9b91-4e46-4e71-a354-4de90fa98674",
+    "kind": "insurance-policy",
+    "handlerId": "protocol/insurance-policy",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "a9dbb695d95f37adfa79a898d1b31cdc103a1952d5110caafbce8fd8e614df4c",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Whenever a *CORPO character you control is destroyed by an opponent, install 1 *RAM running.",
+      "copiesLimit": 4,
+      "name": "INSURANCE POLICY",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    }
+  },
+  {
+    "cardId": "bfd8e1d4-493d-4ced-a02e-72c6082061c8",
+    "kind": "tax-evasion",
+    "handlerId": "protocol/tax-evasion",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "08d207ec25e225afda8ff083de45a7d593b1d4ba85b800c78301c6101b8a291b",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "If a character you control is destroyed by an opponent, its committed *RAM returns to its owner's RAM bank refreshed.",
+      "copiesLimit": 4,
+      "name": "TAX EVASION",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "protocol",
+      "swift": false
+    }
+  }
+]

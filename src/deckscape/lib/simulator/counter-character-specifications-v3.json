@@ -1,0 +1,62 @@
+[
+  {
+    "cardId": "b79be2d7-1eae-4864-9db4-6bc17cdb4fb6",
+    "reviewMechanicsSha256": "d28c0d109f92c1f08de521fd2df0c4891e2e231880a3e9d445cf31413eb3bf75",
+    "characteristics": {
+      "name": "BIG KAT",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "CORPO"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put a -1/-1 counter on target character.\nPut a +1/+1 counter on another target *WONDERLAND character.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "SHORTER",
+          "ramCost": 2,
+          "run": true
+        },
+        {
+          "name": "TALLER",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "shorter",
+        "index": 0,
+        "handlerId": "big-kat/shorter-v1",
+        "handlerVersion": 1,
+        "counter": {
+          "counter": "-1/-1",
+          "amount": 1
+        }
+      },
+      {
+        "abilityId": "taller",
+        "index": 1,
+        "handlerId": "big-kat/taller-v1",
+        "handlerVersion": 1,
+        "counter": {
+          "counter": "+1/+1",
+          "amount": 1,
+          "another": true,
+          "faction": "WONDERLAND"
+        }
+      }
+    ]
+  }
+]

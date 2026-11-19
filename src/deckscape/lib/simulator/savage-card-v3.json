@@ -1,0 +1,44 @@
+{
+  "cardId": "e55ec40d-cf40-49b9-97e2-086dfe8a02f6",
+  "characteristics": {
+    "name": "SAVAGE",
+    "cardType": "mainframe",
+    "factions": ["THRASHER", "CYBERNETIC"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "Characters you control with CYBERNETIC gear get STAMINA.\nCharacters you control with THRASHER gear get FEEDBACK.",
+    "prefix": "",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "THRASHER": 1,
+          "CYBERNETIC": 1
+        },
+        "operator": "base",
+        "text": "Characters you control with CYBERNETIC gear get STAMINA."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "THRASHER": 2,
+          "CYBERNETIC": 2
+        },
+        "operator": "independent",
+        "text": "Characters you control with THRASHER gear get FEEDBACK."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "savage/equipped-keywords-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "e55ec40d-cf40-49b9-97e2-086dfe8a02f6/11e483fbc4e9a641ca833e9c42c6ff0c39148a9ceb237ee25c34ba52d972893f.webp",
+    "sha256": "11e483fbc4e9a641ca833e9c42c6ff0c39148a9ceb237ee25c34ba52d972893f"
+  }
+}

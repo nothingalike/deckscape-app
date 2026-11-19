@@ -1,0 +1,161 @@
+[
+  {
+    "cardId": "2dbe2535-e170-4a14-9a86-335f49ac924b",
+    "reviewMechanicsSha256": "1a434e0fc0366511bc1459d4276bc720b90077417dcbd2398ac4730b2c1d256e",
+    "characteristics": {
+      "name": "WHITE KNIGHT",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "ROBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Gain 2 *MF or 2 *BF health.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "VIRTUE",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "abilityId": "virtue",
+        "index": 0,
+        "handlerId": "white-knight/virtue-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "a9e15a7a-bc94-4de5-a79d-ac62d50ed302",
+    "reviewMechanicsSha256": "2932a20c40449a7b86ce596a741e315afccd1b577cef6bfca0eadf9b3859867d",
+    "characteristics": {
+      "name": "AEKANI PRIESTESS",
+      "cardType": "character",
+      "factions": ["DUSTRUNNER", "MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Gain 3 *MF or 3 *BF health. If [The Amrita] is the active environment, instead gain 5 *MF or 5 *BF health.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "HEALING WATERS",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "MF"
+    },
+    "abilities": [
+      {
+        "abilityId": "healing-waters",
+        "index": 0,
+        "handlerId": "aekani-priestess/healing-waters-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "e8844622-e6ee-4698-a459-ad8ae7ac7d3d",
+    "reviewMechanicsSha256": "e8a2db218febd4ceda5292fc9dfb0e8940509695c8be0d04102aff7ce823862f",
+    "characteristics": {
+      "name": "RED KNIGHT",
+      "cardType": "character",
+      "factions": ["WONDERLAND", "ROBOT"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 2 *MF or 2 *BF damage to target player.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "MALICE",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "malice",
+        "index": 0,
+        "handlerId": "red-knight/malice-v1",
+        "handlerVersion": 1
+      }
+    ]
+  },
+  {
+    "cardId": "94a13b0b-612b-44b0-bc6e-0290cf234401",
+    "reviewMechanicsSha256": "3ef51d74293bc1edadc8d9f0a3bc56c14959e79f21ab4638d8af2f1467328dfa",
+    "characteristics": {
+      "name": "CRYOBLADE ASSASSIN",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Cryoblade Assassin gets STEALTH until turn end. (Character can’t be blocked except by characters with VISION.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "ports": {
+        "head": 1,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      },
+      "activatedAbilities": [
+        {
+          "name": "CLOAKED STRIKE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 2,
+      "attackType": "BF"
+    },
+    "abilities": [
+      {
+        "abilityId": "cloaked-strike",
+        "index": 0,
+        "handlerId": "cryoblade-assassin/cloaked-strike-v1",
+        "handlerVersion": 1,
+        "temporaryCombat": {
+          "kind": "stealth-self"
+        }
+      }
+    ]
+  }
+]

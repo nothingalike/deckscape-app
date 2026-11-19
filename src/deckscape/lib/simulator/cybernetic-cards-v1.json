@@ -1,0 +1,738 @@
+[
+  {
+    "cardId": "d3ed772b-f0ac-4e77-a9ab-833544869315",
+    "characteristics": {
+      "name": "ARC, CIRCUIT BREAKER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "Deal 1 *MF damage to characters opponents control.\nUntil turn end, *CYBERNETIC characters you control get OVERRUN and +2/+0 for each cyberware attached to them.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SYSTEM SHOCK",
+          "ramCost": 0,
+          "run": true
+        },
+        {
+          "name": "CALL OF THE CHROME",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 6,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "handlers": [
+      {
+        "id": "arc/system-shock-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "arc/call-of-the-chrome-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "d3ed772b-f0ac-4e77-a9ab-833544869315/a324259d855418cbdf044fe0d9ce82ae2ee0ba4468e7abc0cf2dde3078c08102.webp",
+      "sha256": "a324259d855418cbdf044fe0d9ce82ae2ee0ba4468e7abc0cf2dde3078c08102"
+    }
+  },
+  {
+    "cardId": "13bedd76-c98b-4508-a6d0-15eb4afe3f86",
+    "characteristics": {
+      "name": "SYNTHETIX",
+      "cardType": "mainframe",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "+1/+1 for each cyberware attached to them.\nInstead, +2/+1 for each cyberware attached to them.",
+      "prefix": "All CYBERNETIC characters you control get —",
+      "tiers": [
+        {
+          "persistents": 2,
+          "factions": {
+            "CYBERNETIC": 2
+          },
+          "operator": "base",
+          "text": "+1/+1 for each cyberware attached to them."
+        },
+        {
+          "persistents": 4,
+          "factions": {
+            "CYBERNETIC": 4
+          },
+          "operator": "instead",
+          "text": "+2/+1 for each cyberware attached to them."
+        }
+      ]
+    },
+    "handlers": [
+      {
+        "id": "synthetix/cyberware-stats-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "13bedd76-c98b-4508-a6d0-15eb4afe3f86/89d1c8c795c6fd27f495ce6d2749e9d820d60692fa2560e4b6c6b75b2ecec7c8.webp",
+      "sha256": "89d1c8c795c6fd27f495ce6d2749e9d820d60692fa2560e4b6c6b75b2ecec7c8"
+    }
+  },
+  {
+    "cardId": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Until turn end, target character you control gets +7/-1 and +8 PSYCHOSIS. If that character is non-*CYBERNETIC, it gets an additional +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "name": "REDLINE",
+      "factions": ["CYBERNETIC"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "script/redline",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "266be7ba-83f6-49a1-b4f6-cd5f47bac3d5/d19f904cc6ed65720809b1852711ab358e8809480ca7a072f918ef0362a1d849.webp",
+      "sha256": "d19f904cc6ed65720809b1852711ab358e8809480ca7a072f918ef0362a1d849"
+    }
+  },
+  {
+    "cardId": "b7f56830-c78c-48a8-b013-53bbb4c9d123",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "Until turn end, target character you control gets +4/+4 and +5 PSYCHOSIS. If that character is non-*CYBERNETIC, it gets an additional +5 PSYCHOSIS. (When character attacks or runs, roll a d20. If you roll less than its PSYCHOSIS, its attack hits you and this action fails.)",
+      "copiesLimit": 4,
+      "name": "MEGAROIDS, KIWI KRUSH",
+      "factions": ["CYBERNETIC"],
+      "tags": ["DRUG"],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "script/megaroids",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "b7f56830-c78c-48a8-b013-53bbb4c9d123/0a6263bc2e5d030c5ba8751cfea9f3503ac81799f85c702763a3eb1172aa6eb6.webp",
+      "sha256": "0a6263bc2e5d030c5ba8751cfea9f3503ac81799f85c702763a3eb1172aa6eb6"
+    }
+  },
+  {
+    "cardId": "6bc3ceab-04fe-455b-9c9c-b0470f122286",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "*SWIFT Select one — \n\n• Destroy target program attached to your mainframe.\n• Remove all counters on your mainframe.",
+      "copiesLimit": 4,
+      "name": "ANTIVIRUS",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "script",
+      "swift": true,
+      "chooseModes": 1,
+      "modes": [
+        "Destroy target program attached to your mainframe.",
+        "Remove all counters on your mainframe."
+      ]
+    },
+    "handlers": [
+      {
+        "id": "script/antivirus",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "6bc3ceab-04fe-455b-9c9c-b0470f122286/5932db75689db3b99b5e073bcf6c5184712a7565685c1d8ec9b3d30143e1d0c0.webp",
+      "sha256": "5932db75689db3b99b5e073bcf6c5184712a7565685c1d8ec9b3d30143e1d0c0"
+    }
+  },
+  {
+    "cardId": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335",
+    "characteristics": {
+      "cardType": "program",
+      "rulesText": "All characters get STAMINA. (Character doesn’t run when it attacks.)",
+      "copiesLimit": 4,
+      "name": "MAX GAINZ",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "subtype": "environment",
+      "swift": false
+    },
+    "handlers": [
+      {
+        "id": "environment/max-gainz",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "ae3d0b81-6ef6-4ca2-b143-8d45448f6335/30999fd6b479e9744c16cbd602ab69f6c14c09cb363d50d165ed63a0806b2602.webp",
+      "sha256": "30999fd6b479e9744c16cbd602ab69f6c14c09cb363d50d165ed63a0806b2602"
+    }
+  },
+  {
+    "cardId": "89279587-794a-4602-8d08-785b75aa9f47",
+    "characteristics": {
+      "name": "SCRAPPER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Install 1 *RAM running.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SCRAP HEAP",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "scrapper/scrap-heap-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "89279587-794a-4602-8d08-785b75aa9f47/0bc159516ffca0ad6f2c6ff7fdc160486a2126e40fb8ee15ff9164481c71ba2c.webp",
+      "sha256": "0bc159516ffca0ad6f2c6ff7fdc160486a2126e40fb8ee15ff9164481c71ba2c"
+    }
+  },
+  {
+    "cardId": "138219c0-06f3-44de-b02b-1cb418c690c9",
+    "characteristics": {
+      "name": "ROGUE VALKYRIE",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "MECH"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Deal 2 *BF damage to target character.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {
+        "CYBERNETIC": 1
+      },
+      "activatedAbilities": [
+        {
+          "name": "SKYBREAKER",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 3,
+      "defence": 5,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "handlers": [
+      {
+        "id": "rogue-valkyrie/skybreaker-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "138219c0-06f3-44de-b02b-1cb418c690c9/cfe3c87b51a3210592de58f6182fb165ab45600929720c9353948fd8b8a8f02e.webp",
+      "sha256": "cfe3c87b51a3210592de58f6182fb165ab45600929720c9353948fd8b8a8f02e"
+    }
+  },
+  {
+    "cardId": "c3d25941-ff69-4cfb-9aaa-20b97c44c819",
+    "characteristics": {
+      "name": "BACK ALLEY BRUISERS",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DUEL target character. (Both characters' attacks hit each other.)",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "KNUCKLE UP",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 5,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "back-alley-bruisers/knuckle-up-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "c3d25941-ff69-4cfb-9aaa-20b97c44c819/2abd22e9eab20a9ad7eaeba5e96617319a7ee06bdafc3d37c3c2654d2502ce36.webp",
+      "sha256": "2abd22e9eab20a9ad7eaeba5e96617319a7ee06bdafc3d37c3c2654d2502ce36"
+    }
+  },
+  {
+    "cardId": "11fc2d4c-e24a-4556-baef-42ecf2b27838",
+    "characteristics": {
+      "name": "LUG NUT",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "ANIMAL"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Target character with 3 or less defense can't block this turn.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "BORK",
+          "ramCost": 0,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "lug-nut/bork-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "11fc2d4c-e24a-4556-baef-42ecf2b27838/4c1583613ea1fe587e14d15133758ef6ae0523f996a4824eb2c986aba33670c6.webp",
+      "sha256": "4c1583613ea1fe587e14d15133758ef6ae0523f996a4824eb2c986aba33670c6"
+    }
+  },
+  {
+    "cardId": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442",
+    "characteristics": {
+      "name": "FACELESS ONI",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "DUEL target character. (Both characters' attacks hit each other.) If Faceless Oni destroys that character, deal 3 *BF damage to that character's controller.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SILENT EXECUTION",
+          "ramCost": 2,
+          "run": true
+        }
+      ],
+      "attack": 4,
+      "defence": 3,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "faceless-oni/silent-execution-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "fe1f9604-5e6c-43ab-9ce9-9e9cd03b1442/f7663551ed405b893ead027666fcb77ac9e7932973b0b5ee0a3e2a1b02faee46.webp",
+      "sha256": "f7663551ed405b893ead027666fcb77ac9e7932973b0b5ee0a3e2a1b02faee46"
+    }
+  },
+  {
+    "cardId": "9771c36f-c100-4ac3-af9d-f54c32bbde1f",
+    "characteristics": {
+      "name": "LASERSAW BERSERKER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "OVERRUN (Character deals excess damage to defending player when blocked.)\nUntil turn end, Lasersaw Berserker gets +2/+0 for each *CYBERNETIC you control. On turn end, destroy him.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "RAMPAGE",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 5,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "handlers": [
+      {
+        "id": "lasersaw-berserker/rampage-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "lasersaw-berserker/overrun-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "9771c36f-c100-4ac3-af9d-f54c32bbde1f/06c78f48dc93efcd9b6789756c0c3241dc37210f4bcbaa8685f46c0cdbdcb93d.webp",
+      "sha256": "06c78f48dc93efcd9b6789756c0c3241dc37210f4bcbaa8685f46c0cdbdcb93d"
+    }
+  },
+  {
+    "cardId": "240abe8f-929a-4bb6-b6b8-872033a7cc56",
+    "characteristics": {
+      "name": "THE PLUG",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Search your cyberdeck for a drug and reveal it. Put it into your hand, then shuffle.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "THE GOOD SHIT",
+          "ramCost": 1,
+          "run": true
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "the-plug/the-good-shit-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "240abe8f-929a-4bb6-b6b8-872033a7cc56/5a97db12de641ebeb5999818c04effd777f9338bb34f0f0267762812effff4d2.webp",
+      "sha256": "5a97db12de641ebeb5999818c04effd777f9338bb34f0f0267762812effff4d2"
+    }
+  },
+  {
+    "cardId": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04",
+    "characteristics": {
+      "name": "DUMPSTER DIVER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Put target gear from your recycle bin into your hand.",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SALVAGE",
+          "ramCost": 1,
+          "run": false
+        }
+      ],
+      "attack": 1,
+      "defence": 1,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [
+      {
+        "id": "dumpster-diver/salvage-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "2c13b064-5d3a-4489-8b1f-4d55d9c39c04/13e933471c7057827874c4c8d6df2fc021ed11796d7676ee5bc24976c6e7f3dd.webp",
+      "sha256": "13e933471c7057827874c4c8d6df2fc021ed11796d7676ee5bc24976c6e7f3dd"
+    }
+  },
+  {
+    "cardId": "8ac649de-1476-4db0-adec-9d8d09ad53e2",
+    "characteristics": {
+      "name": "IRON MAIDEN",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Until turn end, Iron Maiden gets +2/+0 and, whenever her attack hits a character, she may also deal that much damage to another target character.",
+      "copiesLimit": 4,
+      "ramCost": 3,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "MACHINA MORTIS",
+          "ramCost": 2,
+          "run": false
+        }
+      ],
+      "attack": 2,
+      "defence": 4,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "iron-maiden/machina-mortis-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "iron-maiden/machina-mortis-hit-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "8ac649de-1476-4db0-adec-9d8d09ad53e2/7c7259be7eacd52e3f0158d8ba3e61c809a895c0d87ef578e57a88a37c898a49.webp",
+      "sha256": "7c7259be7eacd52e3f0158d8ba3e61c809a895c0d87ef578e57a88a37c898a49"
+    }
+  },
+  {
+    "cardId": "011d3fc1-6fab-4791-bf59-fc6a80a465b4",
+    "characteristics": {
+      "name": "BLACKOUT BOYS",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Blackout Boys gets +1/+0 for each other [Blackout Boys] you control.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 1,
+        "body": 1,
+        "leftArm": 2,
+        "rightArm": 2
+      }
+    },
+    "handlers": [
+      {
+        "id": "blackout-boys/passive-stats-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "011d3fc1-6fab-4791-bf59-fc6a80a465b4/608c0abd301c91c0ac0e95b642879274e68ded33fe2204dab124bacc4be70a98.webp",
+      "sha256": "608c0abd301c91c0ac0e95b642879274e68ded33fe2204dab124bacc4be70a98"
+    }
+  },
+  {
+    "cardId": "5806a128-2e44-4fe4-a275-2a3e7c2666b3",
+    "characteristics": {
+      "name": "BOONYEN, WARDRIVER",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "ANIMAL"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "OVERRUN (Character deals excess damage to defending player when blocked.)",
+      "copiesLimit": 4,
+      "ramCost": 6,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 7,
+      "defence": 8,
+      "attackType": "BF",
+      "ports": {
+        "head": 0,
+        "body": 0,
+        "leftArm": 0,
+        "rightArm": 0
+      }
+    },
+    "handlers": [
+      {
+        "id": "boonyen/overrun-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "5806a128-2e44-4fe4-a275-2a3e7c2666b3/7701de9f693c3d287c76b67080b40be05fcb01a33a0cd842b9641ee753e8293f.webp",
+      "sha256": "7701de9f693c3d287c76b67080b40be05fcb01a33a0cd842b9641ee753e8293f"
+    }
+  },
+  {
+    "cardId": "202d92fe-e5df-4b04-9a6e-7e499a8385bf",
+    "characteristics": {
+      "name": "VIRTUAL KID",
+      "cardType": "character",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "",
+      "copiesLimit": 4,
+      "ramCost": 1,
+      "requirements": {},
+      "activatedAbilities": [],
+      "attack": 1,
+      "defence": 2,
+      "attackType": "BF",
+      "ports": {
+        "head": 2,
+        "body": 1,
+        "leftArm": 1,
+        "rightArm": 1
+      }
+    },
+    "handlers": [],
+    "artwork": {
+      "path": "202d92fe-e5df-4b04-9a6e-7e499a8385bf/290c09cd87331147306cf0853aad5d0eabc409dcd2733484a35db0a725b921c0.webp",
+      "sha256": "290c09cd87331147306cf0853aad5d0eabc409dcd2733484a35db0a725b921c0"
+    }
+  },
+  {
+    "cardId": "ec207828-a706-474a-9d96-f6cc98e15973",
+    "characteristics": {
+      "name": "METAL HEAD",
+      "cardType": "character",
+      "factions": ["CYBERNETIC", "THRASHER"],
+      "tags": [],
+      "iconic": true,
+      "rulesText": "STAMINA (Character doesn’t run when it attacks.)\nDUEL target character. (Both characters' attacks hit each other.) You may then gain control of target gear attached to them and attach it to Metal Head.",
+      "copiesLimit": 4,
+      "ramCost": 5,
+      "requirements": {},
+      "activatedAbilities": [
+        {
+          "name": "SHRED",
+          "ramCost": 3,
+          "run": true
+        }
+      ],
+      "attack": 6,
+      "defence": 7,
+      "attackType": "BF",
+      "ports": {
+        "head": 3,
+        "body": 3,
+        "leftArm": 3,
+        "rightArm": 3
+      }
+    },
+    "handlers": [
+      {
+        "id": "metal-head/shred-v1",
+        "version": 1,
+        "parameters": {}
+      },
+      {
+        "id": "metal-head/stamina-v1",
+        "version": 1,
+        "parameters": {}
+      }
+    ],
+    "artwork": {
+      "path": "ec207828-a706-474a-9d96-f6cc98e15973/663df716b3845eb0db98d556c160960aa9bad5fa095c85df36dbb3b7ab5dee23.webp",
+      "sha256": "663df716b3845eb0db98d556c160960aa9bad5fa095c85df36dbb3b7ab5dee23"
+    }
+  }
+]

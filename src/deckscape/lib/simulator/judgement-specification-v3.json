@@ -1,0 +1,29 @@
+{
+  "cardId": "0fbfb6dc-448f-4236-9845-b449697d9881",
+  "kind": "judgement",
+  "handlerId": "script/judgement",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "f4da79600210d2f293337b76cf2797a6651e5938baa192f9b5eee0e5e2d3fcbc",
+  "characteristics": {
+    "name": "JUDGEMENT",
+    "cardType": "program",
+    "factions": ["MYSTIC"],
+    "tags": ["TAROT"],
+    "iconic": false,
+    "rulesText": "*SWIFT Until turn end, whenever a character you control is destroyed by an opponent, destroy target character.\nREVERSED program",
+    "copiesLimit": 4,
+    "ramCost": 4,
+    "requirements": {
+      "MYSTIC": 1
+    },
+    "subtype": "script",
+    "swift": true,
+    "activatedAbilities": [],
+    "reversal": {
+      "normalText": "Until turn end, whenever a character you control is destroyed by an opponent, destroy target character.",
+      "pinkText": "character",
+      "replacementText": "program",
+      "reversedText": "Until turn end, whenever a character you control is destroyed by an opponent, destroy target program."
+    }
+  }
+}

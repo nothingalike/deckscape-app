@@ -1,0 +1,215 @@
+[
+  {
+    "cardId": "a97feebb-6d0f-45da-b4a2-8b137159a1e5",
+    "kind": "supersymmetry",
+    "handlerId": "environment/supersymmetry",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "9a5088bd343d8975983fc23d3ba2750c340118e339dd0a932c90a14dd3858d4f",
+    "characteristics": {
+      "name": "SUPERSYMMETRY",
+      "cardType": "program",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "All characters' base attack values are swapped with their base defense values.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "4d16b51f-98fd-4e84-9dcd-8b13718dac20",
+    "kind": "death-wish",
+    "handlerId": "death-wish/damage-v1",
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "DEATH WISH",
+      "cardType": "program",
+      "subtype": "environment",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Whenever a non-*THRASHER character takes *BF damage, destroy them.",
+      "copiesLimit": 4,
+      "ramCost": 4,
+      "requirements": {},
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "handlerVersion": 1,
+    "characteristics": {
+      "name": "BLACK MARKET",
+      "cardType": "program",
+      "subtype": "environment",
+      "factions": ["CYBERNETIC"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "On NETCHECK, the active player may INDEX 3 GEAR. (Reveal the top 3 cards of your cyberdeck. Put 1 gear into your hand, then bin the rest.)",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "swift": false,
+      "activatedAbilities": []
+    },
+    "kind": "black-market",
+    "cardId": "cb5391ee-470b-48bb-960e-4473fe878486",
+    "reviewMechanicsSha256": "423bf2ed1f526d0e578ddce6fecfc9fb729d63321986f9ba9809e2b2edb5e0cc",
+    "handlerId": "black-market/index-v1"
+  },
+  {
+    "reviewMechanicsSha256": "51c5e7e7c1b5e7ac3a60a3f62b4bd7f23d7fb9ed3597d8facbf474e1a49a7377",
+    "handlerId": "the-hive/drone-v1",
+    "cardId": "aa900643-5acb-4282-87b2-bdfe93753f9d",
+    "handlerVersion": 1,
+    "characteristics": {
+      "rulesText": "On NETCHECK, the active player creates a *BF 1/1 *NANOBOT Drone token character.",
+      "subtype": "environment",
+      "tags": [],
+      "swift": false,
+      "activatedAbilities": [],
+      "requirements": {},
+      "ramCost": 3,
+      "name": "THE HIVE",
+      "iconic": false,
+      "cardType": "program",
+      "factions": ["NANOBOT"],
+      "copiesLimit": 4
+    },
+    "kind": "the-hive"
+  },
+  {
+    "cardId": "d528c7a7-8556-45f8-8afa-0ba239b8d9b5",
+    "kind": "mosh-pit",
+    "handlerId": "environment/mosh-pit",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "ebbe54601e2d18c5f9725b3da4e36cbd9425379a7581e495df171a9672060c9a",
+    "characteristics": {
+      "name": "MOSH PIT",
+      "cardType": "program",
+      "factions": ["THRASHER"],
+      "tags": [],
+      "iconic": false,
+      "rulesText": "Damage can't be prevented.",
+      "copiesLimit": 4,
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "aedb4478-6bff-4efc-8f13-8795dd125062",
+    "kind": "zen-garden",
+    "handlerId": "environment/zen-garden",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "a50d95d68001eb310b0b888e72cd9c7b8b3b1ac9f9bd17b936eabd9098eed2b5",
+    "characteristics": {
+      "name": "ZEN GARDEN",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "Prevent all damage.\nOn NETCHECK, add 1 anicca counter to Zen Garden. Then, if it has 5 or more, destroy it.\n\nIf Zen Garden would leave play, purge it.",
+      "ramCost": 3,
+      "requirements": {
+        "MYSTIC": 1
+      },
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "3b74d3ea-b033-4954-be27-6159f88d0dfd",
+    "kind": "crossfade",
+    "handlerId": "environment/crossfade",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "d4cbdf8e453465a53d34c623b5b578277ef037a36ba6a6ad7fb2112856470878",
+    "characteristics": {
+      "name": "CROSSFADE",
+      "cardType": "program",
+      "factions": [],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "On NETCHECK, the active player may destroy 1 *RAM they control to draw 1.",
+      "ramCost": 1,
+      "requirements": {},
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "332e5dae-057a-4ef9-bf94-b8e202ed1994",
+    "kind": "yacht-party",
+    "handlerId": "environment/yacht-party",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "33bb27487bdf763b2b955c897d3d1e8e3f0886d368058cb943947311c8e113aa",
+    "characteristics": {
+      "name": "YACHT PARTY",
+      "cardType": "program",
+      "factions": ["CORPO"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "On NETCHECK, the active player may pay 2 *RAM to reveal cards from their cyberdeck until they reveal a *CORPO character. They put it into their hand and shuffle the rest into their cyberdeck.",
+      "ramCost": 3,
+      "requirements": {},
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "e4ff952c-43b1-4e21-bca3-85acd9d89f0c",
+    "kind": "setu-simulation",
+    "handlerId": "environment/setu-simulation",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "1c435d4940dcb02c919b88db5913d10fddb695122af19c2793a9b757186d83b3",
+    "characteristics": {
+      "name": "SETU SIMULATION",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "On NETCHECK, the active player may purge a character they control to put target *MYSTIC character from their recycle bin into their hand.",
+      "ramCost": 2,
+      "requirements": {},
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  },
+  {
+    "cardId": "07a9faeb-bd38-4c22-8842-558961e1df41",
+    "kind": "the-spirit-realm",
+    "handlerId": "environment/the-spirit-realm",
+    "handlerVersion": 1,
+    "reviewMechanicsSha256": "b96ec432fb1d89503ac66b33542c1771adce256a28708fb69fea2d51f14a274d",
+    "characteristics": {
+      "name": "THE SPIRIT REALM",
+      "cardType": "program",
+      "factions": ["MYSTIC"],
+      "tags": [],
+      "iconic": false,
+      "copiesLimit": 4,
+      "rulesText": "On enter, all characters in recycle bins that share a faction with their owner's mainframe are put into play under their owner's control with a SPIRIT counter on them. (Character’s *RAM cost is set to 0. If they would leave play, purge them instead.)\nWhen The Spirit Realm leaves play, purge all characters with SPIRIT counters.",
+      "ramCost": 7,
+      "requirements": {
+        "MYSTIC": 2
+      },
+      "subtype": "environment",
+      "swift": false,
+      "activatedAbilities": []
+    }
+  }
+]

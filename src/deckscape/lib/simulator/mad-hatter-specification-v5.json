@@ -1,0 +1,51 @@
+{
+  "cardId": "6a29dd75-2e6a-46df-9c76-f05c852ec2f0",
+  "reviewMechanicsSha256": "b1963de4b02c086d934221b78cb75fb7994df2c4d053228f6aa946f4df9c2656",
+  "characteristics": {
+    "name": "MAD HATTER",
+    "cardType": "character",
+    "factions": ["WONDERLAND"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "When Mad Hatter leaves play, destroy all characters with tea party counters.\nReveal the top 2 cards of your cyberdeck. Put a *WONDERLAND character from among them into play with a tea party counter on it and set its *RAM cost to 0. Bin the rest.",
+    "ramCost": 4,
+    "requirements": {},
+    "activatedAbilities": [
+      {
+        "name": "TEA PARTY",
+        "ramCost": 2,
+        "run": true
+      }
+    ],
+    "attack": 3,
+    "defence": 2,
+    "attackType": "MF",
+    "ports": {
+      "head": 3,
+      "body": 1,
+      "leftArm": 2,
+      "rightArm": 2
+    }
+  },
+  "abilities": [
+    {
+      "abilityId": "tea-party",
+      "index": 0,
+      "handlerId": "mad-hatter/tea-party-v1",
+      "handlerVersion": 1,
+      "topCards": {
+        "kind": "tea-party",
+        "count": 2,
+        "cardType": "character",
+        "faction": "WONDERLAND"
+      }
+    }
+  ],
+  "passiveTriggers": [
+    {
+      "handlerId": "mad-hatter/departure-v1",
+      "handlerVersion": 1
+    }
+  ]
+}

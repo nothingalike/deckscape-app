@@ -1,0 +1,33 @@
+{
+  "handlerId": "headbanger/destruction-v1",
+  "cardId": "97ffdf87-fa27-47c4-86f6-57af2949112f",
+  "reviewMechanicsSha256": "bb1cf5d41dbec175227a217ca0ce6b0f8afa7b130b90fc2d8940214dd69759c1",
+  "characteristics": {
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "THRASHER": 2
+        },
+        "operator": "base",
+        "text": "+1/+1 until turn end."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "THRASHER": 4
+        },
+        "operator": "instead",
+        "text": "+2/+2 until turn end."
+      }
+    ],
+    "prefix": "Whenever you destroy a character an opponent controls, THRASHER characters you control get —",
+    "cardType": "mainframe",
+    "name": "HEADBANGER",
+    "copiesLimit": 4,
+    "tags": [],
+    "iconic": false,
+    "rulesText": "Whenever you destroy a character an opponent controls, THRASHER characters you control get —\n+1/+1 until turn end.\n+2/+2 until turn end.",
+    "factions": ["THRASHER"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cardId": "86cb1442-f22b-435e-a110-6812175e071c",
+  "kind": "artificial-inflation",
+  "handlerId": "protocol/artificial-inflation",
+  "handlerVersion": 1,
+  "reviewMechanicsSha256": "ed85e2766a81d1393c5ef122f13636a3348afd38cffbaeb3c648eee11bfea5ee",
+  "characteristics": {
+    "name": "ARTIFICIAL INFLATION",
+    "cardType": "program",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "The *RAM cost of non-*CORPO cards is increased by 1 *RAM. (This includes committed character costs.)",
+    "ramCost": 6,
+    "requirements": {
+      "CORPO": 1
+    },
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

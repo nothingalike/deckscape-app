@@ -1,0 +1,269 @@
+.tray {
+  width: min(1100px, calc(100vw - 32px));
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid #57727c;
+  border-radius: 12px;
+  background: #101f29;
+  color: #eef7f9;
+}
+.tray::backdrop {
+  background: rgb(0 0 0 / 72%);
+}
+.tray header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: -16px;
+  background: #101f29;
+  z-index: 1;
+  padding: 8px 0;
+}
+.tray h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.choiceLayout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.cardInfo {
+  grid-column: 1;
+  grid-row: 1;
+  box-sizing: border-box;
+  max-height: 55dvh;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #77efd5;
+  border-radius: 12px;
+  background: #10232b;
+}
+.cardInfo h3 { margin: 0 0 8px; font-size: 17px; }
+.cardInfo img { max-width: 100%; height: auto; }
+.cards {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+.card {
+  flex: 0 1 210px;
+  min-width: 150px;
+}
+.card > button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 5px;
+  color: #ecf6fa;
+  background: #142932;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+.card > button[aria-pressed="true"] {
+  border-color: #c4ff65;
+  background: #304627;
+}
+.card > button:disabled {
+  opacity: 0.55;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 128/181;
+  object-fit: contain;
+}
+.card span {
+  color: #c4ff65;
+}
+@media (max-width: 700px) {
+  .choiceLayout { grid-template-columns: minmax(0, 1fr); }
+  .choiceLayout .cards { grid-column: 1; grid-row: 1; }
+  .choiceLayout .cardInfo { grid-column: 1; grid-row: 2; }
+  .cardInfo { max-height: 40dvh; }
+}
+
+.cards {
+  max-height: 55dvh;
+  overflow-y: auto;
+  align-content: flex-start;
+  padding: 3px;
+}
+.cacheTray {
+  overflow: visible;
+  position: fixed;
+  top: 90px;
+  left: auto;
+  right: calc(12px + var(--game-safe-right, 0px));
+  z-index: 30;
+  transform: none;
+  box-sizing: border-box;
+  width: min(1000px, calc(100vw - 24px - var(--game-safe-left, 0px) - var(--game-safe-right, 0px)));
+  max-height: calc(100dvh - 24px);
+  padding: 14px 16px 16px;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 1280px) {
+  .tray.cacheTray {
+    top: 44px;
+    right: calc(8px + var(--game-safe-right, 0px));
+    max-width: 196px;
+    padding: 6px;
+  }
+  .cacheTray .cards .card { flex-basis: 80px; }
+  .cacheTray .cards .card > button { height: 113px; }
+  .cacheTray header { padding: 0 0 4px; gap: 4px; }
+  .cacheTray header h2 { font-size: 11px; }
+}
+.cacheTray button {
+  min-height: 44px;
+  border: 1px solid #77efd5;
+  border-radius: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.cacheTray .cards {
+  overflow: visible;
+  max-height: none;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+.cacheTray .card {
+  flex: 0 0 128px;
+  min-width: 0;
+}
+.cacheTray .card[hidden] {
+  display: none;
+}
+.cachePages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  pointer-events: auto;
+}
+.cachePages button {
+  min-width: 44px;
+}
+.cachePages span {
+  min-width: 48px;
+  min-height: 18px;
+}
+.cacheChrome {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  contain: strict;
+}
+.cacheChrome canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cacheTray:not([data-fallback]) [data-pixi-button],
+.cacheTray:not([data-fallback]) [data-pixi-text] {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+.cacheTray header {
+  top: -14px;
+  padding: 0 0 10px;
+  background: transparent;
+}
+.cacheTray h2 {
+  font-size: 14px;
+  flex: 1;
+  white-space: nowrap;
+}
+.cacheTray .card > button {
+  height: 181px;
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
+.cacheTray .card > button > * {
+  opacity: 0;
+}
+.cacheTray[data-fallback] .card > button > * {
+  opacity: 1;
+}
+.cacheTray .card > button:focus-visible {
+  outline: 2px solid #eef5ff;
+  outline-offset: 2px;
+}
+.cacheFallback {
+  display: grid;
+  place-items: center;
+  gap: 5px;
+  width: 100%;
+  aspect-ratio: 128 / 181;
+  text-align: center;
+}
+@media (max-width: 520px) {
+  .cacheTray .card {
+    flex-basis: min(128px, calc(50% - 4px));
+  }
+  .cacheTray {
+    padding: 12px;
+    top: 12px;
+  }
+}
+
+/* Compact Obsidian Cache; Pixi owns the visible frame and controls. */
+.tray.cacheTray {
+  top: max(58px, calc(env(safe-area-inset-top) + 42px));
+  right: calc(16px + var(--game-safe-right, env(safe-area-inset-right, 0px)));
+  padding: 10px;
+  border-radius: 0;
+}
+.cacheTray header {
+  position: relative;
+  top: 0;
+  padding: 0 0 6px;
+  gap: 6px;
+}
+.cacheTray .cacheCollapse,
+.cachePages button {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  padding: 0;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+}
+.cacheTray[data-fallback] {
+  background: #091216;
+  outline: 1px solid #527080;
+}
+.cacheTray button:focus-visible { outline: 2px solid #89dce5; outline-offset: 1px; }
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 1280px) {
+  .tray.cacheTray { max-width: 188px; padding: 8px; }
+  .cacheTray header h2 { font-size: 12px; }
+  .cacheTray header { padding-bottom: 4px; }
+  .cachePages { margin-top: 4px; }
+}
+
+/* Desktop Cache stays left of the permanent log/action column. */
+@media (min-width: 1281px) {
+  .tray.cacheTray { right: calc(24px + var(--match-column-width, 280px) + var(--game-safe-right, 0px)); }
+}

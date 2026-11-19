@@ -1,0 +1,33 @@
+{
+  "cardId": "e908ee06-b2c9-496d-92de-6a33d9bdce41",
+  "reviewMechanicsSha256": "39025e739979d4bbfa415913435fbe08fb4eaa8e64c3feeebe581dcf1189a524",
+  "handlerId": "sidewinder/mirage-v1",
+  "characteristics": {
+    "name": "SIDEWINDER",
+    "cardType": "mainframe",
+    "factions": ["DUSTRUNNER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "All DUSTRUNNER characters you control get —\nMIRAGE.\nThey can only be blocked by 2 or more characters.",
+    "prefix": "All DUSTRUNNER characters you control get —",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "DUSTRUNNER": 2
+        },
+        "operator": "base",
+        "text": "MIRAGE."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "DUSTRUNNER": 4
+        },
+        "operator": "plus",
+        "text": "They can only be blocked by 2 or more characters."
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "cardId": "420e5511-e5b0-4aa8-8e5c-3e9ca7363f5e",
+  "reviewMechanicsSha256": "144cf02c9a8ef29672aa2dde0ae3adaed0afd2a64407a81c0256104f5b5efc41",
+  "characteristics": {
+    "name": "VENTURE CAPITALIST",
+    "cardType": "character",
+    "factions": ["CORPO"],
+    "tags": [],
+    "iconic": false,
+    "rulesText": "Venture Capitalist enters play with 1 interest counter on her. On your NETCHECK, double the number of interest counters on her.\nRemove all interest counters from Venture Capitalist and install 1 *RAM running for each interest counter removed.",
+    "copiesLimit": 4,
+    "ramCost": 4,
+    "requirements": {},
+    "ports": {
+      "head": 1,
+      "body": 1,
+      "leftArm": 1,
+      "rightArm": 1
+    },
+    "activatedAbilities": [
+      {
+        "name": "CASH OUT",
+        "ramCost": 0,
+        "run": true
+      }
+    ],
+    "attack": 1,
+    "defence": 2,
+    "attackType": "BF"
+  },
+  "abilities": [
+    {
+      "abilityId": "cash-out",
+      "handlerId": "venture-capitalist/interest-v1",
+      "handlerVersion": 1,
+      "index": 0
+    }
+  ]
+}

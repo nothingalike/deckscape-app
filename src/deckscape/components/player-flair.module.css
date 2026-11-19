@@ -1,0 +1,73 @@
+.flair {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.title {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #536d3d;
+  border-radius: 4px;
+  color: var(--accent);
+  background: #22301d;
+  font-size: 0.82em;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  color: var(--accent);
+  vertical-align: middle;
+}
+
+.badge img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.badgeTier {
+  position: absolute;
+  right: -2px;
+  bottom: -1px;
+  display: grid;
+  place-items: center;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 3px;
+  border: 1px solid #9eb868;
+  border-radius: 50%;
+  color: #d7ff8b;
+  background: #17231d;
+  font:
+    700 0.62rem/1 "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0;
+}
+
+.locked img {
+  filter: brightness(0.7) saturate(0.75);
+}
+
+.locked .badgeTier {
+  color: #a7b0a7;
+  border-color: #6c766c;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 0.85em;
+}

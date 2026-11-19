@@ -1,0 +1,21 @@
+{
+  "cardId": "47eaaa21-e06e-456c-947a-9258157c85e4",
+  "reviewMechanicsSha256": "c9c309520b6a63761b925a038826db83bcf5ed0095fc7e50610323f13f3ec69c",
+  "kind": "firewall",
+  "handlerId": "protocol/firewall",
+  "handlerVersion": 1,
+  "characteristics": {
+    "name": "FIREWALL",
+    "cardType": "program",
+    "factions": ["HACKER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "If a source would deal *MF damage to you, prevent that damage and put 1 breach counter on Firewall.\n\nWhenever you put a breach counter on Firewall, if it has 2 or more, purge it.",
+    "ramCost": 2,
+    "requirements": {},
+    "subtype": "protocol",
+    "swift": false,
+    "activatedAbilities": []
+  }
+}

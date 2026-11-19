@@ -1,0 +1,35 @@
+{
+  "reviewMechanicsSha256": "1601479c0ff03f01ef0dd0cbaa95848193fb055bca9782a0c6a2252e1ae9bed1",
+  "characteristics": {
+    "rulesText": "Whenever you install a RAM, you may give target character —\n+1/+1 until turn end.\n+2/+2 until turn end.",
+    "name": "NEXUS",
+    "prefix": "Whenever you install a RAM, you may give target character —",
+    "iconic": false,
+    "factions": ["CYBERNETIC", "CORPO"],
+    "cardType": "mainframe",
+    "copiesLimit": 4,
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "CYBERNETIC": 1,
+          "CORPO": 1
+        },
+        "operator": "base",
+        "text": "+1/+1 until turn end."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "CYBERNETIC": 2,
+          "CORPO": 2
+        },
+        "operator": "instead",
+        "text": "+2/+2 until turn end."
+      }
+    ],
+    "tags": []
+  },
+  "handlerId": "nexus/install-v1",
+  "cardId": "7a39c706-0354-4d96-9b3a-4caba5749648"
+}

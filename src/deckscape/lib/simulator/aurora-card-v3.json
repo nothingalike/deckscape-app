@@ -1,0 +1,44 @@
+{
+  "cardId": "3c7cb6c0-bb3b-42a0-8ff1-3b83f5d0f4dd",
+  "characteristics": {
+    "name": "AURORA",
+    "cardType": "mainframe",
+    "factions": ["MYSTIC", "DUSTRUNNER"],
+    "tags": [],
+    "iconic": false,
+    "copiesLimit": 4,
+    "rulesText": "When 1 or more MYSTIC or DUSTRUNNER characters you control are blocked —\nDIVINE 2.\nInstead, DIVINE 2 for each blocked MYSTIC or DUSTRUNNER.",
+    "prefix": "When 1 or more MYSTIC or DUSTRUNNER characters you control are blocked —",
+    "tiers": [
+      {
+        "persistents": 2,
+        "factions": {
+          "MYSTIC": 1,
+          "DUSTRUNNER": 1
+        },
+        "operator": "base",
+        "text": "DIVINE 2."
+      },
+      {
+        "persistents": 4,
+        "factions": {
+          "MYSTIC": 2,
+          "DUSTRUNNER": 2
+        },
+        "operator": "instead",
+        "text": "DIVINE 2 for each blocked MYSTIC or DUSTRUNNER."
+      }
+    ]
+  },
+  "handlers": [
+    {
+      "id": "aurora/blocked-divine-v1",
+      "version": 1,
+      "parameters": {}
+    }
+  ],
+  "artwork": {
+    "path": "3c7cb6c0-bb3b-42a0-8ff1-3b83f5d0f4dd/ebc553eb9f8f8fb49d14b3568a48a924f5bd825816f414d842f0fcbcd9293094.webp",
+    "sha256": "ebc553eb9f8f8fb49d14b3568a48a924f5bd825816f414d842f0fcbcd9293094"
+  }
+}
