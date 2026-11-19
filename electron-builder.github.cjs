@@ -14,5 +14,5 @@ module.exports = {
     ...(!signed ? { identity: '-', hardenedRuntime: false, notarize: false } : {}),
     artifactName: 'Neuroscape-Local-${version}-macOS-${arch}.${ext}',
   },
-  linux: { ...base.linux, artifactName: 'Neuroscape-Local-${version}-Linux-${arch}.${ext}' },
+  linux: { ...base.linux, artifactName: 'Neuroscape-Local-${version}-Linux-x64.${ext}' },
 };

@@ -3,12 +3,28 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
+import { createRequire } from 'node:module';
 // Maintainer tooling is ESM while the application uses NodeNext/CJS.
 // @ts-expect-error JavaScript release tooling is exercised directly without application declarations.
 import { installerName, releaseIdentity, releaseNotes, stageInstaller, targets, validateExistingDraft, verifyInstallers } from '../tools/github-release.mjs';
 
 const sha = 'a'.repeat(40);
 const release = releaseIdentity('v0.2.0', '0.2.0', sha, 'false');
+test('electron-builder filenames match release assembly for every native target', () => {
+  const requireBuild = createRequire(resolve('package.json'));
+  const config = requireBuild('./electron-builder.github.cjs');
+  const { Arch, getArtifactArchName } = requireBuild('builder-util');
+  const { expandMacro } = requireBuild('app-builder-lib/out/util/macroExpander.js');
+  for (const [target, platform, arch, ext] of [
+    ['windows-x64', 'win', 'x64', 'exe'],
+    ['mac-arm64', 'mac', 'arm64', 'dmg'],
+    ['mac-x64', 'mac', 'x64', 'dmg'],
+    ['linux-x64', 'linux', 'x64', 'AppImage'],
+  ]) {
+    const actual = expandMacro(config[platform].artifactName, getArtifactArchName(Arch[arch], ext), { version: '0.2.0' }, { ext });
+    assert.equal(actual, installerName('0.2.0', target));
+  }
+});
 test('release tags bind exact supported versions and commits without accepting shell-like input', () => {
   for (const tag of ['main', 'v0.2.1', 'v0.2.0-beta', 'v01.2.0', 'v0.2.0\nsha=bad', 'v0.2.0;echo unsafe']) assert.throws(() => releaseIdentity(tag, '0.2.0', sha, 'false'));
   assert.throws(() => releaseIdentity('v0.2.0', '0.2.0', 'main', 'false'));
