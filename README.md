@@ -2,9 +2,11 @@
 
 A desktop app for local Neuroscape deckbuilding and solo bot play, in development for Windows, macOS, and Linux.
 
+**[Download the latest version](https://github.com/nothingalike/deckscape-app/releases)** | [Contribute](#contributing)
+
 ## Download and install
 
-Open the [Releases page](https://github.com/nothingalike/deckscape-app/releases) and choose your computer's download. Player downloads appear there after the maintainer publishes a release.
+Open the [latest downloads](https://github.com/nothingalike/deckscape-app/releases) and choose the installer for your computer under **Assets**. Preview releases appear there too.
 
 - **Windows:** download the file ending in `Windows-x64-Setup.exe`. Open it and follow the installer.
 - **Mac:** choose `macOS-arm64.dmg` for Apple silicon or `macOS-x64.dmg` for Intel. Open the DMG and drag Neuroscape Local into Applications. Requires macOS 13 or later.
@@ -13,6 +15,30 @@ Open the [Releases page](https://github.com/nothingalike/deckscape-app/releases)
 You do not need Node.js, Git, a terminal, or the **Source code** downloads. On first launch, choose **Update cards** with an internet connection. After the download finishes, you can build decks and play supported bot matches offline. If an installer is blocked or its developer cannot be verified, ask the maintainer for help and keep your normal security settings enabled. Unsigned releases are clearly labeled as previews.
 
 The Windows app synchronizes the official catalog and artwork, preserves the working catalog through failed updates, and reuses Deckscape's catalog and deck editor. Local decks autosave to SQLite with revision checks and draft recovery. The original legality, quantities, sections, mainframe replacement, statistics, cost curve and opening-hand tester are preserved. Supplied starters and JSON/text imports create new local copies. JSON backup, copyable card-list and promotional PNG export retain the hosted formats. Solo admission uses the hosted reviewed definitions and rules; a supported matchup saves its decks, definitions, artwork, rules and initial strategy together. The original setup, React/Pixi battlefield, choices, rules and bot executor run locally, with atomic command receipts in SQLite.
+
+## Contributing
+
+Code, documentation, bug reports, and feedback are welcome. [Report a bug or suggest a feature](https://github.com/nothingalike/deckscape-app/issues). Include your operating system, app version, and steps to reproduce a bug.
+
+To contribute a change:
+
+1. [Fork this repository](https://github.com/nothingalike/deckscape-app/fork), then clone your fork. Replace `YOUR-USERNAME` with your GitHub username:
+
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/deckscape-app.git
+   cd deckscape-app
+   ```
+
+2. Install Node.js 24.5 or later, then install dependencies and open the app:
+
+   ```sh
+   npm ci
+   npm start
+   ```
+
+3. Create a branch for your change. Read the [local app design](docs/design/local-app.md) and existing [specs and tickets](.scratch/). For card import, deckbuilding, import/export, or game changes, follow the [hosted functionality baseline](docs/hosted-parity.md).
+4. Check code changes with `npm run verify`. It runs TypeScript checks and the full test suite, including bot matches that can take tens of minutes. Use the commands below for relevant desktop checks.
+5. Push your branch and [open a pull request](https://github.com/nothingalike/deckscape-app/compare) against `main`. Explain what changed and how you checked it. Include screenshots for UI changes.
 
 ## Development
 
