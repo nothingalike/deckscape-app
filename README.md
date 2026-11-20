@@ -14,6 +14,8 @@ Open the [latest downloads](https://github.com/nothingalike/deckscape-app/releas
 
 You do not need Node.js, Git, a terminal, or the **Source code** downloads. On first launch, choose **Update cards** with an internet connection. After the download finishes, you can build decks and play supported bot matches offline. If an installer is blocked or its developer cannot be verified, ask the maintainer for help and keep your normal security settings enabled. Unsigned releases are clearly labeled as previews.
 
+If the official card feed is unavailable, **Update cards** automatically tries [Deckscape's cached catalog](https://www.deckscape.run/cards) and labels the download as a backup. See [catalog sources](docs/catalog-sources.md) for details.
+
 The Windows app synchronizes the official catalog and artwork, preserves the working catalog through failed updates, and reuses Deckscape's catalog and deck editor. Local decks autosave to SQLite with revision checks and draft recovery. The original legality, quantities, sections, mainframe replacement, statistics, cost curve and opening-hand tester are preserved. Supplied starters and JSON/text imports create new local copies. JSON backup, copyable card-list and promotional PNG export retain the hosted formats. Solo admission uses the hosted reviewed definitions and rules; a supported matchup saves its decks, definitions, artwork, rules and initial strategy together. The original setup, React/Pixi battlefield, choices, rules and bot executor run locally, with atomic command receipts in SQLite.
 
 ## Contributing

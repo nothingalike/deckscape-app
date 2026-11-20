@@ -26,4 +26,4 @@ The artifact is 155824590 bytes, mounted app 430413360 bytes, SHA256 f9a6d6796ae
 
 Native integration is qualified only as available on this host. The real native save request stayed pending without an owned visible X11 chooser; no native input was sent, and cancel/selection success remains unqualified. No Linux default browser handler is installed, so real browser handoff also remains unqualified. These are explicit host limits, distinct from previously passed controlled dialog/opener boundary tests. GNOME, KDE, other distributions and physical GPUs are untested. Completing this bounded WSLg ticket does not claim general Linux compatibility.
 
-Repeatable procedure: `docs/linux-qualification.md`. Interactive review: http://localhost:4321/f/neuroscape-app/general/reviews/2026-11-15-2250-linux-appimage-proof . Full Linux journey remains 21. Mac17 stays ready-for-human per the user's instruction; continue19. All work remains uncommitted.
+Repeatable procedure: `docs/linux-qualification.md`. Full Linux journey remains 21. Mac17 stays ready-for-human per the user's instruction; continue19. All work remains uncommitted.

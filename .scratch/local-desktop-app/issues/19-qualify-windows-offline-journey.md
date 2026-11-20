@@ -31,4 +31,4 @@ The second failed run (`61a486e5-e003-41cd-8e08-0713a892612e`) passed the comple
 
 Repeatable commands and evidence boundaries are in `docs/installed-qualification.md`. Real fresh official sync downloaded256 cards/artwork. Actual main and utility HTTP/HTTPS requests were denied in the shared Electron session while the original deck/editor/import/export/game/reopen paths worked. This is application-network denial, not an OS firewall claim. Native dialog/clipboard/browser responses are controlled at their OS boundaries; actual files, SQLite, ZIPs, generation activation and OS relaunch run for real. Full platform/toolchain/process evidence is in the per-step files. All600 source/local hashes match the updated provenance manifest and the pinned read-only reference is unchanged.
 
-Review: http://localhost:4321/f/neuroscape-app/general/reviews/2026-11-15-2225-installed-windows-player-journey . Standards and Spec have zero remaining findings. All work stays uncommitted. Mac17/20 remain user execution; continue Linux21.
+Standards and Spec have zero remaining findings. All work stays uncommitted. Mac17/20 remain user execution; continue Linux21.

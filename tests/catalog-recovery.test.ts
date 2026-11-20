@@ -19,6 +19,33 @@ async function syncAndWait(app: ReturnType<typeof openApplication>) {
   throw new Error('Catalog did not settle');
 }
 
+for (const cached of [false, true]) test(`an empty source catalog is explained and preserves existing data across restart (cached: ${cached})`, async () => {
+  const profileDirectory = await mkdtemp(join(tmpdir(), 'neuroscape-empty-source-'));
+  let empty = !cached;
+  const source = {
+    async fetchPage() { return { cards: empty ? [] : [basic], total: empty ? 0 : 1, has_more: false, offset: 0 }; },
+    async fetchArtwork() { return new Response(png, { headers: { 'Content-Type': 'image/png' } }); },
+  };
+  const app = openApplication({ profileDirectory, catalogSource: source });
+  let failed;
+  try {
+    if (cached) await syncAndWait(app);
+    const before = await app.execute({ type: 'catalog.status' }); assert.ok(before.ok);
+    empty = true;
+    failed = await syncAndWait(app);
+    assert.equal(failed.progress?.phase, 'failed');
+    assert.match(failed.progress?.message ?? '', /card source returned an empty catalog/i);
+    assert.equal(failed.snapshotId, before.data.snapshotId);
+    assert.equal(failed.lastSyncedAt, before.data.lastSyncedAt);
+    assert.equal(failed.count, cached ? 1 : 0);
+  } finally { await app.close(); }
+  const reopened = openApplication({ profileDirectory, catalogSource: source });
+  try {
+    const status = await reopened.execute({ type: 'catalog.status' }); assert.ok(status.ok);
+    assert.deepEqual(status.data, failed);
+  } finally { await reopened.close(); await rm(profileDirectory, { recursive: true, force: true }); }
+});
+
 test('a missing-source card remains readable with its artwork after an update and restart', async () => {
   const profileDirectory = await mkdtemp(join(tmpdir(), 'neuroscape-retained-'));
   let includeRunner = true;

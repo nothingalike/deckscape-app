@@ -9,6 +9,7 @@ import corrections from './deckscape/data/corrections.json';
 import { createCatalogRequester, SourceHttpError, type CatalogFetch } from './deckscape/lib/catalog-request';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { catalogStaging } from './catalog-staging';
+import { deckscapeCatalogSource } from './deckscape-source';
 
 const basicRamId = corrections.basic_ram.id;
 export const catalogQuery = z.object({ search: z.string().max(200).optional(), type: z.string().max(80).optional(),
@@ -17,19 +18,24 @@ export const catalogQuery = z.object({ search: z.string().max(200).optional(), t
 export interface CatalogSource {
   fetchPage(offset: number, signal: AbortSignal): Promise<unknown>;
   fetchArtwork(url: string, signal: AbortSignal): Promise<Response>;
+  acceptsArtworkUrl?(url: string): boolean;
+  fallback?: CatalogSource;
 }
 export type CatalogFileSystem = Pick<typeof import('node:fs/promises'), 'open'>;
 
 class CatalogSyncError extends Error {}
-function validateArtworkUrl(value: string) {
+const emptyCatalogPage = z.object({ cards: z.tuple([]), total: z.literal(0), has_more: z.literal(false), offset: z.literal(0) });
+function validateArtworkUrl(value: string, source: CatalogSource) {
   const url = new URL(value);
-  if (url.origin !== 'https://storage.googleapis.com' || url.username || url.password
-    || !url.pathname.startsWith('/spicerack_media/cards/neuroscape/')) throw new CatalogSyncError('The artwork source needs review.');
+  const official = url.origin === 'https://storage.googleapis.com' && url.pathname.startsWith('/spicerack_media/cards/neuroscape/');
+  const backup = source.acceptsArtworkUrl?.(value) === true;
+  if ((!official && !backup) || url.username || url.password) throw new CatalogSyncError('The artwork source needs review.');
 }
 
 export function officialCatalogSource(fetcher: CatalogFetch = fetch): CatalogSource {
   const request = createCatalogRequester(fetcher);
   return {
+    fallback: deckscapeCatalogSource(fetcher),
     async fetchPage(offset, signal) {
       await sleep(250, undefined, { signal });
       return (await request('https://api.v2.cloudflare.prod.carde.io/hydraproxy/api/v2/deckbuilder/cards/search-with-filters/', signal, {
@@ -126,54 +132,73 @@ export function createCatalog(db: DatabaseSync, profileDirectory: string, source
   async function synchronize(runId: string, signal: AbortSignal) {
     try {
       staging.recover();
-      recordProgress({ phase: 'catalog', done: 0, total: 0 });
-      const readSource = () => fetchCatalog(async offset => {
-        signal.throwIfAborted();
-        recordProgress({ phase: 'catalog', done: offset, total: 0 });
-        return source.fetchPage(offset, signal);
-      });
-      const records = await readSource();
-      let refreshedLinks = false;
-      const basic = records.find(card => card.id === basicRamId);
-      if (!basic || basic.name.toLowerCase() !== 'basic ram') throw new CatalogSyncError('The required Basic RAM source correction needs review.');
-      const stage = staging.path(runId); const art = join(profileDirectory, 'artwork');
-      await mkdir(stage, { recursive: true }); await mkdir(art, { recursive: true });
-      const incoming: Card[] = [];
-      for (const raw of records) {
-        signal.throwIfAborted();
-        const card = normalizeCard(raw, basicRamId);
-        if (!['ram','mainframe','character','program','gear'].includes(card.card_type)) throw new CatalogSyncError('The catalog contains a card type that needs an app update.');
-        if (raw.image_url) {
-        recordProgress({ phase: 'artwork', done: incoming.length, total: records.length });
-        async function download(url: string) {
-          validateArtworkUrl(url);
-          const response = await source.fetchArtwork(url, signal);
-          if (response.status === 401 || response.status === 403) { await response.body?.cancel(); throw new SourceHttpError(response.status); }
-          return response;
+      let usingBackup = false;
+      const updateProgress = (value: NonNullable<CatalogStatus['progress']>, state = 'running') => recordProgress({
+        ...value, ...(usingBackup ? { message: 'Using the Deckscape backup catalog because the official source is unavailable.' } : {}),
+      }, state);
+      updateProgress({ phase: 'catalog', done: 0, total: 0 });
+      const prepare = async (activeSource: CatalogSource) => {
+        const readSource = () => fetchCatalog(async offset => {
+          signal.throwIfAborted();
+          updateProgress({ phase: 'catalog', done: offset, total: 0 });
+          const page = await activeSource.fetchPage(offset, signal);
+          if (offset === 0 && emptyCatalogPage.safeParse(page).success) {
+            throw new CatalogSyncError('The card source returned an empty catalog. Try again later.');
+          }
+          return page;
+        });
+        const records = await readSource();
+        let refreshedLinks = false;
+        const basic = records.find(card => card.id === basicRamId);
+        if (!basic || basic.name.toLowerCase() !== 'basic ram') throw new CatalogSyncError('The required Basic RAM source correction needs review.');
+        const stage = staging.path(runId); const art = join(profileDirectory, 'artwork');
+        await mkdir(stage, { recursive: true }); await mkdir(art, { recursive: true });
+        const incoming: Card[] = [];
+        for (const raw of records) {
+          signal.throwIfAborted();
+          const card = normalizeCard(raw, basicRamId);
+          if (!['ram','mainframe','character','program','gear'].includes(card.card_type)) throw new CatalogSyncError('The catalog contains a card type that needs an app update.');
+          if (raw.image_url) {
+          updateProgress({ phase: 'artwork', done: incoming.length, total: records.length });
+          async function download(url: string) {
+            validateArtworkUrl(url, activeSource);
+            const response = await activeSource.fetchArtwork(url, signal);
+            if (response.status === 401 || response.status === 403) { await response.body?.cancel(); throw new SourceHttpError(response.status); }
+            return response;
+          }
+          let response: Response;
+          try { response = await download(raw.image_url); }
+          catch (error) {
+            if (!(error instanceof SourceHttpError) || ![401,403].includes(error.status) || refreshedLinks) throw error;
+            refreshedLinks = true;
+            const fresh = await readSource();
+            const stable = importDiff(fresh.map(item => normalizeCard(item,basicRamId)), records.map(item => normalizeCard(item,basicRamId)));
+            if (stable.added || stable.changed || stable.missing.length) throw new CatalogSyncError('The catalog changed while refreshing artwork links. Retry the complete update.');
+            const links = new Map(fresh.map(item => [item.id,item.image_url]));
+            for (const item of records) item.image_url = links.get(item.id);
+            if (!raw.image_url) throw new CatalogSyncError('A refreshed artwork link is unavailable.');
+            response = await download(raw.image_url);
+          }
+          const { bytes, extension } = await imageBytes(response);
+          const hash = createHash('sha256').update(bytes).digest('hex'); const imagePath = `${hash}.${extension}`;
+          const staged = join(stage, imagePath); const file = await fileSystem.open(staged, 'w');
+          try { await file.writeFile(bytes); await file.sync(); } finally { await file.close(); }
+          await rename(staged, join(art, imagePath));
+          card.image_path = imagePath;
+          card.image_hash = hash;
+          }
+          incoming.push(card);
+          updateProgress({ phase: 'artwork', done: incoming.length, total: records.length });
         }
-        let response: Response;
-        try { response = await download(raw.image_url); }
-        catch (error) {
-          if (!(error instanceof SourceHttpError) || ![401,403].includes(error.status) || refreshedLinks) throw error;
-          refreshedLinks = true;
-          const fresh = await readSource();
-          const stable = importDiff(fresh.map(item => normalizeCard(item,basicRamId)), records.map(item => normalizeCard(item,basicRamId)));
-          if (stable.added || stable.changed || stable.missing.length) throw new CatalogSyncError('The catalog changed while refreshing artwork links. Retry the complete update.');
-          const links = new Map(fresh.map(item => [item.id,item.image_url]));
-          for (const item of records) item.image_url = links.get(item.id);
-          if (!raw.image_url) throw new CatalogSyncError('A refreshed artwork link is unavailable.');
-          response = await download(raw.image_url);
-        }
-        const { bytes, extension } = await imageBytes(response);
-        const hash = createHash('sha256').update(bytes).digest('hex'); const imagePath = `${hash}.${extension}`;
-        const staged = join(stage, imagePath); const file = await fileSystem.open(staged, 'w');
-        try { await file.writeFile(bytes); await file.sync(); } finally { await file.close(); }
-        await rename(staged, join(art, imagePath));
-        card.image_path = imagePath;
-        card.image_hash = hash;
-        }
-        incoming.push(card);
-        recordProgress({ phase: 'artwork', done: incoming.length, total: records.length });
+        return incoming;
+      };
+      let incoming: Card[];
+      try { incoming = await prepare(source); }
+      catch (error) {
+        const code = error && typeof error === 'object' && 'code' in error ? String(error.code) : null;
+        if (!source.fallback || signal.aborted || code && !['ECONNRESET','ECONNREFUSED','ETIMEDOUT','ENOTFOUND','EAI_AGAIN','ERR_NETWORK'].includes(code)) throw error;
+        usingBackup = true;
+        incoming = await prepare(source.fallback);
       }
       signal.throwIfAborted();
       const previous = cards();
@@ -181,14 +206,14 @@ export function createCatalog(db: DatabaseSync, profileDirectory: string, source
       const retained = previous.filter(card => !incomingIds.has(card.id)).map(card => ({ ...card, source_missing: true }));
       const diff = importDiff(incoming, previous);
       const result = { added: diff.added, changed: diff.changed, missing: diff.missing.length };
-      recordProgress({ phase: 'activating', done: incoming.length, total: incoming.length });
+      updateProgress({ phase: 'activating', done: incoming.length, total: incoming.length });
       db.exec('BEGIN IMMEDIATE;');
       try {
         db.prepare('INSERT INTO catalog_snapshots VALUES(?,?,?)').run(runId, new Date().toISOString(), JSON.stringify(result));
         const insert = db.prepare('INSERT INTO catalog_cards VALUES(?,?,?)');
         for (const card of [...incoming, ...retained]) insert.run(runId, card.id, JSON.stringify(card));
         db.prepare('INSERT INTO catalog_active VALUES(1,?) ON CONFLICT(id) DO UPDATE SET snapshot_id=excluded.snapshot_id').run(runId);
-        recordProgress({ phase: 'complete', done: incoming.length, total: incoming.length }, 'complete');
+        updateProgress({ phase: 'complete', done: incoming.length, total: incoming.length }, 'complete');
         db.exec('COMMIT;');
       } catch (error) { db.exec('ROLLBACK;'); throw error; }
     } catch (error) {

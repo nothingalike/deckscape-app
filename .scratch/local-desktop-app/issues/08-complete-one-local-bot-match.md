@@ -37,6 +37,3 @@ Completed: TypeScript and the complete current test suite passed all 222 checks,
 Read-only review confirmed that the slow duels use the unchanged hosted default runtime and their own in-memory store; local IPC, SQLite and revision notifications do not participate. Core bot policy/executor/combat evaluation, match service, commands, setup and starter runtime remain byte-identical to the source. Repeated snapshot and combat-forecast evaluation is a plausible inherited cost, not a measured profiler attribution. This validates execution, not a tactical-strength or performance promise. Broader roster qualification remains 12.
 
 Standards and Spec each have zero remaining findings after the routing fix. All 596 source/local provenance hashes match; the source checkout is unchanged. The final installed proof records a health outcome, 46 native player actions, zero service-submitted player decisions, both return-link checks, decoded original texture and cached artwork, and zero page/console errors under application-session HTTP/HTTPS denial. The internal proof uninstaller returned 0. All changes remain uncommitted; nothing was pushed or published.
-
-Review: http://localhost:4321/f/neuroscape-app/general/reviews/2026-11-15-1645-hosted-offline-gameplay
-

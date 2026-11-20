@@ -46,6 +46,8 @@ Provide **Update cards** with progress, cancellation, last successful sync time,
 
 Use explicit sync for the first release rather than silent periodic full-artwork downloads. A canceled or failed update keeps the prior catalog active. Disk-space failures report what remains usable. Temporary staging data is recoverable or removable on the next launch; cleanup retains every object referenced by an active snapshot or saved match.
 
+November 20, 2026: The user adopted the public Deckscape card page as a backup when the official source cannot supply a complete validated catalog and artwork. Restart from one complete backup snapshot, label its source visibly, and prefer the official source on the next update. Preserve existing catalogs if both sources fail. The public page adapter and artwork validation are documented in [catalog sources](../catalog-sources.md).
+
 For example, a new set may appear in the catalog today while its mechanics ship in a later app release. The deckbuilder shows those cards immediately and labels their solo support. Starting a bot game lists the unsupported cards that prevent admission. Existing saved matches keep their original content.
 
 ## Release and support boundaries

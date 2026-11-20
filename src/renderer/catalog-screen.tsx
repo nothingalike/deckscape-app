@@ -60,6 +60,7 @@ export function CatalogScreen({ cardId }: { cardId?: string }) {
       {!status ? 'Opening your local catalog…' : status.running ? `${status.progress?.phase === 'artwork' ? 'Downloading artwork' : status.progress?.phase === 'activating' ? 'Activating catalog' : 'Reading catalog'} · ${status.progress?.done ?? 0} of ${status.progress?.total || '…'}`
         : status.count ? `${status.count} cards on this computer · Last updated ${new Date(status.lastSyncedAt!).toLocaleString()}` : 'Download the card catalog to get started. An internet connection is required for this first download.'}
       {status?.lastResult && !status.running && <span className="sync-result">Added {status.lastResult.added} · Changed {status.lastResult.changed} · Missing {status.lastResult.missing}</span>}
+      {status?.progress?.message && !['failed','canceled','interrupted'].includes(status.progress.phase) && <p>{status.progress.message}</p>}
     </CardContent></Panel>
     {(error || ['failed','canceled','interrupted'].includes(status?.progress?.phase ?? '')) && <p className="error-message" role="alert">{error || status?.progress?.message}</p>}
     {Boolean(status?.count) && <div className="hosted-catalog"><Catalog cards={cards} /></div>}
